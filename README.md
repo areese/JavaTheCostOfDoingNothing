@@ -1,6 +1,6 @@
 #
 
-This code is to resurrect a presentation done by Dean Yu & Josh Blatt at JavaOne 2008.
+This code is to resurrect a presentation done by @dty & Josh Blatt at JavaOne 2008.
 (http://download.oracle.com/javaone/javaone2008-ee.zip,  TS6391.pdf)
 
 The title was something similiar to the cost of doing nothing, and reflected how much does 
@@ -19,3 +19,5 @@ Notice the library dir is:
 target/native/x86_64-{darwin,linux}-{clang,gcc}
 
 depending on build OS.
+
+Thanks to @bigloser for digging up the original presentation
