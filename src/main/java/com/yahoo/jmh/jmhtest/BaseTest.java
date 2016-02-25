@@ -41,6 +41,18 @@ public abstract class BaseTest {
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testParamStringsEq() {
+        return wrapper.paramStrings(equalsLhs1, equalsRhs1);
+    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testParamStringsNe() {
+        return wrapper.paramStrings(notEqualsLhs1, notEqualsRhs1);
+    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
     public boolean testParamArray() {
         return wrapper.paramArray(foo);
     }
