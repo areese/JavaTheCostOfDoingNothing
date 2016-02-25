@@ -10,9 +10,9 @@ With JMH we can do far better micro-benchmarking, so I've resurrected this.
 
 To execute the code:
 
-java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/jmhtest-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest 
+java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest 
 
-java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/jmhtest-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
+java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
 
 
 Notice the library dir is:
