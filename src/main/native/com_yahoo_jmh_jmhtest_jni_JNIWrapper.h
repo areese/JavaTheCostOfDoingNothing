@@ -25,6 +25,14 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStri
 
 /*
  * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStrings
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStrings
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
  * Method:    nativeParamArray
  * Signature: ([Ljava/lang/String;)V
  */
@@ -38,6 +46,14 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamArra
  */
 JNIEXPORT jstring JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamNoneReturnString
   (JNIEnv *, jclass);
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeEquals
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEquals
+  (JNIEnv *, jclass, jstring, jstring);
 
 #ifdef __cplusplus
 }

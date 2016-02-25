@@ -5,12 +5,16 @@ import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.TearDown;
 
-import com.yahoo.jmh.jmhtest.java.JavaWrapper;
-
 public abstract class BaseTest {
     protected Wrapper wrapper;
     protected String bar = "foo";
     protected String[] foo = {bar};
+
+    protected String equalsLhs1 = "ThisIsAStringI'mComparing";
+    protected String equalsRhs1 = "ThisIsAStringI'mComparing";
+    protected String notEqualsLhs1 = "SomethingElseLongAlmostDifferent";
+    protected String notEqualsRhs1 = "SomethingElseLongToCompare";
+
 
     public BaseTest(Wrapper instance) {
         wrapper = instance;
@@ -46,5 +50,18 @@ public abstract class BaseTest {
     public String testParamNoneReturnString() {
         return wrapper.paramNoneReturnString();
     }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testEquals1() {
+        return wrapper.strEquals(equalsLhs1, equalsRhs1);
+    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testEquals2() {
+        return wrapper.strEquals(notEqualsLhs1, notEqualsRhs1);
+    }
+
 
 }

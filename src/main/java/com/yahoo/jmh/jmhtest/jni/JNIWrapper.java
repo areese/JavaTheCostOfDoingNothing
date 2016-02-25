@@ -21,9 +21,14 @@ public class JNIWrapper implements Wrapper {
 
     static final native void nativeParamString(String param);
 
+    static final native void nativeParamStrings(String lhs, String rhs);
+
     static final native void nativeParamArray(String[] param);
 
     static final native String nativeParamNoneReturnString();
+
+    static final native boolean nativeEquals(String lhs, String rhs);
+
 
     private boolean returnValue = true;
 
@@ -41,6 +46,12 @@ public class JNIWrapper implements Wrapper {
     }
 
     @Override
+    public final boolean paramStrings(String lhs, String rhs) {
+        nativeParamStrings(lhs, rhs);
+        return returnValue;
+    }
+
+    @Override
     public final boolean paramArray(String[] param) {
         nativeParamArray(param);
         return returnValue;
@@ -49,6 +60,11 @@ public class JNIWrapper implements Wrapper {
     @Override
     public final String paramNoneReturnString() {
         return nativeParamNoneReturnString();
+    }
+
+    @Override
+    public boolean strEquals(String lhs, String rhs) {
+        return nativeEquals(lhs, rhs);
     }
 
 }

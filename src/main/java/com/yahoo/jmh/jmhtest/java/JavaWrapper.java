@@ -28,6 +28,11 @@ public class JavaWrapper implements Wrapper {
     }
 
     @Override
+    public final boolean paramStrings(String lhs, String rhs) {
+        return returnValue;
+    }
+
+    @Override
     public final boolean paramArray(String[] param) {
         return returnValue;
     }
@@ -35,6 +40,11 @@ public class JavaWrapper implements Wrapper {
     @Override
     public final String paramNoneReturnString() {
         return returnString;
+    }
+
+    @Override
+    public boolean strEquals(String lhs, String rhs) {
+        return lhs.equals(rhs);
     }
 
 }

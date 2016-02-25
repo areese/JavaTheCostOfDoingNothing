@@ -9,8 +9,12 @@ public interface Wrapper {
 
     boolean paramString(String param);
 
+    boolean paramStrings(String lhs, String rhs);
+
     boolean paramArray(String[] param);
 
     String paramNoneReturnString();
+
+    boolean strEquals(String lhs, String rhs);
 
 }
