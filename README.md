@@ -1,6 +1,17 @@
-#
+The Cost of Doing Nothing
+================
 
-This code is to resurrect a presentation done by Dean Yu (@dty) & Josh Blatt at JavaOne 2008.
+*   [Background](#Background)
+*   [Running](#Running)
+    *   [Running JavaTest](#JavaTest)
+    *   [Running JNITest](#JNITest)
+    *   [Running on OS-X](#osx)
+    *   [Running on Linux](#linux)
+*   [Credits](#Credits)
+
+<h2 id="Background">Background</h2>
+
+This code is to resurrect a presentation done by Dean Yu (@dty) & Josh Blatt (@jtblatt) at JavaOne 2008.
 (http://download.oracle.com/javaone/javaone2008-ee.zip,  TS6391.pdf)
 
 The title was something similiar to the cost of doing nothing, and reflected how much does 
@@ -8,16 +19,26 @@ it cost to make a single JNI call.
 
 With JMH we can do far better micro-benchmarking, so I've resurrected this.
 
-To execute the code:
+<h2 id="Running">Running</h2>
+First build the code: 
+	mvn clean verify
 
-java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest 
-
-java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
+Then decide which test to run, and set your java.library.path appriately.
 
 
-Notice the library dir is:
-target/native/x86_64-{darwin,linux}-{clang,gcc}
+<h3 id="JavaTest">JavaTest</h3>
+	java -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest 
 
-depending on build OS.
+<h3 id="JNITest">JNITest</h3>
+	java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
 
-Thanks to Sumit Shah (@bigloser) for digging up the original presentation
+<h3 id="osx">osx</h3>
+	java.library.path=target/native/x86_64-darwin-clang/
+
+<h3 id="linux">linux</h3>
+	java.library.path=target/native/x86_64-linux-gcc/
+
+<h2 id="Credits">Credits</h2>
+Josh Blatt (@jtblatt) and Dean Yu (@dty) originally presented this at JavaOne 2008 as part of the Java Platform Team @ Yahoo!
+Thanks to Sumit Shah (@bigloser) for digging up the original presentation, as he was also a member of the team at that time.
+Nelson Maltez (@nelson-maltez) put together the basic parts of the code which I then refined with him.
