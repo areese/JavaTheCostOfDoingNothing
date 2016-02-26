@@ -13,7 +13,7 @@ The Cost of Doing Nothing
 <h2 id="Background">Background</h2>
 
 This code is to resurrect a presentation done by Dean Yu (@dty) & Josh Blatt (@jtblatt) at JavaOne 2008.
-(http://download.oracle.com/javaone/javaone2008-ee.zip,  TS6391.pdf)
+(Complete track here: http://download.oracle.com/javaone/javaone2008-ee.zip.  Actual pdf here: TS6391.pdf)
 
 The title was something similiar to the cost of doing nothing, and reflected how much does 
 it cost to make a single JNI call.
