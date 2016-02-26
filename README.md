@@ -7,6 +7,7 @@ The Cost of Doing Nothing
     *   [Running JNITest](#JNITest)
     *   [Running on OS-X](#osx)
     *   [Running on Linux](#linux)
+*   [Charts](#Charts)
 *   [Credits](#Credits)
 
 <h2 id="Background">Background</h2>
@@ -37,6 +38,13 @@ Then decide which test to run, and set your java.library.path appriately.
 
 <h3 id="linux">linux</h3>
 	java.library.path=target/native/x86_64-linux-gcc/
+
+<h2 id="Charts">Charts</h2>
+Data is in javatest.txt and jnitest.txt
+hardware config is in DATA.md
+Copied into google docs, and then created charts as pdfs.
+These replicate the orginal charts in slide 13 and 14, but using the data from this code as output from jmh.
+(Sadly I can't find the original code that was used for these slides despite digging).
 
 <h2 id="Credits">Credits</h2>
 Josh Blatt (@jtblatt) and Dean Yu (@dty) originally presented this at JavaOne 2008 as part of the Java Platform Team @ Yahoo!
