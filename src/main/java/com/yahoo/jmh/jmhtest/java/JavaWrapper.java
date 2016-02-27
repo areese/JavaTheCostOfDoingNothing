@@ -47,4 +47,9 @@ public class JavaWrapper implements Wrapper {
         return lhs.equals(rhs);
     }
 
+    @Override
+    public boolean paramStringsUnicode(String lhs, String rhs) {
+        return returnValue;
+    }
+
 }

@@ -33,6 +33,14 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStri
 
 /*
  * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStringsUnicode
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStringsUnicode
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
  * Method:    nativeParamArray
  * Signature: ([Ljava/lang/String;)V
  */

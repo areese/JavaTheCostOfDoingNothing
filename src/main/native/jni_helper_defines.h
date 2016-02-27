@@ -38,6 +38,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <wchar.h>
 
 #ifdef YJAVA_DEBUG_TYPEMAPS
 #undef NDEBUG
@@ -253,7 +254,6 @@ static jfieldID get_ ## fieldid_var(JNIEnv *jenv) { \
 
 #define GET_CACHED_FIELD_ID(jenv, fieldid_var) get_##fieldid_var(jenv)
 
-
 #define DECLARE_STATIC_CACHED_FIELD_ID(class_var, fieldid_var, fieldid_name, field_sig) \
 static jfieldID fieldid_var = 0; \
 \
@@ -265,7 +265,6 @@ static jfieldID get_ ## fieldid_var(JNIEnv *jenv) { \
     if (jenv->ExceptionCheck()) return 0; \
     return fieldid_var; \
 }
-
 
 DECLARE_CACHED_CLASS(stringBufferClass, "java/lang/StringBuffer")
 DECLARE_CACHED_METHOD_ID(stringBufferClass, stringBufferCapacityID, "capacity",
@@ -333,7 +332,6 @@ public:
     ScopedMemory(size_t length, size_t size) {
         set(length, size);
     }
-
 
     inline void set(size_t length, size_t size) {
         set(length * size);
@@ -495,6 +493,69 @@ private:
     const char *_str;
 };
 
+class ScopedStringUnicodeChars {
+public:
+    ScopedStringUnicodeChars(JNIEnv *jenv, jstring jstr, jchar *str) :
+            _jenv(jenv), _jstr(jstr), _str((wchar_t*) str) {
+    }
+
+    ScopedStringUnicodeChars(JNIEnv *jenv, jstring jstr) {
+        set(jenv, jstr);
+    }
+
+    ScopedStringUnicodeChars() :
+            _jenv(0), _jstr(0), _str(0) {
+    }
+
+    virtual ~ScopedStringUnicodeChars() {
+        if (_jenv && _jstr && _str) {
+            _jenv->ReleaseStringChars(_jstr, (jchar*) _str);
+        }
+    }
+
+    inline void set(JNIEnv *jenv, jstring jstr, jchar *str) {
+        _jenv = jenv;
+        _jstr = jstr;
+        _str = (wchar_t*) str;
+    }
+
+    inline void set(JNIEnv *jenv, jstring jstr) {
+        _str =
+                (wchar_t*) (
+                        (NULL == jstr) ? NULL : jenv->GetStringChars(jstr, 0));
+        _jenv = jenv;
+        _jstr = jstr;
+    }
+
+    inline const wchar_t * getChars() {
+        return _str;
+    }
+
+    inline const wchar_t * get() {
+        return _str;
+    }
+
+    inline const wchar_t * getJavaStr() {
+        return _str;
+    }
+
+    inline const jsize getLength() {
+        if (NULL == _jstr) {
+            return 0;
+        }
+        return _jenv->GetStringLength(_jstr);
+    }
+
+private:
+    // Disabled
+    ScopedStringUnicodeChars(const ScopedStringUnicodeChars &);
+    void operator=(const ScopedStringUnicodeChars &);
+
+    JNIEnv *_jenv;
+    jstring _jstr;
+    const wchar_t *_str;
+};
+
 class ScopedStringUTFCharsArray {
 public:
     ScopedStringUTFCharsArray(char **nativeStrings,
@@ -535,44 +596,44 @@ private:
     ScopedStringUTFChars *_scopedStrings;
 };
 
-
 class ScopedStringArray {
 public:
-    ScopedStringArray(JNIEnv *jenv, jobjectArray objects) : _scopedStrings(NULL), size(0), _nativeStrings(NULL) {
-      if (NULL == objects) {
-          return;
-      }
-
-      GET_CACHED_CLASS(jenv, stringClass);
-
-      size = jenv->GetArrayLength(objects);
-      _scopedStrings = new ScopedStringUTFChars*[size];
-      _nativeStrings = new const char*[size+1];
-
-      for (size_t i=0;i < size; i++) {
-        jobject object = jenv->GetObjectArrayElement(objects, i);
-        jstring str = NULL;
-        if (NULL != object) {
-            if (JNI_FALSE == jenv->IsInstanceOf(object, stringClass)) {
-              continue;
-            }
-            str = (jstring)object;
+    ScopedStringArray(JNIEnv *jenv, jobjectArray objects) :
+            _scopedStrings(NULL), size(0), _nativeStrings(NULL) {
+        if (NULL == objects) {
+            return;
         }
 
-        _scopedStrings[i] = new ScopedStringUTFChars(jenv, str);
-        _nativeStrings[i] = _scopedStrings[i]->getChars();
-      }
+        GET_CACHED_CLASS(jenv, stringClass);
 
-      // gotta love the NULL;
-      _nativeStrings[size] = NULL;
+        size = jenv->GetArrayLength(objects);
+        _scopedStrings = new ScopedStringUTFChars*[size];
+        _nativeStrings = new const char*[size + 1];
+
+        for (size_t i = 0; i < size; i++) {
+            jobject object = jenv->GetObjectArrayElement(objects, i);
+            jstring str = NULL;
+            if (NULL != object) {
+                if (JNI_FALSE == jenv->IsInstanceOf(object, stringClass)) {
+                    continue;
+                }
+                str = (jstring) object;
+            }
+
+            _scopedStrings[i] = new ScopedStringUTFChars(jenv, str);
+            _nativeStrings[i] = _scopedStrings[i]->getChars();
+        }
+
+        // gotta love the NULL;
+        _nativeStrings[size] = NULL;
     }
 
     virtual ~ScopedStringArray() {
         if (NULL != _scopedStrings) {
-            for (size_t i=0;i<size;i++) {
+            for (size_t i = 0; i < size; i++) {
                 if (NULL != _scopedStrings[i]) {
                     delete _scopedStrings[i];
-                    _scopedStrings[i]=NULL;
+                    _scopedStrings[i] = NULL;
                 }
             }
 
@@ -583,7 +644,7 @@ public:
     }
 
     const char **get() {
-      return _nativeStrings;
+        return _nativeStrings;
     }
 
 private:
@@ -595,7 +656,6 @@ private:
     size_t size;
     const char **_nativeStrings;
 };
-
 
 class ScopedByteArray {
 public:
@@ -639,11 +699,13 @@ public:
         }
     }
 
-    ScopedByteArray(JNIEnv* env, void *copyFromNative, int start, int copyLen, int totalLen) :
+    ScopedByteArray(JNIEnv* env, void *copyFromNative, int start, int copyLen,
+            int totalLen) :
             _jenv(env), javaArray(NULL), nativeArray(NULL) {
         this->javaArray = _jenv->NewByteArray(totalLen);
 
-        if (NULL == copyFromNative || copyLen <= 0 || totalLen <= 0 || copyLen > totalLen) {
+        if (NULL == copyFromNative || copyLen <= 0 || totalLen <= 0
+                || copyLen > totalLen) {
             return;
         }
 
@@ -721,7 +783,6 @@ private:
     jbyte* nativeArray;
 };
 
-
 class ScopedLongArray {
 public:
     ScopedLongArray() :
@@ -764,11 +825,13 @@ public:
         }
     }
 
-    ScopedLongArray(JNIEnv* env, void *copyFromNative, int start, int copyLen, int totalLen) :
+    ScopedLongArray(JNIEnv* env, void *copyFromNative, int start, int copyLen,
+            int totalLen) :
             _jenv(env), javaArray(NULL), nativeArray(NULL) {
         this->javaArray = _jenv->NewLongArray(totalLen);
 
-        if (NULL == copyFromNative || copyLen <= 0 || totalLen <= 0 || copyLen > totalLen) {
+        if (NULL == copyFromNative || copyLen <= 0 || totalLen <= 0
+                || copyLen > totalLen) {
             return;
         }
 
@@ -845,6 +908,5 @@ private:
     jlongArray javaArray;
     jlong* nativeArray;
 };
-
 
 #endif /* __YJAVA_JNI_HELPER_DEFINES_H__ */

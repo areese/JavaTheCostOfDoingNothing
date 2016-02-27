@@ -11,6 +11,8 @@ public interface Wrapper {
 
     boolean paramStrings(String lhs, String rhs);
 
+    boolean paramStringsUnicode(String lhs, String rhs);
+
     boolean paramArray(String[] param);
 
     String paramNoneReturnString();

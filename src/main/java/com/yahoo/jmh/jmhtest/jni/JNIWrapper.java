@@ -23,6 +23,8 @@ public class JNIWrapper implements Wrapper {
 
     static final native void nativeParamStrings(String lhs, String rhs);
 
+    static final native void nativeParamStringsUnicode(String lhs, String rhs);
+
     static final native void nativeParamArray(String[] param);
 
     static final native String nativeParamNoneReturnString();
@@ -48,6 +50,12 @@ public class JNIWrapper implements Wrapper {
     @Override
     public final boolean paramStrings(String lhs, String rhs) {
         nativeParamStrings(lhs, rhs);
+        return returnValue;
+    }
+
+    @Override
+    public boolean paramStringsUnicode(String lhs, String rhs) {
+        nativeParamStringsUnicode(lhs, rhs);
         return returnValue;
     }
 

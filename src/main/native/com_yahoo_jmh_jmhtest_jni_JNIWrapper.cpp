@@ -32,11 +32,22 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStri
  * Signature: (Ljava/lang/String;Ljava/lang/String;)V
  */
 JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStrings
-(
-        JNIEnv *jenv, jclass, jstring lhsArg, jstring rhsArg) {
+(JNIEnv *jenv, jclass, jstring lhsArg, jstring rhsArg) {
     // we want to use this string.
     ScopedStringUTFChars lhsString(jenv, lhsArg);
     ScopedStringUTFChars rhsString(jenv, rhsArg);
+}
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStringsUnicode
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStringsUnicode
+(JNIEnv *jenv, jclass, jstring lhsArg, jstring rhsArg) {
+    // we want to use this string.
+    ScopedStringUnicodeChars lhsString(jenv, lhsArg);
+    ScopedStringUnicodeChars rhsString(jenv, rhsArg);
 }
 
 /*
