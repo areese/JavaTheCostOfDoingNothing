@@ -31,6 +31,14 @@ public class JNIWrapper implements Wrapper {
 
     static final native boolean nativeEquals(String lhs, String rhs);
 
+    /**
+     * 
+     * Write 0xDEADBEEF to an address from sun.misc.unsafe.
+     * 
+     * @param address allocated by Unsafe.allocate memory
+     * @param size size in bytes to write to.
+     */
+    public static final native void fillBytesInFromNative(long address, long size);
 
     private boolean returnValue = true;
 

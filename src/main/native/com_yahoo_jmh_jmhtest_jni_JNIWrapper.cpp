@@ -85,3 +85,18 @@ JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEqual
 
     return 0 == strcmp(lhsString.get(), rhsString.get());
 }
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    fillBytesInFromNative
+ * Signature: (JJ)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_fillBytesInFromNative
+(JNIEnv *jenv, jclass, jlong address, jlong size) {
+    if (0 == address) {
+        return;
+    }
+
+    memset((void*)address, 0xDA, size);
+}
+
