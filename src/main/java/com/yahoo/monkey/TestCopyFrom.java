@@ -27,6 +27,8 @@ public class TestCopyFrom {
         }
         System.out.println("");
 
+        JNIWrapper.dumpBytesFromAddress(address, size);
+
         unsafe.freeMemory(address);
 
     }

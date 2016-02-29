@@ -71,6 +71,14 @@ JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEqual
 JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_fillBytesInFromNative
   (JNIEnv *, jclass, jlong, jlong);
 
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    dumpBytesFromAddress
+ * Signature: (JJ)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_dumpBytesFromAddress
+  (JNIEnv *, jclass, jlong, jlong);
+
 #ifdef __cplusplus
 }
 #endif
