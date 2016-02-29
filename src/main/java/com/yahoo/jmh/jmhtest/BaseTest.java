@@ -51,6 +51,19 @@ public abstract class BaseTest {
         return wrapper.paramStrings(notEqualsLhs1, notEqualsRhs1);
     }
 
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testParamStringsUnicodeEq() {
+        return wrapper.paramStringsUnicode(equalsLhs1, equalsRhs1);
+    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    public boolean testParamStringsUnicodeNe() {
+        return wrapper.paramStringsUnicode(notEqualsLhs1, notEqualsRhs1);
+    }
+
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
     public boolean testParamArray() {
