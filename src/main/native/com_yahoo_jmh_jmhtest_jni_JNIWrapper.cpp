@@ -85,3 +85,37 @@ JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEqual
 
     return 0 == strcmp(lhsString.get(), rhsString.get());
 }
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    fillBytesInFromNative
+ * Signature: (JJ)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_fillBytesInFromNative
+(JNIEnv *jenv, jclass, jlong address, jlong size) {
+    if (0 == address) {
+        return;
+    }
+
+    memset((void*)address, 0xDA, size);
+}
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    dumpBytesFromAddress
+ * Signature: (JJJ)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_dumpBytesFromAddress
+(JNIEnv *jenv, jclass, jlong address, jlong start, jlong size) {
+    if (0 == address) {
+        return;
+    }
+
+    const char *ptr=(const char *)address;
+
+    for (jlong i=start;i<size;i++) {
+        printf ("0x%02x ", (unsigned char)ptr[i]);
+    }
+    printf ("\n");
+}
+

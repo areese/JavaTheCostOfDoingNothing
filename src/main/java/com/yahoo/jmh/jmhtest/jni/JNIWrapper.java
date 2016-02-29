@@ -7,6 +7,8 @@ import com.yahoo.jmh.jmhtest.Wrapper;
 
 public class JNIWrapper implements Wrapper {
 
+    private boolean returnValue = true;
+
     static {
         JniLibraryLoader.load();
     }
@@ -31,8 +33,23 @@ public class JNIWrapper implements Wrapper {
 
     static final native boolean nativeEquals(String lhs, String rhs);
 
+    /**
+     * 
+     * Write 0xDA to an address from sun.misc.unsafe.
+     * 
+     * @param address allocated by Unsafe.allocate memory
+     * @param size size in bytes to write to.
+     */
+    public static final native void fillBytesInFromNative(long address, long size);
 
-    private boolean returnValue = true;
+    /**
+     * 
+     * Write 0xDA to an address from sun.misc.unsafe.
+     * 
+     * @param address allocated by Unsafe.allocate memory
+     * @param size size in bytes to write to.
+     */
+    public static final native void dumpBytesFromAddress(long address, long start, long size);
 
 
     @Override
