@@ -49,7 +49,7 @@ public class JNIWrapper implements Wrapper {
      * @param address allocated by Unsafe.allocate memory
      * @param size size in bytes to write to.
      */
-    public static final native void dumpBytesFromAddress(long address, long size);
+    public static final native void dumpBytesFromAddress(long address, long start, long size);
 
 
     @Override

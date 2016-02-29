@@ -103,20 +103,19 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_fillBytesInFrom
 /*
  * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
  * Method:    dumpBytesFromAddress
- * Signature: (JJ)V
+ * Signature: (JJJ)V
  */
 JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_dumpBytesFromAddress
-(JNIEnv *jenv, jclass, jlong address, jlong size) {
+(JNIEnv *jenv, jclass, jlong address, jlong start, jlong size) {
     if (0 == address) {
         return;
     }
 
     const char *ptr=(const char *)address;
 
-    for (jlong i=0;i<size;i++) {
-        printf ("0x%x ", ptr[i]);
+    for (jlong i=start;i<size;i++) {
+        printf ("0x%02x ", (unsigned char)ptr[i]);
     }
     printf ("\n");
 }
-
 
