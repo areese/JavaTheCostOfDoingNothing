@@ -65,6 +65,14 @@ JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEqual
 
 /*
  * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParam2StringsNoScoping
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParam2StringsNoScoping
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
  * Method:    fillBytesInFromNative
  * Signature: (JJ)V
  */

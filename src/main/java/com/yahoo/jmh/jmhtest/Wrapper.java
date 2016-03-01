@@ -19,4 +19,6 @@ public interface Wrapper {
 
     boolean strEquals(String lhs, String rhs);
 
+    boolean param2StringsNoScoping(String equalsLhs1, String equalsRhs1);
+
 }

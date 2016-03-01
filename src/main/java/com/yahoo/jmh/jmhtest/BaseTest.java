@@ -27,16 +27,22 @@ public abstract class BaseTest {
     public void tearDown() {}
 
 
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamNone() {
-        return wrapper.paramNone();
-    }
+//    @Benchmark
+//    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+//    public boolean testParamNone() {
+//        return wrapper.paramNone();
+//    }
+//
+//    @Benchmark
+//    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+//    public boolean testParamString() {
+//        return wrapper.paramString(bar);
+//    }
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamString() {
-        return wrapper.paramString(bar);
+    public boolean testParam2StringsNoScoping() {
+        return wrapper.param2StringsNoScoping(equalsLhs1, equalsRhs1);
     }
 
     @Benchmark
@@ -64,17 +70,17 @@ public abstract class BaseTest {
         return wrapper.paramStringsUnicode(notEqualsLhs1, notEqualsRhs1);
     }
 
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamArray() {
-        return wrapper.paramArray(foo);
-    }
+//    @Benchmark
+//    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+//    public boolean testParamArray() {
+//        return wrapper.paramArray(foo);
+//    }
 
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public String testParamNoneReturnString() {
-        return wrapper.paramNoneReturnString();
-    }
+//    @Benchmark
+//    @CompilerControl(CompilerControl.Mode.EXCLUDE)
+//    public String testParamNoneReturnString() {
+//        return wrapper.paramNoneReturnString();
+//    }
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)

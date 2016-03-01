@@ -52,4 +52,9 @@ public class JavaWrapper implements Wrapper {
         return returnValue;
     }
 
+    @Override
+    public boolean param2StringsNoScoping(String equalsLhs1, String equalsRhs1) {
+        return returnValue;
+    }
+
 }

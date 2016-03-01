@@ -4,6 +4,7 @@
 package com.yahoo.jmh.jmhtest;
 
 import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
 import com.yahoo.jmh.jmhtest.java.JavaWrapper;
@@ -13,5 +14,11 @@ public class JavaTest extends BaseTest {
 
     public JavaTest() {
         super(JavaWrapper.getInstance());
+    }
+
+    @Override
+    @Setup
+    public void setup() {
+
     }
 }

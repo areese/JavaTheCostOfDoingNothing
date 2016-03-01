@@ -33,6 +33,8 @@ public class JNIWrapper implements Wrapper {
 
     static final native boolean nativeEquals(String lhs, String rhs);
 
+    static final native void nativeParam2StringsNoScoping(String lhs, String rhs);
+
     /**
      * 
      * Write 0xDA to an address from sun.misc.unsafe.
@@ -90,6 +92,12 @@ public class JNIWrapper implements Wrapper {
     @Override
     public boolean strEquals(String lhs, String rhs) {
         return nativeEquals(lhs, rhs);
+    }
+
+    @Override
+    public boolean param2StringsNoScoping(String lhs, String rhs) {
+        nativeParam2StringsNoScoping(lhs, rhs);
+        return returnValue;
     }
 
 }
