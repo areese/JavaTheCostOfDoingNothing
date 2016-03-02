@@ -12,6 +12,8 @@ public class MUnsafe {
     public static final Unsafe unsafe;
     public static final long charArrayBaseOffset;
     public static final long charArrayIndexScale;
+    public static final long byteArrayBaseOffset;
+    public static final long byteArrayIndexScale;
 
     static {
         try {
@@ -20,6 +22,8 @@ public class MUnsafe {
             unsafe = (Unsafe) f.get(null);
             charArrayBaseOffset = unsafe.arrayBaseOffset(char[].class);
             charArrayIndexScale = unsafe.arrayIndexScale(char[].class);
+            byteArrayBaseOffset = unsafe.arrayBaseOffset(byte[].class);
+            byteArrayIndexScale = unsafe.arrayIndexScale(byte[].class);
         } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
@@ -37,6 +41,14 @@ public class MUnsafe {
         return from.length * charArrayIndexScale;
     }
 
+    public static long byteArrayOffset(int index) {
+        return calculateOffset(index, byteArrayBaseOffset, byteArrayIndexScale);
+    }
+
+    public static long byteArraySize(byte[] from) {
+        return from.length * byteArrayIndexScale;
+    }
+
     /**
      * The object referred to by o is an array, and the offset is an integer of the form B+N*S, where N is a valid index
      * into the array, and B and S are the values obtained by #arrayBaseOffset and #arrayIndexScale (respectively) from
@@ -45,33 +57,6 @@ public class MUnsafe {
     public static long calculateOffset(int index, long base, long scale) {
         return (base + (index * scale));
     }
-
-    //
-    // public static long toAddress(Object obj) {
-    // Object[] array = new Object[] {obj};
-    // long baseOffset = unsafe.arrayBaseOffset(Object[].class);
-    // return normalize(unsafe.getInt(array, baseOffset));
-    // }
-    //
-    // public static long toAddress(byte[] obj) {
-    // long baseOffset = unsafe.arrayBaseOffset(byte[].class);
-    // return normalize(unsafe.getInt(obj, baseOffset));
-    // }
-    //
-    //
-    // public static Object fromAddress(long address) {
-    // Object[] array = new Object[] {null};
-    // long baseOffset = unsafe.arrayBaseOffset(Object[].class);
-    // unsafe.putLong(array, baseOffset, address);
-    // return array[0];
-    // }
-    //
-    // public static long normalize(int value) {
-    // if (value >= 0)
-    // return value;
-    // return (~0L >>> 32) & value;
-    // }
-
 
     // Cribbed from DiretByteBuffer
     public static long allocate(long cap) {
