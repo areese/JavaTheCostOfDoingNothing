@@ -1,0 +1,3735 @@
+# JMH 1.11 (released 172 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testEquals1
+
+# Run progress: 0.00% complete, ETA 00:53:20
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1757.290 ops/ms
+# Warmup Iteration   2: 1796.841 ops/ms
+# Warmup Iteration   3: 1767.280 ops/ms
+# Warmup Iteration   4: 1767.474 ops/ms
+# Warmup Iteration   5: 1768.741 ops/ms
+# Warmup Iteration   6: 1762.419 ops/ms
+# Warmup Iteration   7: 1767.815 ops/ms
+# Warmup Iteration   8: 1765.723 ops/ms
+# Warmup Iteration   9: 1766.340 ops/ms
+# Warmup Iteration  10: 1766.820 ops/ms
+# Warmup Iteration  11: 1768.571 ops/ms
+# Warmup Iteration  12: 1769.224 ops/ms
+# Warmup Iteration  13: 1769.062 ops/ms
+# Warmup Iteration  14: 1768.587 ops/ms
+# Warmup Iteration  15: 1768.528 ops/ms
+# Warmup Iteration  16: 1758.394 ops/ms
+# Warmup Iteration  17: 1755.709 ops/ms
+# Warmup Iteration  18: 1755.334 ops/ms
+# Warmup Iteration  19: 1755.065 ops/ms
+# Warmup Iteration  20: 1755.974 ops/ms
+Iteration   1: 1756.027 ops/ms
+Iteration   2: 1755.445 ops/ms
+Iteration   3: 1755.643 ops/ms
+Iteration   4: 1754.821 ops/ms
+Iteration   5: 1750.983 ops/ms
+Iteration   6: 1754.676 ops/ms
+Iteration   7: 1754.702 ops/ms
+Iteration   8: 1756.176 ops/ms
+Iteration   9: 1755.197 ops/ms
+Iteration  10: 1756.138 ops/ms
+Iteration  11: 1755.850 ops/ms
+Iteration  12: 1755.499 ops/ms
+Iteration  13: 1755.251 ops/ms
+Iteration  14: 1755.167 ops/ms
+Iteration  15: 1755.419 ops/ms
+Iteration  16: 1755.249 ops/ms
+Iteration  17: 1754.462 ops/ms
+Iteration  18: 1754.257 ops/ms
+Iteration  19: 1753.947 ops/ms
+Iteration  20: 1755.772 ops/ms
+
+# Run progress: 1.25% complete, ETA 00:53:07
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1703.275 ops/ms
+# Warmup Iteration   2: 1704.182 ops/ms
+# Warmup Iteration   3: 1733.995 ops/ms
+# Warmup Iteration   4: 1735.520 ops/ms
+# Warmup Iteration   5: 1722.475 ops/ms
+# Warmup Iteration   6: 1727.305 ops/ms
+# Warmup Iteration   7: 1719.594 ops/ms
+# Warmup Iteration   8: 1733.938 ops/ms
+# Warmup Iteration   9: 1734.559 ops/ms
+# Warmup Iteration  10: 1733.498 ops/ms
+# Warmup Iteration  11: 1733.772 ops/ms
+# Warmup Iteration  12: 1729.469 ops/ms
+# Warmup Iteration  13: 1729.697 ops/ms
+# Warmup Iteration  14: 1733.717 ops/ms
+# Warmup Iteration  15: 1732.394 ops/ms
+# Warmup Iteration  16: 1734.600 ops/ms
+# Warmup Iteration  17: 1715.060 ops/ms
+# Warmup Iteration  18: 1715.340 ops/ms
+# Warmup Iteration  19: 1715.124 ops/ms
+# Warmup Iteration  20: 1715.559 ops/ms
+Iteration   1: 1715.387 ops/ms
+Iteration   2: 1713.265 ops/ms
+Iteration   3: 1715.485 ops/ms
+Iteration   4: 1715.477 ops/ms
+Iteration   5: 1715.641 ops/ms
+Iteration   6: 1715.650 ops/ms
+Iteration   7: 1714.713 ops/ms
+Iteration   8: 1715.712 ops/ms
+Iteration   9: 1715.521 ops/ms
+Iteration  10: 1715.905 ops/ms
+Iteration  11: 1715.958 ops/ms
+Iteration  12: 1715.812 ops/ms
+Iteration  13: 1783.615 ops/ms
+Iteration  14: 1715.479 ops/ms
+Iteration  15: 1732.210 ops/ms
+Iteration  16: 1715.786 ops/ms
+Iteration  17: 1715.893 ops/ms
+Iteration  18: 1715.884 ops/ms
+Iteration  19: 1715.123 ops/ms
+Iteration  20: 1714.212 ops/ms
+
+# Run progress: 2.50% complete, ETA 00:52:26
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1738.692 ops/ms
+# Warmup Iteration   2: 1808.181 ops/ms
+# Warmup Iteration   3: 1759.675 ops/ms
+# Warmup Iteration   4: 1759.495 ops/ms
+# Warmup Iteration   5: 1760.513 ops/ms
+# Warmup Iteration   6: 1760.793 ops/ms
+# Warmup Iteration   7: 1759.634 ops/ms
+# Warmup Iteration   8: 1759.340 ops/ms
+# Warmup Iteration   9: 1760.000 ops/ms
+# Warmup Iteration  10: 1759.671 ops/ms
+# Warmup Iteration  11: 1759.998 ops/ms
+# Warmup Iteration  12: 1760.023 ops/ms
+# Warmup Iteration  13: 1760.316 ops/ms
+# Warmup Iteration  14: 1760.062 ops/ms
+# Warmup Iteration  15: 1760.929 ops/ms
+# Warmup Iteration  16: 1760.723 ops/ms
+# Warmup Iteration  17: 1753.894 ops/ms
+# Warmup Iteration  18: 1754.047 ops/ms
+# Warmup Iteration  19: 1754.663 ops/ms
+# Warmup Iteration  20: 1754.544 ops/ms
+Iteration   1: 1753.950 ops/ms
+Iteration   2: 1753.771 ops/ms
+Iteration   3: 1754.032 ops/ms
+Iteration   4: 1753.461 ops/ms
+Iteration   5: 1752.033 ops/ms
+Iteration   6: 1747.404 ops/ms
+Iteration   7: 1754.029 ops/ms
+Iteration   8: 1753.753 ops/ms
+Iteration   9: 1750.780 ops/ms
+Iteration  10: 1753.623 ops/ms
+Iteration  11: 1753.520 ops/ms
+Iteration  12: 1753.728 ops/ms
+Iteration  13: 1754.317 ops/ms
+Iteration  14: 1753.755 ops/ms
+Iteration  15: 1754.148 ops/ms
+Iteration  16: 1754.699 ops/ms
+Iteration  17: 1754.163 ops/ms
+Iteration  18: 1754.357 ops/ms
+Iteration  19: 1754.015 ops/ms
+Iteration  20: 1753.510 ops/ms
+
+# Run progress: 3.75% complete, ETA 00:51:45
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1683.802 ops/ms
+# Warmup Iteration   2: 1685.424 ops/ms
+# Warmup Iteration   3: 1701.816 ops/ms
+# Warmup Iteration   4: 1699.108 ops/ms
+# Warmup Iteration   5: 1699.037 ops/ms
+# Warmup Iteration   6: 1700.863 ops/ms
+# Warmup Iteration   7: 1698.833 ops/ms
+# Warmup Iteration   8: 1698.487 ops/ms
+# Warmup Iteration   9: 1702.999 ops/ms
+# Warmup Iteration  10: 1698.636 ops/ms
+# Warmup Iteration  11: 1699.490 ops/ms
+# Warmup Iteration  12: 1699.099 ops/ms
+# Warmup Iteration  13: 1699.949 ops/ms
+# Warmup Iteration  14: 1699.186 ops/ms
+# Warmup Iteration  15: 1700.098 ops/ms
+# Warmup Iteration  16: 1700.472 ops/ms
+# Warmup Iteration  17: 1730.138 ops/ms
+# Warmup Iteration  18: 1732.183 ops/ms
+# Warmup Iteration  19: 1729.894 ops/ms
+# Warmup Iteration  20: 1729.670 ops/ms
+Iteration   1: 1700.401 ops/ms
+Iteration   2: 1727.142 ops/ms
+Iteration   3: 1729.381 ops/ms
+Iteration   4: 1733.132 ops/ms
+Iteration   5: 1729.545 ops/ms
+Iteration   6: 1729.666 ops/ms
+Iteration   7: 1730.018 ops/ms
+Iteration   8: 1729.715 ops/ms
+Iteration   9: 1732.990 ops/ms
+Iteration  10: 1729.792 ops/ms
+Iteration  11: 1730.174 ops/ms
+Iteration  12: 1729.996 ops/ms
+Iteration  13: 1730.199 ops/ms
+Iteration  14: 1730.103 ops/ms
+Iteration  15: 1730.212 ops/ms
+Iteration  16: 1730.172 ops/ms
+Iteration  17: 1730.437 ops/ms
+Iteration  18: 1730.254 ops/ms
+Iteration  19: 1729.823 ops/ms
+Iteration  20: 1727.124 ops/ms
+
+# Run progress: 5.00% complete, ETA 00:51:05
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1742.042 ops/ms
+# Warmup Iteration   2: 1777.901 ops/ms
+# Warmup Iteration   3: 1751.364 ops/ms
+# Warmup Iteration   4: 1747.009 ops/ms
+# Warmup Iteration   5: 1745.722 ops/ms
+# Warmup Iteration   6: 1744.142 ops/ms
+# Warmup Iteration   7: 1749.354 ops/ms
+# Warmup Iteration   8: 1750.152 ops/ms
+# Warmup Iteration   9: 1750.679 ops/ms
+# Warmup Iteration  10: 1752.245 ops/ms
+# Warmup Iteration  11: 1751.731 ops/ms
+# Warmup Iteration  12: 1750.499 ops/ms
+# Warmup Iteration  13: 1749.453 ops/ms
+# Warmup Iteration  14: 1752.631 ops/ms
+# Warmup Iteration  15: 1751.059 ops/ms
+# Warmup Iteration  16: 1751.074 ops/ms
+# Warmup Iteration  17: 1744.320 ops/ms
+# Warmup Iteration  18: 1743.875 ops/ms
+# Warmup Iteration  19: 1743.503 ops/ms
+# Warmup Iteration  20: 1744.140 ops/ms
+Iteration   1: 1744.093 ops/ms
+Iteration   2: 1742.690 ops/ms
+Iteration   3: 1744.159 ops/ms
+Iteration   4: 1740.954 ops/ms
+Iteration   5: 1744.212 ops/ms
+Iteration   6: 1743.974 ops/ms
+Iteration   7: 1744.251 ops/ms
+Iteration   8: 1743.718 ops/ms
+Iteration   9: 1742.481 ops/ms
+Iteration  10: 1744.043 ops/ms
+Iteration  11: 1744.428 ops/ms
+Iteration  12: 1744.459 ops/ms
+Iteration  13: 1744.470 ops/ms
+Iteration  14: 1744.532 ops/ms
+Iteration  15: 1744.264 ops/ms
+Iteration  16: 1743.764 ops/ms
+Iteration  17: 1744.104 ops/ms
+Iteration  18: 1743.912 ops/ms
+Iteration  19: 1743.307 ops/ms
+Iteration  20: 1743.036 ops/ms
+
+# Run progress: 6.25% complete, ETA 00:50:25
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1712.828 ops/ms
+# Warmup Iteration   2: 1708.135 ops/ms
+# Warmup Iteration   3: 1720.825 ops/ms
+# Warmup Iteration   4: 1719.978 ops/ms
+# Warmup Iteration   5: 1713.734 ops/ms
+# Warmup Iteration   6: 1722.483 ops/ms
+# Warmup Iteration   7: 1721.878 ops/ms
+# Warmup Iteration   8: 1719.128 ops/ms
+# Warmup Iteration   9: 1720.497 ops/ms
+# Warmup Iteration  10: 1721.365 ops/ms
+# Warmup Iteration  11: 1711.175 ops/ms
+# Warmup Iteration  12: 1722.328 ops/ms
+# Warmup Iteration  13: 1722.387 ops/ms
+# Warmup Iteration  14: 1722.381 ops/ms
+# Warmup Iteration  15: 1723.382 ops/ms
+# Warmup Iteration  16: 1722.698 ops/ms
+# Warmup Iteration  17: 1743.047 ops/ms
+# Warmup Iteration  18: 1742.683 ops/ms
+# Warmup Iteration  19: 1742.254 ops/ms
+# Warmup Iteration  20: 1742.438 ops/ms
+Iteration   1: 1743.041 ops/ms
+Iteration   2: 1740.790 ops/ms
+Iteration   3: 1743.039 ops/ms
+Iteration   4: 1740.345 ops/ms
+Iteration   5: 1737.097 ops/ms
+Iteration   6: 1742.854 ops/ms
+Iteration   7: 1742.941 ops/ms
+Iteration   8: 1744.129 ops/ms
+Iteration   9: 1745.571 ops/ms
+Iteration  10: 1744.818 ops/ms
+Iteration  11: 1743.676 ops/ms
+Iteration  12: 1743.708 ops/ms
+Iteration  13: 1745.024 ops/ms
+Iteration  14: 1743.859 ops/ms
+Iteration  15: 1743.989 ops/ms
+Iteration  16: 1743.345 ops/ms
+Iteration  17: 1743.407 ops/ms
+Iteration  18: 1742.519 ops/ms
+Iteration  19: 1743.175 ops/ms
+Iteration  20: 1743.307 ops/ms
+
+# Run progress: 7.50% complete, ETA 00:49:44
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1730.225 ops/ms
+# Warmup Iteration   2: 1766.190 ops/ms
+# Warmup Iteration   3: 1756.980 ops/ms
+# Warmup Iteration   4: 1756.957 ops/ms
+# Warmup Iteration   5: 1756.471 ops/ms
+# Warmup Iteration   6: 1753.380 ops/ms
+# Warmup Iteration   7: 1756.897 ops/ms
+# Warmup Iteration   8: 1752.701 ops/ms
+# Warmup Iteration   9: 1740.255 ops/ms
+# Warmup Iteration  10: 1748.537 ops/ms
+# Warmup Iteration  11: 1756.784 ops/ms
+# Warmup Iteration  12: 1757.283 ops/ms
+# Warmup Iteration  13: 1756.319 ops/ms
+# Warmup Iteration  14: 1757.476 ops/ms
+# Warmup Iteration  15: 1756.589 ops/ms
+# Warmup Iteration  16: 1756.286 ops/ms
+# Warmup Iteration  17: 1764.780 ops/ms
+# Warmup Iteration  18: 1764.058 ops/ms
+# Warmup Iteration  19: 1765.275 ops/ms
+# Warmup Iteration  20: 1765.453 ops/ms
+Iteration   1: 1765.362 ops/ms
+Iteration   2: 1764.289 ops/ms
+Iteration   3: 1765.028 ops/ms
+Iteration   4: 1765.656 ops/ms
+Iteration   5: 1765.326 ops/ms
+Iteration   6: 1765.078 ops/ms
+Iteration   7: 1766.141 ops/ms
+Iteration   8: 1764.030 ops/ms
+Iteration   9: 1765.578 ops/ms
+Iteration  10: 1765.003 ops/ms
+Iteration  11: 1764.572 ops/ms
+Iteration  12: 1765.543 ops/ms
+Iteration  13: 1765.527 ops/ms
+Iteration  14: 1764.424 ops/ms
+Iteration  15: 1765.848 ops/ms
+Iteration  16: 1764.987 ops/ms
+Iteration  17: 1765.933 ops/ms
+Iteration  18: 1764.768 ops/ms
+Iteration  19: 1764.502 ops/ms
+Iteration  20: 1765.447 ops/ms
+
+# Run progress: 8.75% complete, ETA 00:49:03
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1718.685 ops/ms
+# Warmup Iteration   2: 1730.557 ops/ms
+# Warmup Iteration   3: 1745.776 ops/ms
+# Warmup Iteration   4: 1742.721 ops/ms
+# Warmup Iteration   5: 1745.597 ops/ms
+# Warmup Iteration   6: 1747.428 ops/ms
+# Warmup Iteration   7: 1761.368 ops/ms
+# Warmup Iteration   8: 1746.902 ops/ms
+# Warmup Iteration   9: 1746.583 ops/ms
+# Warmup Iteration  10: 1746.393 ops/ms
+# Warmup Iteration  11: 1746.756 ops/ms
+# Warmup Iteration  12: 1747.661 ops/ms
+# Warmup Iteration  13: 1747.900 ops/ms
+# Warmup Iteration  14: 1746.994 ops/ms
+# Warmup Iteration  15: 1748.100 ops/ms
+# Warmup Iteration  16: 1746.260 ops/ms
+# Warmup Iteration  17: 1778.206 ops/ms
+# Warmup Iteration  18: 1776.892 ops/ms
+# Warmup Iteration  19: 1775.365 ops/ms
+# Warmup Iteration  20: 1775.976 ops/ms
+Iteration   1: 1778.151 ops/ms
+Iteration   2: 1774.764 ops/ms
+Iteration   3: 1778.407 ops/ms
+Iteration   4: 1777.417 ops/ms
+Iteration   5: 1778.053 ops/ms
+Iteration   6: 1777.273 ops/ms
+Iteration   7: 1774.467 ops/ms
+Iteration   8: 1778.241 ops/ms
+Iteration   9: 1769.859 ops/ms
+Iteration  10: 1772.180 ops/ms
+Iteration  11: 1778.553 ops/ms
+Iteration  12: 1777.290 ops/ms
+Iteration  13: 1778.086 ops/ms
+Iteration  14: 1777.770 ops/ms
+Iteration  15: 1776.751 ops/ms
+Iteration  16: 1775.951 ops/ms
+Iteration  17: 1778.503 ops/ms
+Iteration  18: 1779.460 ops/ms
+Iteration  19: 1778.032 ops/ms
+Iteration  20: 1777.950 ops/ms
+
+# Run progress: 10.00% complete, ETA 00:48:23
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1717.458 ops/ms
+# Warmup Iteration   2: 1750.714 ops/ms
+# Warmup Iteration   3: 1729.521 ops/ms
+# Warmup Iteration   4: 1728.832 ops/ms
+# Warmup Iteration   5: 1743.135 ops/ms
+# Warmup Iteration   6: 1728.357 ops/ms
+# Warmup Iteration   7: 1721.034 ops/ms
+# Warmup Iteration   8: 1720.884 ops/ms
+# Warmup Iteration   9: 1722.711 ops/ms
+# Warmup Iteration  10: 1707.569 ops/ms
+# Warmup Iteration  11: 1721.480 ops/ms
+# Warmup Iteration  12: 1725.386 ops/ms
+# Warmup Iteration  13: 1727.217 ops/ms
+# Warmup Iteration  14: 1721.885 ops/ms
+# Warmup Iteration  15: 1721.982 ops/ms
+# Warmup Iteration  16: 1721.517 ops/ms
+# Warmup Iteration  17: 1746.402 ops/ms
+# Warmup Iteration  18: 1735.920 ops/ms
+# Warmup Iteration  19: 1734.921 ops/ms
+# Warmup Iteration  20: 1735.949 ops/ms
+Iteration   1: 1735.487 ops/ms
+Iteration   2: 1734.832 ops/ms
+Iteration   3: 1734.722 ops/ms
+Iteration   4: 1752.607 ops/ms
+Iteration   5: 1735.499 ops/ms
+Iteration   6: 1735.665 ops/ms
+Iteration   7: 1749.207 ops/ms
+Iteration   8: 1761.722 ops/ms
+Iteration   9: 1761.909 ops/ms
+Iteration  10: 1761.673 ops/ms
+Iteration  11: 1761.761 ops/ms
+Iteration  12: 1746.870 ops/ms
+Iteration  13: 1736.251 ops/ms
+Iteration  14: 1735.660 ops/ms
+Iteration  15: 1735.384 ops/ms
+Iteration  16: 1756.714 ops/ms
+Iteration  17: 1746.238 ops/ms
+Iteration  18: 1735.674 ops/ms
+Iteration  19: 1725.442 ops/ms
+Iteration  20: 1731.795 ops/ms
+
+# Run progress: 11.25% complete, ETA 00:47:43
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1700.917 ops/ms
+# Warmup Iteration   2: 1703.092 ops/ms
+# Warmup Iteration   3: 1688.033 ops/ms
+# Warmup Iteration   4: 1696.541 ops/ms
+# Warmup Iteration   5: 1697.719 ops/ms
+# Warmup Iteration   6: 1711.420 ops/ms
+# Warmup Iteration   7: 1709.691 ops/ms
+# Warmup Iteration   8: 1709.370 ops/ms
+# Warmup Iteration   9: 1710.136 ops/ms
+# Warmup Iteration  10: 1712.877 ops/ms
+# Warmup Iteration  11: 1712.900 ops/ms
+# Warmup Iteration  12: 1712.557 ops/ms
+# Warmup Iteration  13: 1713.104 ops/ms
+# Warmup Iteration  14: 1711.986 ops/ms
+# Warmup Iteration  15: 1712.718 ops/ms
+# Warmup Iteration  16: 1710.506 ops/ms
+# Warmup Iteration  17: 1754.647 ops/ms
+# Warmup Iteration  18: 1746.308 ops/ms
+# Warmup Iteration  19: 1754.316 ops/ms
+# Warmup Iteration  20: 1755.570 ops/ms
+Iteration   1: 1755.011 ops/ms
+Iteration   2: 1721.912 ops/ms
+Iteration   3: 1755.534 ops/ms
+Iteration   4: 1752.789 ops/ms
+Iteration   5: 1753.983 ops/ms
+Iteration   6: 1754.378 ops/ms
+Iteration   7: 1758.752 ops/ms
+Iteration   8: 1749.563 ops/ms
+Iteration   9: 1755.338 ops/ms
+Iteration  10: 1722.662 ops/ms
+Iteration  11: 1753.716 ops/ms
+Iteration  12: 1749.042 ops/ms
+Iteration  13: 1754.247 ops/ms
+Iteration  14: 1756.098 ops/ms
+Iteration  15: 1754.921 ops/ms
+Iteration  16: 1754.964 ops/ms
+Iteration  17: 1752.461 ops/ms
+Iteration  18: 1754.593 ops/ms
+Iteration  19: 1754.332 ops/ms
+Iteration  20: 1754.519 ops/ms
+
+
+Result "testEquals1":
+  1748.002 ±(99.9%) 4.084 ops/ms [Average]
+  (min, avg, max) = (1700.401, 1748.002, 1783.615), stdev = 17.291
+  CI (99.9%): [1743.918, 1752.085] (assumes normal distribution)
+
+
+# JMH 1.11 (released 172 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testEquals2
+
+# Run progress: 12.50% complete, ETA 00:47:02
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1603.296 ops/ms
+# Warmup Iteration   2: 1582.722 ops/ms
+# Warmup Iteration   3: 1610.360 ops/ms
+# Warmup Iteration   4: 1615.916 ops/ms
+# Warmup Iteration   5: 1617.276 ops/ms
+# Warmup Iteration   6: 1616.667 ops/ms
+# Warmup Iteration   7: 1617.198 ops/ms
+# Warmup Iteration   8: 1616.373 ops/ms
+# Warmup Iteration   9: 1616.975 ops/ms
+# Warmup Iteration  10: 1616.605 ops/ms
+# Warmup Iteration  11: 1617.098 ops/ms
+# Warmup Iteration  12: 1616.148 ops/ms
+# Warmup Iteration  13: 1617.065 ops/ms
+# Warmup Iteration  14: 1617.523 ops/ms
+# Warmup Iteration  15: 1616.969 ops/ms
+# Warmup Iteration  16: 1617.592 ops/ms
+# Warmup Iteration  17: 1580.688 ops/ms
+# Warmup Iteration  18: 1580.595 ops/ms
+# Warmup Iteration  19: 1580.769 ops/ms
+# Warmup Iteration  20: 1580.608 ops/ms
+Iteration   1: 1581.387 ops/ms
+Iteration   2: 1578.985 ops/ms
+Iteration   3: 1580.945 ops/ms
+Iteration   4: 1580.193 ops/ms
+Iteration   5: 1581.108 ops/ms
+Iteration   6: 1581.492 ops/ms
+Iteration   7: 1580.862 ops/ms
+Iteration   8: 1580.730 ops/ms
+Iteration   9: 1580.880 ops/ms
+Iteration  10: 1579.890 ops/ms
+Iteration  11: 1581.251 ops/ms
+Iteration  12: 1580.780 ops/ms
+Iteration  13: 1580.698 ops/ms
+Iteration  14: 1580.773 ops/ms
+Iteration  15: 1580.899 ops/ms
+Iteration  16: 1580.882 ops/ms
+Iteration  17: 1580.664 ops/ms
+Iteration  18: 1580.972 ops/ms
+Iteration  19: 1580.535 ops/ms
+Iteration  20: 1580.326 ops/ms
+
+# Run progress: 13.75% complete, ETA 00:46:23
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1584.790 ops/ms
+# Warmup Iteration   2: 1586.975 ops/ms
+# Warmup Iteration   3: 1598.997 ops/ms
+# Warmup Iteration   4: 1598.119 ops/ms
+# Warmup Iteration   5: 1598.821 ops/ms
+# Warmup Iteration   6: 1607.514 ops/ms
+# Warmup Iteration   7: 1598.708 ops/ms
+# Warmup Iteration   8: 1598.575 ops/ms
+# Warmup Iteration   9: 1598.530 ops/ms
+# Warmup Iteration  10: 1599.210 ops/ms
+# Warmup Iteration  11: 1599.020 ops/ms
+# Warmup Iteration  12: 1598.799 ops/ms
+# Warmup Iteration  13: 1598.676 ops/ms
+# Warmup Iteration  14: 1599.170 ops/ms
+# Warmup Iteration  15: 1599.254 ops/ms
+# Warmup Iteration  16: 1599.243 ops/ms
+# Warmup Iteration  17: 1563.036 ops/ms
+# Warmup Iteration  18: 1562.056 ops/ms
+# Warmup Iteration  19: 1561.533 ops/ms
+# Warmup Iteration  20: 1561.570 ops/ms
+Iteration   1: 1561.609 ops/ms
+Iteration   2: 1554.605 ops/ms
+Iteration   3: 1556.129 ops/ms
+Iteration   4: 1563.168 ops/ms
+Iteration   5: 1561.156 ops/ms
+Iteration   6: 1562.164 ops/ms
+Iteration   7: 1560.847 ops/ms
+Iteration   8: 1562.441 ops/ms
+Iteration   9: 1561.855 ops/ms
+Iteration  10: 1563.161 ops/ms
+Iteration  11: 1563.783 ops/ms
+Iteration  12: 1562.050 ops/ms
+Iteration  13: 1559.812 ops/ms
+Iteration  14: 1561.334 ops/ms
+Iteration  15: 1552.561 ops/ms
+Iteration  16: 1561.426 ops/ms
+Iteration  17: 1563.657 ops/ms
+Iteration  18: 1563.684 ops/ms
+Iteration  19: 1563.657 ops/ms
+Iteration  20: 1562.850 ops/ms
+
+# Run progress: 15.00% complete, ETA 00:45:42
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1568.270 ops/ms
+# Warmup Iteration   2: 1581.054 ops/ms
+# Warmup Iteration   3: 1581.056 ops/ms
+# Warmup Iteration   4: 1582.393 ops/ms
+# Warmup Iteration   5: 1582.678 ops/ms
+# Warmup Iteration   6: 1582.511 ops/ms
+# Warmup Iteration   7: 1581.591 ops/ms
+# Warmup Iteration   8: 1581.706 ops/ms
+# Warmup Iteration   9: 1581.870 ops/ms
+# Warmup Iteration  10: 1582.804 ops/ms
+# Warmup Iteration  11: 1582.783 ops/ms
+# Warmup Iteration  12: 1583.021 ops/ms
+# Warmup Iteration  13: 1580.718 ops/ms
+# Warmup Iteration  14: 1582.832 ops/ms
+# Warmup Iteration  15: 1581.189 ops/ms
+# Warmup Iteration  16: 1582.930 ops/ms
+# Warmup Iteration  17: 1588.282 ops/ms
+# Warmup Iteration  18: 1588.038 ops/ms
+# Warmup Iteration  19: 1588.333 ops/ms
+# Warmup Iteration  20: 1589.350 ops/ms
+Iteration   1: 1588.317 ops/ms
+Iteration   2: 1588.089 ops/ms
+Iteration   3: 1587.977 ops/ms
+Iteration   4: 1586.299 ops/ms
+Iteration   5: 1585.079 ops/ms
+Iteration   6: 1588.444 ops/ms
+Iteration   7: 1588.152 ops/ms
+Iteration   8: 1588.836 ops/ms
+Iteration   9: 1587.060 ops/ms
+Iteration  10: 1583.131 ops/ms
+Iteration  11: 1588.944 ops/ms
+Iteration  12: 1589.546 ops/ms
+Iteration  13: 1588.265 ops/ms
+Iteration  14: 1589.775 ops/ms
+Iteration  15: 1588.343 ops/ms
+Iteration  16: 1588.159 ops/ms
+Iteration  17: 1587.942 ops/ms
+Iteration  18: 1588.166 ops/ms
+Iteration  19: 1585.405 ops/ms
+Iteration  20: 1587.906 ops/ms
+
+# Run progress: 16.25% complete, ETA 00:45:02
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1568.246 ops/ms
+# Warmup Iteration   2: 1553.349 ops/ms
+# Warmup Iteration   3: 1584.706 ops/ms
+# Warmup Iteration   4: 1586.089 ops/ms
+# Warmup Iteration   5: 1586.062 ops/ms
+# Warmup Iteration   6: 1586.452 ops/ms
+# Warmup Iteration   7: 1586.251 ops/ms
+# Warmup Iteration   8: 1585.037 ops/ms
+# Warmup Iteration   9: 1585.743 ops/ms
+# Warmup Iteration  10: 1585.898 ops/ms
+# Warmup Iteration  11: 1586.248 ops/ms
+# Warmup Iteration  12: 1586.109 ops/ms
+# Warmup Iteration  13: 1586.180 ops/ms
+# Warmup Iteration  14: 1586.364 ops/ms
+# Warmup Iteration  15: 1586.105 ops/ms
+# Warmup Iteration  16: 1586.125 ops/ms
+# Warmup Iteration  17: 1587.114 ops/ms
+# Warmup Iteration  18: 1587.273 ops/ms
+# Warmup Iteration  19: 1568.950 ops/ms
+# Warmup Iteration  20: 1587.309 ops/ms
+Iteration   1: 1587.015 ops/ms
+Iteration   2: 1584.812 ops/ms
+Iteration   3: 1587.300 ops/ms
+Iteration   4: 1587.368 ops/ms
+Iteration   5: 1586.731 ops/ms
+Iteration   6: 1588.756 ops/ms
+Iteration   7: 1586.704 ops/ms
+Iteration   8: 1587.539 ops/ms
+Iteration   9: 1586.408 ops/ms
+Iteration  10: 1588.405 ops/ms
+Iteration  11: 1587.079 ops/ms
+Iteration  12: 1587.392 ops/ms
+Iteration  13: 1586.630 ops/ms
+Iteration  14: 1586.396 ops/ms
+Iteration  15: 1587.840 ops/ms
+Iteration  16: 1587.006 ops/ms
+Iteration  17: 1587.238 ops/ms
+Iteration  18: 1587.153 ops/ms
+Iteration  19: 1586.404 ops/ms
+Iteration  20: 1587.044 ops/ms
+
+# Run progress: 17.50% complete, ETA 00:44:22
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1572.522 ops/ms
+# Warmup Iteration   2: 1573.985 ops/ms
+# Warmup Iteration   3: 1577.874 ops/ms
+# Warmup Iteration   4: 1575.594 ops/ms
+# Warmup Iteration   5: 1578.626 ops/ms
+# Warmup Iteration   6: 1578.203 ops/ms
+# Warmup Iteration   7: 1577.800 ops/ms
+# Warmup Iteration   8: 1577.133 ops/ms
+# Warmup Iteration   9: 1578.850 ops/ms
+# Warmup Iteration  10: 1577.908 ops/ms
+# Warmup Iteration  11: 1578.247 ops/ms
+# Warmup Iteration  12: 1578.264 ops/ms
+# Warmup Iteration  13: 1578.135 ops/ms
+# Warmup Iteration  14: 1578.076 ops/ms
+# Warmup Iteration  15: 1578.062 ops/ms
+# Warmup Iteration  16: 1578.650 ops/ms
+# Warmup Iteration  17: 1584.153 ops/ms
+# Warmup Iteration  18: 1583.650 ops/ms
+# Warmup Iteration  19: 1584.150 ops/ms
+# Warmup Iteration  20: 1583.679 ops/ms
+Iteration   1: 1582.747 ops/ms
+Iteration   2: 1580.329 ops/ms
+Iteration   3: 1583.228 ops/ms
+Iteration   4: 1582.872 ops/ms
+Iteration   5: 1576.456 ops/ms
+Iteration   6: 1581.736 ops/ms
+Iteration   7: 1584.348 ops/ms
+Iteration   8: 1584.681 ops/ms
+Iteration   9: 1584.535 ops/ms
+Iteration  10: 1583.842 ops/ms
+Iteration  11: 1584.481 ops/ms
+Iteration  12: 1584.347 ops/ms
+Iteration  13: 1581.262 ops/ms
+Iteration  14: 1584.470 ops/ms
+Iteration  15: 1583.525 ops/ms
+Iteration  16: 1584.418 ops/ms
+Iteration  17: 1580.999 ops/ms
+Iteration  18: 1583.739 ops/ms
+Iteration  19: 1583.893 ops/ms
+Iteration  20: 1585.712 ops/ms
+
+# Run progress: 18.75% complete, ETA 00:43:41
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1589.076 ops/ms
+# Warmup Iteration   2: 1590.768 ops/ms
+# Warmup Iteration   3: 1602.094 ops/ms
+# Warmup Iteration   4: 1600.000 ops/ms
+# Warmup Iteration   5: 1602.256 ops/ms
+# Warmup Iteration   6: 1601.733 ops/ms
+# Warmup Iteration   7: 1602.394 ops/ms
+# Warmup Iteration   8: 1601.396 ops/ms
+# Warmup Iteration   9: 1602.713 ops/ms
+# Warmup Iteration  10: 1602.075 ops/ms
+# Warmup Iteration  11: 1602.440 ops/ms
+# Warmup Iteration  12: 1602.140 ops/ms
+# Warmup Iteration  13: 1602.739 ops/ms
+# Warmup Iteration  14: 1602.609 ops/ms
+# Warmup Iteration  15: 1602.234 ops/ms
+# Warmup Iteration  16: 1602.289 ops/ms
+# Warmup Iteration  17: 1580.261 ops/ms
+# Warmup Iteration  18: 1580.684 ops/ms
+# Warmup Iteration  19: 1580.961 ops/ms
+# Warmup Iteration  20: 1581.508 ops/ms
+Iteration   1: 1580.884 ops/ms
+Iteration   2: 1578.176 ops/ms
+Iteration   3: 1580.463 ops/ms
+Iteration   4: 1580.527 ops/ms
+Iteration   5: 1580.888 ops/ms
+Iteration   6: 1580.906 ops/ms
+Iteration   7: 1580.464 ops/ms
+Iteration   8: 1580.896 ops/ms
+Iteration   9: 1580.774 ops/ms
+Iteration  10: 1580.977 ops/ms
+Iteration  11: 1580.986 ops/ms
+Iteration  12: 1580.750 ops/ms
+Iteration  13: 1581.083 ops/ms
+Iteration  14: 1581.111 ops/ms
+Iteration  15: 1581.179 ops/ms
+Iteration  16: 1580.797 ops/ms
+Iteration  17: 1580.793 ops/ms
+Iteration  18: 1580.785 ops/ms
+Iteration  19: 1582.100 ops/ms
+Iteration  20: 1580.623 ops/ms
+
+# Run progress: 20.00% complete, ETA 00:43:01
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1590.094 ops/ms
+# Warmup Iteration   2: 1596.762 ops/ms
+# Warmup Iteration   3: 1610.511 ops/ms
+# Warmup Iteration   4: 1609.240 ops/ms
+# Warmup Iteration   5: 1610.202 ops/ms
+# Warmup Iteration   6: 1609.623 ops/ms
+# Warmup Iteration   7: 1608.851 ops/ms
+# Warmup Iteration   8: 1610.040 ops/ms
+# Warmup Iteration   9: 1609.292 ops/ms
+# Warmup Iteration  10: 1610.107 ops/ms
+# Warmup Iteration  11: 1604.857 ops/ms
+# Warmup Iteration  12: 1610.106 ops/ms
+# Warmup Iteration  13: 1610.494 ops/ms
+# Warmup Iteration  14: 1610.450 ops/ms
+# Warmup Iteration  15: 1610.626 ops/ms
+# Warmup Iteration  16: 1610.566 ops/ms
+# Warmup Iteration  17: 1624.920 ops/ms
+# Warmup Iteration  18: 1615.014 ops/ms
+# Warmup Iteration  19: 1615.108 ops/ms
+# Warmup Iteration  20: 1614.971 ops/ms
+Iteration   1: 1615.193 ops/ms
+Iteration   2: 1612.343 ops/ms
+Iteration   3: 1614.953 ops/ms
+Iteration   4: 1614.195 ops/ms
+Iteration   5: 1614.957 ops/ms
+Iteration   6: 1614.958 ops/ms
+Iteration   7: 1615.020 ops/ms
+Iteration   8: 1615.113 ops/ms
+Iteration   9: 1614.878 ops/ms
+Iteration  10: 1614.932 ops/ms
+Iteration  11: 1615.119 ops/ms
+Iteration  12: 1614.793 ops/ms
+Iteration  13: 1615.022 ops/ms
+Iteration  14: 1615.043 ops/ms
+Iteration  15: 1615.002 ops/ms
+Iteration  16: 1615.062 ops/ms
+Iteration  17: 1614.802 ops/ms
+Iteration  18: 1614.919 ops/ms
+Iteration  19: 1615.198 ops/ms
+Iteration  20: 1615.024 ops/ms
+
+# Run progress: 21.25% complete, ETA 00:42:20
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1569.098 ops/ms
+# Warmup Iteration   2: 1632.531 ops/ms
+# Warmup Iteration   3: 1584.308 ops/ms
+# Warmup Iteration   4: 1583.174 ops/ms
+# Warmup Iteration   5: 1584.408 ops/ms
+# Warmup Iteration   6: 1584.743 ops/ms
+# Warmup Iteration   7: 1583.747 ops/ms
+# Warmup Iteration   8: 1584.063 ops/ms
+# Warmup Iteration   9: 1582.912 ops/ms
+# Warmup Iteration  10: 1584.241 ops/ms
+# Warmup Iteration  11: 1584.600 ops/ms
+# Warmup Iteration  12: 1584.436 ops/ms
+# Warmup Iteration  13: 1584.589 ops/ms
+# Warmup Iteration  14: 1584.353 ops/ms
+# Warmup Iteration  15: 1584.870 ops/ms
+# Warmup Iteration  16: 1585.063 ops/ms
+# Warmup Iteration  17: 1594.909 ops/ms
+# Warmup Iteration  18: 1595.016 ops/ms
+# Warmup Iteration  19: 1594.677 ops/ms
+# Warmup Iteration  20: 1594.003 ops/ms
+Iteration   1: 1589.257 ops/ms
+Iteration   2: 1592.413 ops/ms
+Iteration   3: 1594.980 ops/ms
+Iteration   4: 1594.407 ops/ms
+Iteration   5: 1594.922 ops/ms
+Iteration   6: 1595.321 ops/ms
+Iteration   7: 1595.065 ops/ms
+Iteration   8: 1595.009 ops/ms
+Iteration   9: 1594.413 ops/ms
+Iteration  10: 1595.020 ops/ms
+Iteration  11: 1595.366 ops/ms
+Iteration  12: 1595.152 ops/ms
+Iteration  13: 1595.428 ops/ms
+Iteration  14: 1594.559 ops/ms
+Iteration  15: 1594.695 ops/ms
+Iteration  16: 1595.076 ops/ms
+Iteration  17: 1594.981 ops/ms
+Iteration  18: 1595.314 ops/ms
+Iteration  19: 1586.615 ops/ms
+Iteration  20: 1594.988 ops/ms
+
+# Run progress: 22.50% complete, ETA 00:41:40
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1595.923 ops/ms
+# Warmup Iteration   2: 1633.921 ops/ms
+# Warmup Iteration   3: 1610.399 ops/ms
+# Warmup Iteration   4: 1610.625 ops/ms
+# Warmup Iteration   5: 1610.150 ops/ms
+# Warmup Iteration   6: 1610.171 ops/ms
+# Warmup Iteration   7: 1610.288 ops/ms
+# Warmup Iteration   8: 1609.178 ops/ms
+# Warmup Iteration   9: 1609.682 ops/ms
+# Warmup Iteration  10: 1610.179 ops/ms
+# Warmup Iteration  11: 1610.244 ops/ms
+# Warmup Iteration  12: 1609.842 ops/ms
+# Warmup Iteration  13: 1610.352 ops/ms
+# Warmup Iteration  14: 1610.824 ops/ms
+# Warmup Iteration  15: 1610.680 ops/ms
+# Warmup Iteration  16: 1610.670 ops/ms
+# Warmup Iteration  17: 1596.851 ops/ms
+# Warmup Iteration  18: 1596.865 ops/ms
+# Warmup Iteration  19: 1597.647 ops/ms
+# Warmup Iteration  20: 1597.586 ops/ms
+Iteration   1: 1597.618 ops/ms
+Iteration   2: 1597.047 ops/ms
+Iteration   3: 1596.274 ops/ms
+Iteration   4: 1596.285 ops/ms
+Iteration   5: 1597.097 ops/ms
+Iteration   6: 1597.778 ops/ms
+Iteration   7: 1596.955 ops/ms
+Iteration   8: 1596.249 ops/ms
+Iteration   9: 1596.645 ops/ms
+Iteration  10: 1597.209 ops/ms
+Iteration  11: 1597.089 ops/ms
+Iteration  12: 1596.950 ops/ms
+Iteration  13: 1596.731 ops/ms
+Iteration  14: 1596.135 ops/ms
+Iteration  15: 1596.762 ops/ms
+Iteration  16: 1597.529 ops/ms
+Iteration  17: 1596.749 ops/ms
+Iteration  18: 1597.364 ops/ms
+Iteration  19: 1596.545 ops/ms
+Iteration  20: 1594.823 ops/ms
+
+# Run progress: 23.75% complete, ETA 00:41:00
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1608.927 ops/ms
+# Warmup Iteration   2: 1646.368 ops/ms
+# Warmup Iteration   3: 1617.615 ops/ms
+# Warmup Iteration   4: 1617.260 ops/ms
+# Warmup Iteration   5: 1617.484 ops/ms
+# Warmup Iteration   6: 1616.996 ops/ms
+# Warmup Iteration   7: 1615.192 ops/ms
+# Warmup Iteration   8: 1617.474 ops/ms
+# Warmup Iteration   9: 1616.903 ops/ms
+# Warmup Iteration  10: 1612.570 ops/ms
+# Warmup Iteration  11: 1613.614 ops/ms
+# Warmup Iteration  12: 1617.480 ops/ms
+# Warmup Iteration  13: 1615.772 ops/ms
+# Warmup Iteration  14: 1616.543 ops/ms
+# Warmup Iteration  15: 1615.979 ops/ms
+# Warmup Iteration  16: 1614.952 ops/ms
+# Warmup Iteration  17: 1612.720 ops/ms
+# Warmup Iteration  18: 1610.382 ops/ms
+# Warmup Iteration  19: 1611.094 ops/ms
+# Warmup Iteration  20: 1612.376 ops/ms
+Iteration   1: 1611.881 ops/ms
+Iteration   2: 1608.770 ops/ms
+Iteration   3: 1611.295 ops/ms
+Iteration   4: 1608.991 ops/ms
+Iteration   5: 1611.891 ops/ms
+Iteration   6: 1610.195 ops/ms
+Iteration   7: 1611.641 ops/ms
+Iteration   8: 1610.354 ops/ms
+Iteration   9: 1611.486 ops/ms
+Iteration  10: 1612.228 ops/ms
+Iteration  11: 1610.825 ops/ms
+Iteration  12: 1609.850 ops/ms
+Iteration  13: 1612.009 ops/ms
+Iteration  14: 1613.239 ops/ms
+Iteration  15: 1611.819 ops/ms
+Iteration  16: 1608.031 ops/ms
+Iteration  17: 1611.402 ops/ms
+Iteration  18: 1608.074 ops/ms
+Iteration  19: 1608.907 ops/ms
+Iteration  20: 1611.669 ops/ms
+
+
+Result "testEquals2":
+  1589.690 ±(99.9%) 3.514 ops/ms [Average]
+  (min, avg, max) = (1552.561, 1589.690, 1615.198), stdev = 14.877
+  CI (99.9%): [1586.176, 1593.203] (assumes normal distribution)
+
+
+# JMH 1.11 (released 172 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testParam2StringsNoScoping
+
+# Run progress: 25.00% complete, ETA 00:40:20
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+8063.468 ops/ms
+# Warmup Iteration   2: 9616.099 ops/ms
+# Warmup Iteration   3: 7983.479 ops/ms
+# Warmup Iteration   4: 7979.702 ops/ms
+# Warmup Iteration   5: 7984.068 ops/ms
+# Warmup Iteration   6: 7987.345 ops/ms
+# Warmup Iteration   7: 8006.098 ops/ms
+# Warmup Iteration   8: 7967.958 ops/ms
+# Warmup Iteration   9: 7964.963 ops/ms
+# Warmup Iteration  10: 7975.685 ops/ms
+# Warmup Iteration  11: 8008.930 ops/ms
+# Warmup Iteration  12: 7994.063 ops/ms
+# Warmup Iteration  13: 8013.544 ops/ms
+# Warmup Iteration  14: 7983.998 ops/ms
+# Warmup Iteration  15: 7854.886 ops/ms
+# Warmup Iteration  16: 7969.305 ops/ms
+# Warmup Iteration  17: 7901.530 ops/ms
+# Warmup Iteration  18: 7918.343 ops/ms
+# Warmup Iteration  19: 7924.033 ops/ms
+# Warmup Iteration  20: 7825.769 ops/ms
+Iteration   1: 7785.173 ops/ms
+Iteration   2: 7898.960 ops/ms
+Iteration   3: 7743.316 ops/ms
+Iteration   4: 7741.712 ops/ms
+Iteration   5: 7765.243 ops/ms
+Iteration   6: 7751.438 ops/ms
+Iteration   7: 7742.311 ops/ms
+Iteration   8: 7751.535 ops/ms
+Iteration   9: 7747.343 ops/ms
+Iteration  10: 7740.833 ops/ms
+Iteration  11: 7905.522 ops/ms
+Iteration  12: 7935.481 ops/ms
+Iteration  13: 7746.926 ops/ms
+Iteration  14: 7771.811 ops/ms
+Iteration  15: 7747.697 ops/ms
+Iteration  16: 7786.365 ops/ms
+Iteration  17: 7749.948 ops/ms
+Iteration  18: 7831.955 ops/ms
+Iteration  19: 7744.745 ops/ms
+Iteration  20: 7811.346 ops/ms
+
+# Run progress: 26.25% complete, ETA 00:39:39
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7762.357 ops/ms
+# Warmup Iteration   2: 9629.549 ops/ms
+# Warmup Iteration   3: 8712.234 ops/ms
+# Warmup Iteration   4: 8706.334 ops/ms
+# Warmup Iteration   5: 8711.360 ops/ms
+# Warmup Iteration   6: 8713.800 ops/ms
+# Warmup Iteration   7: 8713.929 ops/ms
+# Warmup Iteration   8: 8708.099 ops/ms
+# Warmup Iteration   9: 8712.229 ops/ms
+# Warmup Iteration  10: 8709.540 ops/ms
+# Warmup Iteration  11: 8712.190 ops/ms
+# Warmup Iteration  12: 8713.226 ops/ms
+# Warmup Iteration  13: 8713.153 ops/ms
+# Warmup Iteration  14: 8714.156 ops/ms
+# Warmup Iteration  15: 8712.518 ops/ms
+# Warmup Iteration  16: 8715.246 ops/ms
+# Warmup Iteration  17: 7553.566 ops/ms
+# Warmup Iteration  18: 8078.042 ops/ms
+# Warmup Iteration  19: 7557.081 ops/ms
+# Warmup Iteration  20: 7720.033 ops/ms
+Iteration   1: 7556.299 ops/ms
+Iteration   2: 8244.706 ops/ms
+Iteration   3: 8377.395 ops/ms
+Iteration   4: 8123.207 ops/ms
+Iteration   5: 7598.267 ops/ms
+Iteration   6: 8207.992 ops/ms
+Iteration   7: 8030.253 ops/ms
+Iteration   8: 8071.753 ops/ms
+Iteration   9: 8093.468 ops/ms
+Iteration  10: 8376.492 ops/ms
+Iteration  11: 7769.342 ops/ms
+Iteration  12: 7557.713 ops/ms
+Iteration  13: 8077.382 ops/ms
+Iteration  14: 8375.956 ops/ms
+Iteration  15: 7853.447 ops/ms
+Iteration  16: 7817.240 ops/ms
+Iteration  17: 8047.696 ops/ms
+Iteration  18: 8075.629 ops/ms
+Iteration  19: 8328.613 ops/ms
+Iteration  20: 8383.948 ops/ms
+
+# Run progress: 27.50% complete, ETA 00:38:59
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7735.837 ops/ms
+# Warmup Iteration   2: 7577.237 ops/ms
+# Warmup Iteration   3: 7730.707 ops/ms
+# Warmup Iteration   4: 7921.495 ops/ms
+# Warmup Iteration   5: 7728.831 ops/ms
+# Warmup Iteration   6: 7728.989 ops/ms
+# Warmup Iteration   7: 7711.529 ops/ms
+# Warmup Iteration   8: 7717.669 ops/ms
+# Warmup Iteration   9: 7726.417 ops/ms
+# Warmup Iteration  10: 7934.813 ops/ms
+# Warmup Iteration  11: 7816.836 ops/ms
+# Warmup Iteration  12: 7837.947 ops/ms
+# Warmup Iteration  13: 7811.800 ops/ms
+# Warmup Iteration  14: 7840.814 ops/ms
+# Warmup Iteration  15: 7796.090 ops/ms
+# Warmup Iteration  16: 7946.479 ops/ms
+# Warmup Iteration  17: 7919.058 ops/ms
+# Warmup Iteration  18: 7875.603 ops/ms
+# Warmup Iteration  19: 7896.797 ops/ms
+# Warmup Iteration  20: 9454.141 ops/ms
+Iteration   1: 10199.776 ops/ms
+Iteration   2: 8557.530 ops/ms
+Iteration   3: 10229.728 ops/ms
+Iteration   4: 10198.611 ops/ms
+Iteration   5: 10216.500 ops/ms
+Iteration   6: 10205.970 ops/ms
+Iteration   7: 10228.664 ops/ms
+Iteration   8: 10271.114 ops/ms
+Iteration   9: 10279.197 ops/ms
+Iteration  10: 10261.875 ops/ms
+Iteration  11: 10257.650 ops/ms
+Iteration  12: 10236.534 ops/ms
+Iteration  13: 10242.002 ops/ms
+Iteration  14: 10252.463 ops/ms
+Iteration  15: 10222.454 ops/ms
+Iteration  16: 10237.634 ops/ms
+Iteration  17: 10204.458 ops/ms
+Iteration  18: 10252.687 ops/ms
+Iteration  19: 10270.882 ops/ms
+Iteration  20: 10257.539 ops/ms
+
+# Run progress: 28.75% complete, ETA 00:38:19
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7961.013 ops/ms
+# Warmup Iteration   2: 7571.181 ops/ms
+# Warmup Iteration   3: 7846.100 ops/ms
+# Warmup Iteration   4: 7841.813 ops/ms
+# Warmup Iteration   5: 7848.515 ops/ms
+# Warmup Iteration   6: 7848.383 ops/ms
+# Warmup Iteration   7: 7862.788 ops/ms
+# Warmup Iteration   8: 7900.685 ops/ms
+# Warmup Iteration   9: 7848.393 ops/ms
+# Warmup Iteration  10: 7876.511 ops/ms
+# Warmup Iteration  11: 7848.314 ops/ms
+# Warmup Iteration  12: 7848.299 ops/ms
+# Warmup Iteration  13: 7960.700 ops/ms
+# Warmup Iteration  14: 7878.909 ops/ms
+# Warmup Iteration  15: 7879.168 ops/ms
+# Warmup Iteration  16: 7849.747 ops/ms
+# Warmup Iteration  17: 8218.875 ops/ms
+# Warmup Iteration  18: 8656.663 ops/ms
+# Warmup Iteration  19: 8607.451 ops/ms
+# Warmup Iteration  20: 8643.154 ops/ms
+Iteration   1: 8588.604 ops/ms
+Iteration   2: 8071.175 ops/ms
+Iteration   3: 8175.178 ops/ms
+Iteration   4: 8107.149 ops/ms
+Iteration   5: 8437.868 ops/ms
+Iteration   6: 8644.199 ops/ms
+Iteration   7: 8410.560 ops/ms
+Iteration   8: 8646.781 ops/ms
+Iteration   9: 8643.794 ops/ms
+Iteration  10: 8648.381 ops/ms
+Iteration  11: 8653.718 ops/ms
+Iteration  12: 8650.267 ops/ms
+Iteration  13: 8648.184 ops/ms
+Iteration  14: 8644.481 ops/ms
+Iteration  15: 8030.118 ops/ms
+Iteration  16: 8026.404 ops/ms
+Iteration  17: 8634.850 ops/ms
+Iteration  18: 8646.592 ops/ms
+Iteration  19: 8632.574 ops/ms
+Iteration  20: 8643.916 ops/ms
+
+# Run progress: 30.00% complete, ETA 00:37:38
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7692.910 ops/ms
+# Warmup Iteration   2: 9290.619 ops/ms
+# Warmup Iteration   3: 7985.519 ops/ms
+# Warmup Iteration   4: 8163.150 ops/ms
+# Warmup Iteration   5: 8053.112 ops/ms
+# Warmup Iteration   6: 8065.215 ops/ms
+# Warmup Iteration   7: 7984.349 ops/ms
+# Warmup Iteration   8: 8001.510 ops/ms
+# Warmup Iteration   9: 8016.372 ops/ms
+# Warmup Iteration  10: 8017.119 ops/ms
+# Warmup Iteration  11: 8017.882 ops/ms
+# Warmup Iteration  12: 8155.961 ops/ms
+# Warmup Iteration  13: 7917.809 ops/ms
+# Warmup Iteration  14: 8010.672 ops/ms
+# Warmup Iteration  15: 7955.244 ops/ms
+# Warmup Iteration  16: 7992.445 ops/ms
+# Warmup Iteration  17: 7765.074 ops/ms
+# Warmup Iteration  18: 7771.082 ops/ms
+# Warmup Iteration  19: 7769.078 ops/ms
+# Warmup Iteration  20: 7766.507 ops/ms
+Iteration   1: 7768.379 ops/ms
+Iteration   2: 7761.566 ops/ms
+Iteration   3: 7765.481 ops/ms
+Iteration   4: 7765.701 ops/ms
+Iteration   5: 7764.252 ops/ms
+Iteration   6: 7765.065 ops/ms
+Iteration   7: 7679.646 ops/ms
+Iteration   8: 7512.272 ops/ms
+Iteration   9: 7521.329 ops/ms
+Iteration  10: 7514.982 ops/ms
+Iteration  11: 7526.154 ops/ms
+Iteration  12: 7511.972 ops/ms
+Iteration  13: 7478.716 ops/ms
+Iteration  14: 7475.628 ops/ms
+Iteration  15: 7476.563 ops/ms
+Iteration  16: 7519.121 ops/ms
+Iteration  17: 7517.953 ops/ms
+Iteration  18: 7500.789 ops/ms
+Iteration  19: 7491.621 ops/ms
+Iteration  20: 7704.242 ops/ms
+
+# Run progress: 31.25% complete, ETA 00:36:58
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+8202.905 ops/ms
+# Warmup Iteration   2: 8310.523 ops/ms
+# Warmup Iteration   3: 7970.154 ops/ms
+# Warmup Iteration   4: 7992.717 ops/ms
+# Warmup Iteration   5: 7959.469 ops/ms
+# Warmup Iteration   6: 7969.975 ops/ms
+# Warmup Iteration   7: 7971.699 ops/ms
+# Warmup Iteration   8: 7984.941 ops/ms
+# Warmup Iteration   9: 7986.964 ops/ms
+# Warmup Iteration  10: 7955.288 ops/ms
+# Warmup Iteration  11: 7982.955 ops/ms
+# Warmup Iteration  12: 7967.579 ops/ms
+# Warmup Iteration  13: 7934.825 ops/ms
+# Warmup Iteration  14: 7937.124 ops/ms
+# Warmup Iteration  15: 7946.814 ops/ms
+# Warmup Iteration  16: 8101.030 ops/ms
+# Warmup Iteration  17: 9694.853 ops/ms
+# Warmup Iteration  18: 9318.864 ops/ms
+# Warmup Iteration  19: 9755.826 ops/ms
+# Warmup Iteration  20: 9569.056 ops/ms
+Iteration   1: 9770.646 ops/ms
+Iteration   2: 9822.376 ops/ms
+Iteration   3: 9782.288 ops/ms
+Iteration   4: 9852.504 ops/ms
+Iteration   5: 9720.004 ops/ms
+Iteration   6: 9927.617 ops/ms
+Iteration   7: 9849.791 ops/ms
+Iteration   8: 9400.157 ops/ms
+Iteration   9: 9660.861 ops/ms
+Iteration  10: 9659.376 ops/ms
+Iteration  11: 9862.366 ops/ms
+Iteration  12: 9802.854 ops/ms
+Iteration  13: 9665.499 ops/ms
+Iteration  14: 9707.713 ops/ms
+Iteration  15: 9780.411 ops/ms
+Iteration  16: 9819.444 ops/ms
+Iteration  17: 9831.190 ops/ms
+Iteration  18: 9822.816 ops/ms
+Iteration  19: 9779.615 ops/ms
+Iteration  20: 9919.938 ops/ms
+
+# Run progress: 32.50% complete, ETA 00:36:18
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7950.698 ops/ms
+# Warmup Iteration   2: 7731.862 ops/ms
+# Warmup Iteration   3: 7918.780 ops/ms
+# Warmup Iteration   4: 7748.686 ops/ms
+# Warmup Iteration   5: 7803.005 ops/ms
+# Warmup Iteration   6: 7923.984 ops/ms
+# Warmup Iteration   7: 8020.163 ops/ms
+# Warmup Iteration   8: 7879.634 ops/ms
+# Warmup Iteration   9: 7967.874 ops/ms
+# Warmup Iteration  10: 8032.920 ops/ms
+# Warmup Iteration  11: 7889.938 ops/ms
+# Warmup Iteration  12: 7749.375 ops/ms
+# Warmup Iteration  13: 7753.427 ops/ms
+# Warmup Iteration  14: 7757.450 ops/ms
+# Warmup Iteration  15: 7752.341 ops/ms
+# Warmup Iteration  16: 7770.724 ops/ms
+# Warmup Iteration  17: 7657.995 ops/ms
+# Warmup Iteration  18: 7635.321 ops/ms
+# Warmup Iteration  19: 7548.659 ops/ms
+# Warmup Iteration  20: 7550.030 ops/ms
+Iteration   1: 7848.741 ops/ms
+Iteration   2: 7844.019 ops/ms
+Iteration   3: 7785.837 ops/ms
+Iteration   4: 7983.185 ops/ms
+Iteration   5: 7899.372 ops/ms
+Iteration   6: 7841.219 ops/ms
+Iteration   7: 8010.402 ops/ms
+Iteration   8: 7553.278 ops/ms
+Iteration   9: 7559.147 ops/ms
+Iteration  10: 8427.365 ops/ms
+Iteration  11: 7842.283 ops/ms
+Iteration  12: 8393.459 ops/ms
+Iteration  13: 8206.237 ops/ms
+Iteration  14: 8068.764 ops/ms
+Iteration  15: 7550.362 ops/ms
+Iteration  16: 8527.181 ops/ms
+Iteration  17: 8376.321 ops/ms
+Iteration  18: 8286.327 ops/ms
+Iteration  19: 8052.786 ops/ms
+Iteration  20: 8426.758 ops/ms
+
+# Run progress: 33.75% complete, ETA 00:35:37
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7936.079 ops/ms
+# Warmup Iteration   2: 8282.911 ops/ms
+# Warmup Iteration   3: 8350.617 ops/ms
+# Warmup Iteration   4: 8337.801 ops/ms
+# Warmup Iteration   5: 8371.464 ops/ms
+# Warmup Iteration   6: 8314.131 ops/ms
+# Warmup Iteration   7: 8311.368 ops/ms
+# Warmup Iteration   8: 8439.433 ops/ms
+# Warmup Iteration   9: 8575.895 ops/ms
+# Warmup Iteration  10: 8263.539 ops/ms
+# Warmup Iteration  11: 8351.445 ops/ms
+# Warmup Iteration  12: 8243.450 ops/ms
+# Warmup Iteration  13: 8378.434 ops/ms
+# Warmup Iteration  14: 8583.243 ops/ms
+# Warmup Iteration  15: 8574.358 ops/ms
+# Warmup Iteration  16: 8345.331 ops/ms
+# Warmup Iteration  17: 7704.735 ops/ms
+# Warmup Iteration  18: 7703.711 ops/ms
+# Warmup Iteration  19: 7703.454 ops/ms
+# Warmup Iteration  20: 7703.187 ops/ms
+Iteration   1: 7669.146 ops/ms
+Iteration   2: 7658.533 ops/ms
+Iteration   3: 7662.457 ops/ms
+Iteration   4: 7668.552 ops/ms
+Iteration   5: 7643.819 ops/ms
+Iteration   6: 7662.364 ops/ms
+Iteration   7: 7662.405 ops/ms
+Iteration   8: 7662.370 ops/ms
+Iteration   9: 7661.442 ops/ms
+Iteration  10: 7661.883 ops/ms
+Iteration  11: 7663.811 ops/ms
+Iteration  12: 7674.697 ops/ms
+Iteration  13: 7704.463 ops/ms
+Iteration  14: 7674.146 ops/ms
+Iteration  15: 7659.937 ops/ms
+Iteration  16: 7663.407 ops/ms
+Iteration  17: 7653.921 ops/ms
+Iteration  18: 7654.146 ops/ms
+Iteration  19: 7661.776 ops/ms
+Iteration  20: 7661.857 ops/ms
+
+# Run progress: 35.00% complete, ETA 00:34:57
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7766.474 ops/ms
+# Warmup Iteration   2: 9933.127 ops/ms
+# Warmup Iteration   3: 8241.881 ops/ms
+# Warmup Iteration   4: 8308.422 ops/ms
+# Warmup Iteration   5: 8283.381 ops/ms
+# Warmup Iteration   6: 8269.082 ops/ms
+# Warmup Iteration   7: 8293.315 ops/ms
+# Warmup Iteration   8: 8284.347 ops/ms
+# Warmup Iteration   9: 8312.623 ops/ms
+# Warmup Iteration  10: 8282.866 ops/ms
+# Warmup Iteration  11: 8264.805 ops/ms
+# Warmup Iteration  12: 8319.949 ops/ms
+# Warmup Iteration  13: 8247.774 ops/ms
+# Warmup Iteration  14: 8221.204 ops/ms
+# Warmup Iteration  15: 8286.478 ops/ms
+# Warmup Iteration  16: 8196.883 ops/ms
+# Warmup Iteration  17: 10208.225 ops/ms
+# Warmup Iteration  18: 10214.425 ops/ms
+# Warmup Iteration  19: 10219.265 ops/ms
+# Warmup Iteration  20: 10224.191 ops/ms
+Iteration   1: 10267.701 ops/ms
+Iteration   2: 10200.116 ops/ms
+Iteration   3: 10216.375 ops/ms
+Iteration   4: 10226.979 ops/ms
+Iteration   5: 10224.390 ops/ms
+Iteration   6: 10265.235 ops/ms
+Iteration   7: 10217.551 ops/ms
+Iteration   8: 10208.935 ops/ms
+Iteration   9: 10212.757 ops/ms
+Iteration  10: 10227.111 ops/ms
+Iteration  11: 10218.151 ops/ms
+Iteration  12: 10219.486 ops/ms
+Iteration  13: 10220.541 ops/ms
+Iteration  14: 10227.796 ops/ms
+Iteration  15: 10213.935 ops/ms
+Iteration  16: 10210.385 ops/ms
+Iteration  17: 10230.867 ops/ms
+Iteration  18: 10222.919 ops/ms
+Iteration  19: 10233.190 ops/ms
+Iteration  20: 10216.189 ops/ms
+
+# Run progress: 36.25% complete, ETA 00:34:17
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+7829.130 ops/ms
+# Warmup Iteration   2: 10060.563 ops/ms
+# Warmup Iteration   3: 8531.900 ops/ms
+# Warmup Iteration   4: 8545.732 ops/ms
+# Warmup Iteration   5: 8125.221 ops/ms
+# Warmup Iteration   6: 8572.225 ops/ms
+# Warmup Iteration   7: 8571.048 ops/ms
+# Warmup Iteration   8: 8567.914 ops/ms
+# Warmup Iteration   9: 7611.039 ops/ms
+# Warmup Iteration  10: 8424.774 ops/ms
+# Warmup Iteration  11: 8582.490 ops/ms
+# Warmup Iteration  12: 8574.633 ops/ms
+# Warmup Iteration  13: 8401.984 ops/ms
+# Warmup Iteration  14: 8580.843 ops/ms
+# Warmup Iteration  15: 8564.509 ops/ms
+# Warmup Iteration  16: 8564.923 ops/ms
+# Warmup Iteration  17: 9654.192 ops/ms
+# Warmup Iteration  18: 9620.917 ops/ms
+# Warmup Iteration  19: 10062.183 ops/ms
+# Warmup Iteration  20: 9519.371 ops/ms
+Iteration   1: 9608.524 ops/ms
+Iteration   2: 10016.290 ops/ms
+Iteration   3: 9684.496 ops/ms
+Iteration   4: 10104.790 ops/ms
+Iteration   5: 9664.960 ops/ms
+Iteration   6: 9609.330 ops/ms
+Iteration   7: 9646.778 ops/ms
+Iteration   8: 10059.457 ops/ms
+Iteration   9: 9706.761 ops/ms
+Iteration  10: 9494.484 ops/ms
+Iteration  11: 10072.761 ops/ms
+Iteration  12: 10146.839 ops/ms
+Iteration  13: 9662.705 ops/ms
+Iteration  14: 10122.654 ops/ms
+Iteration  15: 9828.762 ops/ms
+Iteration  16: 10175.478 ops/ms
+Iteration  17: 9839.588 ops/ms
+Iteration  18: 10184.488 ops/ms
+Iteration  19: 9671.749 ops/ms
+Iteration  20: 9620.358 ops/ms
+
+
+Result "testParam2StringsNoScoping":
+  8759.817 ±(99.9%) 252.259 ops/ms [Average]
+  (min, avg, max) = (7475.628, 8759.817, 10279.197), stdev = 1068.082
+  CI (99.9%): [8507.558, 9012.077] (assumes normal distribution)
+
+
+# JMH 1.11 (released 172 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testParamStringsEq
+
+# Run progress: 37.50% complete, ETA 00:33:36
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1725.794 ops/ms
+# Warmup Iteration   2: 1750.138 ops/ms
+# Warmup Iteration   3: 1709.434 ops/ms
+# Warmup Iteration   4: 1733.826 ops/ms
+# Warmup Iteration   5: 1708.249 ops/ms
+# Warmup Iteration   6: 1712.047 ops/ms
+# Warmup Iteration   7: 1747.787 ops/ms
+# Warmup Iteration   8: 1710.154 ops/ms
+# Warmup Iteration   9: 1704.663 ops/ms
+# Warmup Iteration  10: 1703.528 ops/ms
+# Warmup Iteration  11: 1773.326 ops/ms
+# Warmup Iteration  12: 1708.831 ops/ms
+# Warmup Iteration  13: 1709.825 ops/ms
+# Warmup Iteration  14: 1706.783 ops/ms
+# Warmup Iteration  15: 1710.422 ops/ms
+# Warmup Iteration  16: 1708.975 ops/ms
+# Warmup Iteration  17: 1698.737 ops/ms
+# Warmup Iteration  18: 1734.608 ops/ms
+# Warmup Iteration  19: 1697.348 ops/ms
+# Warmup Iteration  20: 1717.899 ops/ms
+Iteration   1: 1703.338 ops/ms
+Iteration   2: 1701.211 ops/ms
+Iteration   3: 1698.184 ops/ms
+Iteration   4: 1720.497 ops/ms
+Iteration   5: 1755.061 ops/ms
+Iteration   6: 1703.806 ops/ms
+Iteration   7: 1697.758 ops/ms
+Iteration   8: 1702.425 ops/ms
+Iteration   9: 1700.523 ops/ms
+Iteration  10: 1705.979 ops/ms
+Iteration  11: 1716.731 ops/ms
+Iteration  12: 1705.334 ops/ms
+Iteration  13: 1746.135 ops/ms
+Iteration  14: 1709.502 ops/ms
+Iteration  15: 1701.814 ops/ms
+Iteration  16: 1700.399 ops/ms
+Iteration  17: 1698.430 ops/ms
+Iteration  18: 1703.571 ops/ms
+Iteration  19: 1719.336 ops/ms
+Iteration  20: 1703.564 ops/ms
+
+# Run progress: 38.75% complete, ETA 00:32:56
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1808.189 ops/ms
+# Warmup Iteration   2: 1852.832 ops/ms
+# Warmup Iteration   3: 1807.301 ops/ms
+# Warmup Iteration   4: 1808.922 ops/ms
+# Warmup Iteration   5: 1808.259 ops/ms
+# Warmup Iteration   6: 1808.564 ops/ms
+# Warmup Iteration   7: 1807.747 ops/ms
+# Warmup Iteration   8: 1806.110 ops/ms
+# Warmup Iteration   9: 1807.728 ops/ms
+# Warmup Iteration  10: 1805.435 ops/ms
+# Warmup Iteration  11: 1805.835 ops/ms
+# Warmup Iteration  12: 1809.461 ops/ms
+# Warmup Iteration  13: 1809.628 ops/ms
+# Warmup Iteration  14: 1808.685 ops/ms
+# Warmup Iteration  15: 1809.311 ops/ms
+# Warmup Iteration  16: 1810.673 ops/ms
+# Warmup Iteration  17: 1887.050 ops/ms
+# Warmup Iteration  18: 1886.792 ops/ms
+# Warmup Iteration  19: 1887.188 ops/ms
+# Warmup Iteration  20: 1887.281 ops/ms
+Iteration   1: 1887.096 ops/ms
+Iteration   2: 1886.349 ops/ms
+Iteration   3: 1887.058 ops/ms
+Iteration   4: 1887.136 ops/ms
+Iteration   5: 1887.249 ops/ms
+Iteration   6: 1887.208 ops/ms
+Iteration   7: 1886.868 ops/ms
+Iteration   8: 1887.080 ops/ms
+Iteration   9: 1886.974 ops/ms
+Iteration  10: 1887.129 ops/ms
+Iteration  11: 1887.101 ops/ms
+Iteration  12: 1887.174 ops/ms
+Iteration  13: 1883.718 ops/ms
+Iteration  14: 1887.424 ops/ms
+Iteration  15: 1887.107 ops/ms
+Iteration  16: 1887.333 ops/ms
+Iteration  17: 1886.905 ops/ms
+Iteration  18: 1887.239 ops/ms
+Iteration  19: 1887.262 ops/ms
+Iteration  20: 1886.851 ops/ms
+
+# Run progress: 40.00% complete, ETA 00:32:16
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1786.472 ops/ms
+# Warmup Iteration   2: 1881.222 ops/ms
+# Warmup Iteration   3: 1809.442 ops/ms
+# Warmup Iteration   4: 1805.592 ops/ms
+# Warmup Iteration   5: 1806.996 ops/ms
+# Warmup Iteration   6: 1807.655 ops/ms
+# Warmup Iteration   7: 1794.551 ops/ms
+# Warmup Iteration   8: 1805.804 ops/ms
+# Warmup Iteration   9: 1796.130 ops/ms
+# Warmup Iteration  10: 1796.046 ops/ms
+# Warmup Iteration  11: 1809.271 ops/ms
+# Warmup Iteration  12: 1809.507 ops/ms
+# Warmup Iteration  13: 1809.344 ops/ms
+# Warmup Iteration  14: 1809.358 ops/ms
+# Warmup Iteration  15: 1805.023 ops/ms
+# Warmup Iteration  16: 1805.177 ops/ms
+# Warmup Iteration  17: 1863.048 ops/ms
+# Warmup Iteration  18: 1862.778 ops/ms
+# Warmup Iteration  19: 1863.228 ops/ms
+# Warmup Iteration  20: 1862.817 ops/ms
+Iteration   1: 1862.811 ops/ms
+Iteration   2: 1851.548 ops/ms
+Iteration   3: 1818.000 ops/ms
+Iteration   4: 1817.503 ops/ms
+Iteration   5: 1817.854 ops/ms
+Iteration   6: 1821.118 ops/ms
+Iteration   7: 1817.948 ops/ms
+Iteration   8: 1818.010 ops/ms
+Iteration   9: 1818.150 ops/ms
+Iteration  10: 1818.721 ops/ms
+Iteration  11: 1821.861 ops/ms
+Iteration  12: 1818.360 ops/ms
+Iteration  13: 1817.876 ops/ms
+Iteration  14: 1818.348 ops/ms
+Iteration  15: 1818.635 ops/ms
+Iteration  16: 1818.698 ops/ms
+Iteration  17: 1818.039 ops/ms
+Iteration  18: 1822.862 ops/ms
+Iteration  19: 1822.695 ops/ms
+Iteration  20: 1820.100 ops/ms
+
+# Run progress: 41.25% complete, ETA 00:31:35
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1757.665 ops/ms
+# Warmup Iteration   2: 1835.535 ops/ms
+# Warmup Iteration   3: 1778.182 ops/ms
+# Warmup Iteration   4: 1780.609 ops/ms
+# Warmup Iteration   5: 1784.435 ops/ms
+# Warmup Iteration   6: 1784.437 ops/ms
+# Warmup Iteration   7: 1782.542 ops/ms
+# Warmup Iteration   8: 1782.677 ops/ms
+# Warmup Iteration   9: 1784.591 ops/ms
+# Warmup Iteration  10: 1783.991 ops/ms
+# Warmup Iteration  11: 1783.100 ops/ms
+# Warmup Iteration  12: 1785.088 ops/ms
+# Warmup Iteration  13: 1782.315 ops/ms
+# Warmup Iteration  14: 1782.884 ops/ms
+# Warmup Iteration  15: 1785.019 ops/ms
+# Warmup Iteration  16: 1783.464 ops/ms
+# Warmup Iteration  17: 1770.670 ops/ms
+# Warmup Iteration  18: 1770.322 ops/ms
+# Warmup Iteration  19: 1769.667 ops/ms
+# Warmup Iteration  20: 1767.132 ops/ms
+Iteration   1: 1771.711 ops/ms
+Iteration   2: 1765.027 ops/ms
+Iteration   3: 1767.028 ops/ms
+Iteration   4: 1768.701 ops/ms
+Iteration   5: 1767.479 ops/ms
+Iteration   6: 1764.745 ops/ms
+Iteration   7: 1767.960 ops/ms
+Iteration   8: 1768.011 ops/ms
+Iteration   9: 1770.629 ops/ms
+Iteration  10: 1769.021 ops/ms
+Iteration  11: 1771.399 ops/ms
+Iteration  12: 1763.806 ops/ms
+Iteration  13: 1770.428 ops/ms
+Iteration  14: 1768.252 ops/ms
+Iteration  15: 1766.996 ops/ms
+Iteration  16: 1767.505 ops/ms
+Iteration  17: 1772.375 ops/ms
+Iteration  18: 1768.026 ops/ms
+Iteration  19: 1771.467 ops/ms
+Iteration  20: 1765.459 ops/ms
+
+# Run progress: 42.50% complete, ETA 00:30:55
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1782.614 ops/ms
+# Warmup Iteration   2: 1784.410 ops/ms
+# Warmup Iteration   3: 1812.185 ops/ms
+# Warmup Iteration   4: 1813.460 ops/ms
+# Warmup Iteration   5: 1814.943 ops/ms
+# Warmup Iteration   6: 1813.969 ops/ms
+# Warmup Iteration   7: 1814.487 ops/ms
+# Warmup Iteration   8: 1808.694 ops/ms
+# Warmup Iteration   9: 1815.687 ops/ms
+# Warmup Iteration  10: 1809.064 ops/ms
+# Warmup Iteration  11: 1813.167 ops/ms
+# Warmup Iteration  12: 1814.337 ops/ms
+# Warmup Iteration  13: 1813.936 ops/ms
+# Warmup Iteration  14: 1814.097 ops/ms
+# Warmup Iteration  15: 1813.952 ops/ms
+# Warmup Iteration  16: 1811.980 ops/ms
+# Warmup Iteration  17: 1771.614 ops/ms
+# Warmup Iteration  18: 1771.731 ops/ms
+# Warmup Iteration  19: 1772.470 ops/ms
+# Warmup Iteration  20: 1865.438 ops/ms
+Iteration   1: 1771.834 ops/ms
+Iteration   2: 1769.311 ops/ms
+Iteration   3: 1769.228 ops/ms
+Iteration   4: 1769.935 ops/ms
+Iteration   5: 1771.469 ops/ms
+Iteration   6: 1771.796 ops/ms
+Iteration   7: 1772.056 ops/ms
+Iteration   8: 1771.822 ops/ms
+Iteration   9: 1771.798 ops/ms
+Iteration  10: 1771.905 ops/ms
+Iteration  11: 1771.869 ops/ms
+Iteration  12: 1772.035 ops/ms
+Iteration  13: 1772.088 ops/ms
+Iteration  14: 1772.576 ops/ms
+Iteration  15: 1772.897 ops/ms
+Iteration  16: 1771.594 ops/ms
+Iteration  17: 1772.543 ops/ms
+Iteration  18: 1772.133 ops/ms
+Iteration  19: 1771.809 ops/ms
+Iteration  20: 1771.889 ops/ms
+
+# Run progress: 43.75% complete, ETA 00:30:15
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1779.161 ops/ms
+# Warmup Iteration   2: 1813.900 ops/ms
+# Warmup Iteration   3: 1846.214 ops/ms
+# Warmup Iteration   4: 1834.669 ops/ms
+# Warmup Iteration   5: 1842.123 ops/ms
+# Warmup Iteration   6: 1843.791 ops/ms
+# Warmup Iteration   7: 1845.980 ops/ms
+# Warmup Iteration   8: 1844.378 ops/ms
+# Warmup Iteration   9: 1823.005 ops/ms
+# Warmup Iteration  10: 1839.588 ops/ms
+# Warmup Iteration  11: 1843.486 ops/ms
+# Warmup Iteration  12: 1833.607 ops/ms
+# Warmup Iteration  13: 1830.649 ops/ms
+# Warmup Iteration  14: 1837.934 ops/ms
+# Warmup Iteration  15: 1821.889 ops/ms
+# Warmup Iteration  16: 1841.077 ops/ms
+# Warmup Iteration  17: 1870.537 ops/ms
+# Warmup Iteration  18: 1877.696 ops/ms
+# Warmup Iteration  19: 1879.411 ops/ms
+# Warmup Iteration  20: 1818.466 ops/ms
+Iteration   1: 1879.216 ops/ms
+Iteration   2: 1874.094 ops/ms
+Iteration   3: 1872.363 ops/ms
+Iteration   4: 1879.211 ops/ms
+Iteration   5: 1879.498 ops/ms
+Iteration   6: 1877.722 ops/ms
+Iteration   7: 1878.736 ops/ms
+Iteration   8: 1876.317 ops/ms
+Iteration   9: 1878.222 ops/ms
+Iteration  10: 1877.918 ops/ms
+Iteration  11: 1875.025 ops/ms
+Iteration  12: 1875.435 ops/ms
+Iteration  13: 1878.690 ops/ms
+Iteration  14: 1878.905 ops/ms
+Iteration  15: 1878.717 ops/ms
+Iteration  16: 1879.736 ops/ms
+Iteration  17: 1878.832 ops/ms
+Iteration  18: 1879.790 ops/ms
+Iteration  19: 1879.049 ops/ms
+Iteration  20: 1880.561 ops/ms
+
+# Run progress: 45.00% complete, ETA 00:29:34
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1785.037 ops/ms
+# Warmup Iteration   2: 1839.345 ops/ms
+# Warmup Iteration   3: 1795.791 ops/ms
+# Warmup Iteration   4: 1796.644 ops/ms
+# Warmup Iteration   5: 1800.075 ops/ms
+# Warmup Iteration   6: 1794.992 ops/ms
+# Warmup Iteration   7: 1793.312 ops/ms
+# Warmup Iteration   8: 1793.496 ops/ms
+# Warmup Iteration   9: 1795.950 ops/ms
+# Warmup Iteration  10: 1792.882 ops/ms
+# Warmup Iteration  11: 1792.992 ops/ms
+# Warmup Iteration  12: 1794.148 ops/ms
+# Warmup Iteration  13: 1794.389 ops/ms
+# Warmup Iteration  14: 1795.729 ops/ms
+# Warmup Iteration  15: 1791.747 ops/ms
+# Warmup Iteration  16: 1794.875 ops/ms
+# Warmup Iteration  17: 1811.339 ops/ms
+# Warmup Iteration  18: 1812.497 ops/ms
+# Warmup Iteration  19: 1814.150 ops/ms
+# Warmup Iteration  20: 1814.709 ops/ms
+Iteration   1: 1812.333 ops/ms
+Iteration   2: 1808.773 ops/ms
+Iteration   3: 1812.451 ops/ms
+Iteration   4: 1811.450 ops/ms
+Iteration   5: 1812.374 ops/ms
+Iteration   6: 1810.160 ops/ms
+Iteration   7: 1808.685 ops/ms
+Iteration   8: 1811.668 ops/ms
+Iteration   9: 1811.067 ops/ms
+Iteration  10: 1815.190 ops/ms
+Iteration  11: 1802.617 ops/ms
+Iteration  12: 1813.275 ops/ms
+Iteration  13: 1817.091 ops/ms
+Iteration  14: 1808.338 ops/ms
+Iteration  15: 1809.759 ops/ms
+Iteration  16: 1810.740 ops/ms
+Iteration  17: 1811.054 ops/ms
+Iteration  18: 1813.761 ops/ms
+Iteration  19: 1808.225 ops/ms
+Iteration  20: 1807.537 ops/ms
+
+# Run progress: 46.25% complete, ETA 00:28:54
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1804.698 ops/ms
+# Warmup Iteration   2: 1807.392 ops/ms
+# Warmup Iteration   3: 1815.763 ops/ms
+# Warmup Iteration   4: 1797.762 ops/ms
+# Warmup Iteration   5: 1794.014 ops/ms
+# Warmup Iteration   6: 1794.167 ops/ms
+# Warmup Iteration   7: 1794.415 ops/ms
+# Warmup Iteration   8: 1796.917 ops/ms
+# Warmup Iteration   9: 1794.405 ops/ms
+# Warmup Iteration  10: 1798.263 ops/ms
+# Warmup Iteration  11: 1796.362 ops/ms
+# Warmup Iteration  12: 1800.909 ops/ms
+# Warmup Iteration  13: 1795.030 ops/ms
+# Warmup Iteration  14: 1793.865 ops/ms
+# Warmup Iteration  15: 1794.964 ops/ms
+# Warmup Iteration  16: 1798.326 ops/ms
+# Warmup Iteration  17: 1794.924 ops/ms
+# Warmup Iteration  18: 1794.815 ops/ms
+# Warmup Iteration  19: 1794.314 ops/ms
+# Warmup Iteration  20: 1794.630 ops/ms
+Iteration   1: 1794.403 ops/ms
+Iteration   2: 1793.944 ops/ms
+Iteration   3: 1794.212 ops/ms
+Iteration   4: 1794.000 ops/ms
+Iteration   5: 1794.165 ops/ms
+Iteration   6: 1794.799 ops/ms
+Iteration   7: 1794.300 ops/ms
+Iteration   8: 1795.537 ops/ms
+Iteration   9: 1794.222 ops/ms
+Iteration  10: 1795.690 ops/ms
+Iteration  11: 1794.232 ops/ms
+Iteration  12: 1794.398 ops/ms
+Iteration  13: 1794.113 ops/ms
+Iteration  14: 1794.301 ops/ms
+Iteration  15: 1794.192 ops/ms
+Iteration  16: 1794.176 ops/ms
+Iteration  17: 1794.178 ops/ms
+Iteration  18: 1793.517 ops/ms
+Iteration  19: 1794.263 ops/ms
+Iteration  20: 1793.932 ops/ms
+
+# Run progress: 47.50% complete, ETA 00:28:14
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1795.448 ops/ms
+# Warmup Iteration   2: 1892.188 ops/ms
+# Warmup Iteration   3: 1809.166 ops/ms
+# Warmup Iteration   4: 1814.995 ops/ms
+# Warmup Iteration   5: 1811.778 ops/ms
+# Warmup Iteration   6: 1811.969 ops/ms
+# Warmup Iteration   7: 1812.699 ops/ms
+# Warmup Iteration   8: 1814.280 ops/ms
+# Warmup Iteration   9: 1820.089 ops/ms
+# Warmup Iteration  10: 1806.684 ops/ms
+# Warmup Iteration  11: 1799.208 ops/ms
+# Warmup Iteration  12: 1798.678 ops/ms
+# Warmup Iteration  13: 1791.062 ops/ms
+# Warmup Iteration  14: 1789.763 ops/ms
+# Warmup Iteration  15: 1797.634 ops/ms
+# Warmup Iteration  16: 1819.700 ops/ms
+# Warmup Iteration  17: 1889.559 ops/ms
+# Warmup Iteration  18: 1895.428 ops/ms
+# Warmup Iteration  19: 1895.811 ops/ms
+# Warmup Iteration  20: 1895.339 ops/ms
+Iteration   1: 1894.704 ops/ms
+Iteration   2: 1891.994 ops/ms
+Iteration   3: 1889.943 ops/ms
+Iteration   4: 1894.098 ops/ms
+Iteration   5: 1896.114 ops/ms
+Iteration   6: 1895.671 ops/ms
+Iteration   7: 1888.963 ops/ms
+Iteration   8: 1895.990 ops/ms
+Iteration   9: 1895.098 ops/ms
+Iteration  10: 1895.397 ops/ms
+Iteration  11: 1895.304 ops/ms
+Iteration  12: 1896.158 ops/ms
+Iteration  13: 1896.158 ops/ms
+Iteration  14: 1895.789 ops/ms
+Iteration  15: 1894.587 ops/ms
+Iteration  16: 1895.931 ops/ms
+Iteration  17: 1896.483 ops/ms
+Iteration  18: 1896.164 ops/ms
+Iteration  19: 1895.866 ops/ms
+Iteration  20: 1896.117 ops/ms
+
+# Run progress: 48.75% complete, ETA 00:27:33
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1778.970 ops/ms
+# Warmup Iteration   2: 1779.826 ops/ms
+# Warmup Iteration   3: 1784.551 ops/ms
+# Warmup Iteration   4: 1783.298 ops/ms
+# Warmup Iteration   5: 1784.459 ops/ms
+# Warmup Iteration   6: 1784.228 ops/ms
+# Warmup Iteration   7: 1784.402 ops/ms
+# Warmup Iteration   8: 1783.778 ops/ms
+# Warmup Iteration   9: 1784.459 ops/ms
+# Warmup Iteration  10: 1783.810 ops/ms
+# Warmup Iteration  11: 1784.600 ops/ms
+# Warmup Iteration  12: 1784.394 ops/ms
+# Warmup Iteration  13: 1785.341 ops/ms
+# Warmup Iteration  14: 1791.111 ops/ms
+# Warmup Iteration  15: 1785.210 ops/ms
+# Warmup Iteration  16: 1784.470 ops/ms
+# Warmup Iteration  17: 1767.941 ops/ms
+# Warmup Iteration  18: 1763.583 ops/ms
+# Warmup Iteration  19: 1771.056 ops/ms
+# Warmup Iteration  20: 1767.383 ops/ms
+Iteration   1: 1762.954 ops/ms
+Iteration   2: 1761.457 ops/ms
+Iteration   3: 1785.409 ops/ms
+Iteration   4: 1802.754 ops/ms
+Iteration   5: 1778.199 ops/ms
+Iteration   6: 1763.928 ops/ms
+Iteration   7: 1764.467 ops/ms
+Iteration   8: 1763.247 ops/ms
+Iteration   9: 1770.009 ops/ms
+Iteration  10: 1763.995 ops/ms
+Iteration  11: 1763.155 ops/ms
+Iteration  12: 1762.370 ops/ms
+Iteration  13: 1759.818 ops/ms
+Iteration  14: 1763.342 ops/ms
+Iteration  15: 1763.021 ops/ms
+Iteration  16: 1763.045 ops/ms
+Iteration  17: 1766.671 ops/ms
+Iteration  18: 1767.129 ops/ms
+Iteration  19: 1765.130 ops/ms
+Iteration  20: 1763.031 ops/ms
+
+
+Result "testParamStringsEq":
+  1810.502 ±(99.9%) 13.743 ops/ms [Average]
+  (min, avg, max) = (1697.758, 1810.502, 1896.483), stdev = 58.190
+  CI (99.9%): [1796.759, 1824.245] (assumes normal distribution)
+
+
+# JMH 1.11 (released 173 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testParamStringsNe
+
+# Run progress: 50.00% complete, ETA 00:26:53
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1635.422 ops/ms
+# Warmup Iteration   2: 1648.208 ops/ms
+# Warmup Iteration   3: 1655.387 ops/ms
+# Warmup Iteration   4: 1653.911 ops/ms
+# Warmup Iteration   5: 1655.324 ops/ms
+# Warmup Iteration   6: 1652.078 ops/ms
+# Warmup Iteration   7: 1655.426 ops/ms
+# Warmup Iteration   8: 1654.500 ops/ms
+# Warmup Iteration   9: 1655.031 ops/ms
+# Warmup Iteration  10: 1650.342 ops/ms
+# Warmup Iteration  11: 1655.350 ops/ms
+# Warmup Iteration  12: 1655.204 ops/ms
+# Warmup Iteration  13: 1656.278 ops/ms
+# Warmup Iteration  14: 1654.920 ops/ms
+# Warmup Iteration  15: 1655.115 ops/ms
+# Warmup Iteration  16: 1656.046 ops/ms
+# Warmup Iteration  17: 1598.971 ops/ms
+# Warmup Iteration  18: 1597.598 ops/ms
+# Warmup Iteration  19: 1598.725 ops/ms
+# Warmup Iteration  20: 1598.734 ops/ms
+Iteration   1: 1599.027 ops/ms
+Iteration   2: 1596.526 ops/ms
+Iteration   3: 1598.581 ops/ms
+Iteration   4: 1598.122 ops/ms
+Iteration   5: 1599.036 ops/ms
+Iteration   6: 1598.945 ops/ms
+Iteration   7: 1598.814 ops/ms
+Iteration   8: 1598.532 ops/ms
+Iteration   9: 1598.939 ops/ms
+Iteration  10: 1598.825 ops/ms
+Iteration  11: 1599.051 ops/ms
+Iteration  12: 1598.862 ops/ms
+Iteration  13: 1599.235 ops/ms
+Iteration  14: 1598.749 ops/ms
+Iteration  15: 1598.363 ops/ms
+Iteration  16: 1598.913 ops/ms
+Iteration  17: 1598.395 ops/ms
+Iteration  18: 1599.076 ops/ms
+Iteration  19: 1598.825 ops/ms
+Iteration  20: 1598.910 ops/ms
+
+# Run progress: 51.25% complete, ETA 00:26:13
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1600.374 ops/ms
+# Warmup Iteration   2: 1616.578 ops/ms
+# Warmup Iteration   3: 1613.325 ops/ms
+# Warmup Iteration   4: 1612.643 ops/ms
+# Warmup Iteration   5: 1613.356 ops/ms
+# Warmup Iteration   6: 1612.962 ops/ms
+# Warmup Iteration   7: 1613.819 ops/ms
+# Warmup Iteration   8: 1613.074 ops/ms
+# Warmup Iteration   9: 1613.409 ops/ms
+# Warmup Iteration  10: 1612.854 ops/ms
+# Warmup Iteration  11: 1613.507 ops/ms
+# Warmup Iteration  12: 1611.336 ops/ms
+# Warmup Iteration  13: 1594.868 ops/ms
+# Warmup Iteration  14: 1612.633 ops/ms
+# Warmup Iteration  15: 1612.651 ops/ms
+# Warmup Iteration  16: 1613.042 ops/ms
+# Warmup Iteration  17: 1624.297 ops/ms
+# Warmup Iteration  18: 1625.069 ops/ms
+# Warmup Iteration  19: 1622.892 ops/ms
+# Warmup Iteration  20: 1624.618 ops/ms
+Iteration   1: 1623.998 ops/ms
+Iteration   2: 1622.786 ops/ms
+Iteration   3: 1624.186 ops/ms
+Iteration   4: 1622.531 ops/ms
+Iteration   5: 1623.744 ops/ms
+Iteration   6: 1624.641 ops/ms
+Iteration   7: 1624.222 ops/ms
+Iteration   8: 1623.775 ops/ms
+Iteration   9: 1622.234 ops/ms
+Iteration  10: 1624.912 ops/ms
+Iteration  11: 1624.795 ops/ms
+Iteration  12: 1625.106 ops/ms
+Iteration  13: 1624.339 ops/ms
+Iteration  14: 1624.476 ops/ms
+Iteration  15: 1624.862 ops/ms
+Iteration  16: 1624.251 ops/ms
+Iteration  17: 1624.525 ops/ms
+Iteration  18: 1625.170 ops/ms
+Iteration  19: 1622.520 ops/ms
+Iteration  20: 1607.923 ops/ms
+
+# Run progress: 52.50% complete, ETA 00:25:32
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1648.010 ops/ms
+# Warmup Iteration   2: 1648.977 ops/ms
+# Warmup Iteration   3: 1653.939 ops/ms
+# Warmup Iteration   4: 1654.483 ops/ms
+# Warmup Iteration   5: 1647.222 ops/ms
+# Warmup Iteration   6: 1654.846 ops/ms
+# Warmup Iteration   7: 1654.800 ops/ms
+# Warmup Iteration   8: 1653.807 ops/ms
+# Warmup Iteration   9: 1662.395 ops/ms
+# Warmup Iteration  10: 1654.924 ops/ms
+# Warmup Iteration  11: 1652.497 ops/ms
+# Warmup Iteration  12: 1648.321 ops/ms
+# Warmup Iteration  13: 1654.642 ops/ms
+# Warmup Iteration  14: 1655.099 ops/ms
+# Warmup Iteration  15: 1655.558 ops/ms
+# Warmup Iteration  16: 1655.087 ops/ms
+# Warmup Iteration  17: 1651.146 ops/ms
+# Warmup Iteration  18: 1651.294 ops/ms
+# Warmup Iteration  19: 1651.804 ops/ms
+# Warmup Iteration  20: 1650.831 ops/ms
+Iteration   1: 1651.517 ops/ms
+Iteration   2: 1650.081 ops/ms
+Iteration   3: 1649.594 ops/ms
+Iteration   4: 1649.893 ops/ms
+Iteration   5: 1648.285 ops/ms
+Iteration   6: 1651.399 ops/ms
+Iteration   7: 1650.633 ops/ms
+Iteration   8: 1650.012 ops/ms
+Iteration   9: 1650.874 ops/ms
+Iteration  10: 1633.827 ops/ms
+Iteration  11: 1651.401 ops/ms
+Iteration  12: 1646.553 ops/ms
+Iteration  13: 1644.067 ops/ms
+Iteration  14: 1653.371 ops/ms
+Iteration  15: 1650.717 ops/ms
+Iteration  16: 1651.953 ops/ms
+Iteration  17: 1651.914 ops/ms
+Iteration  18: 1651.589 ops/ms
+Iteration  19: 1651.213 ops/ms
+Iteration  20: 1651.360 ops/ms
+
+# Run progress: 53.75% complete, ETA 00:24:52
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1600.943 ops/ms
+# Warmup Iteration   2: 1647.635 ops/ms
+# Warmup Iteration   3: 1614.286 ops/ms
+# Warmup Iteration   4: 1629.534 ops/ms
+# Warmup Iteration   5: 1630.836 ops/ms
+# Warmup Iteration   6: 1627.998 ops/ms
+# Warmup Iteration   7: 1631.244 ops/ms
+# Warmup Iteration   8: 1630.878 ops/ms
+# Warmup Iteration   9: 1631.260 ops/ms
+# Warmup Iteration  10: 1629.941 ops/ms
+# Warmup Iteration  11: 1631.436 ops/ms
+# Warmup Iteration  12: 1629.593 ops/ms
+# Warmup Iteration  13: 1631.832 ops/ms
+# Warmup Iteration  14: 1629.817 ops/ms
+# Warmup Iteration  15: 1632.629 ops/ms
+# Warmup Iteration  16: 1630.728 ops/ms
+# Warmup Iteration  17: 1619.560 ops/ms
+# Warmup Iteration  18: 1620.407 ops/ms
+# Warmup Iteration  19: 1618.337 ops/ms
+# Warmup Iteration  20: 1619.428 ops/ms
+Iteration   1: 1619.421 ops/ms
+Iteration   2: 1619.954 ops/ms
+Iteration   3: 1618.331 ops/ms
+Iteration   4: 1618.904 ops/ms
+Iteration   5: 1619.238 ops/ms
+Iteration   6: 1618.451 ops/ms
+Iteration   7: 1618.585 ops/ms
+Iteration   8: 1619.312 ops/ms
+Iteration   9: 1618.828 ops/ms
+Iteration  10: 1610.235 ops/ms
+Iteration  11: 1618.140 ops/ms
+Iteration  12: 1619.965 ops/ms
+Iteration  13: 1619.151 ops/ms
+Iteration  14: 1618.291 ops/ms
+Iteration  15: 1620.468 ops/ms
+Iteration  16: 1619.045 ops/ms
+Iteration  17: 1619.758 ops/ms
+Iteration  18: 1618.675 ops/ms
+Iteration  19: 1619.947 ops/ms
+Iteration  20: 1618.181 ops/ms
+
+# Run progress: 55.00% complete, ETA 00:24:12
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1653.328 ops/ms
+# Warmup Iteration   2: 1701.122 ops/ms
+# Warmup Iteration   3: 1667.747 ops/ms
+# Warmup Iteration   4: 1665.887 ops/ms
+# Warmup Iteration   5: 1666.996 ops/ms
+# Warmup Iteration   6: 1667.161 ops/ms
+# Warmup Iteration   7: 1666.784 ops/ms
+# Warmup Iteration   8: 1665.729 ops/ms
+# Warmup Iteration   9: 1666.923 ops/ms
+# Warmup Iteration  10: 1666.332 ops/ms
+# Warmup Iteration  11: 1663.983 ops/ms
+# Warmup Iteration  12: 1658.385 ops/ms
+# Warmup Iteration  13: 1667.504 ops/ms
+# Warmup Iteration  14: 1666.978 ops/ms
+# Warmup Iteration  15: 1667.305 ops/ms
+# Warmup Iteration  16: 1666.975 ops/ms
+# Warmup Iteration  17: 1670.061 ops/ms
+# Warmup Iteration  18: 1664.685 ops/ms
+# Warmup Iteration  19: 1669.703 ops/ms
+# Warmup Iteration  20: 1669.959 ops/ms
+Iteration   1: 1672.509 ops/ms
+Iteration   2: 1668.701 ops/ms
+Iteration   3: 1671.808 ops/ms
+Iteration   4: 1671.360 ops/ms
+Iteration   5: 1672.012 ops/ms
+Iteration   6: 1672.008 ops/ms
+Iteration   7: 1672.362 ops/ms
+Iteration   8: 1671.024 ops/ms
+Iteration   9: 1671.293 ops/ms
+Iteration  10: 1672.025 ops/ms
+Iteration  11: 1672.784 ops/ms
+Iteration  12: 1671.100 ops/ms
+Iteration  13: 1670.982 ops/ms
+Iteration  14: 1667.716 ops/ms
+Iteration  15: 1672.595 ops/ms
+Iteration  16: 1669.840 ops/ms
+Iteration  17: 1668.995 ops/ms
+Iteration  18: 1670.159 ops/ms
+Iteration  19: 1672.683 ops/ms
+Iteration  20: 1661.934 ops/ms
+
+# Run progress: 56.25% complete, ETA 00:23:31
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1627.708 ops/ms
+# Warmup Iteration   2: 1616.646 ops/ms
+# Warmup Iteration   3: 1632.774 ops/ms
+# Warmup Iteration   4: 1635.657 ops/ms
+# Warmup Iteration   5: 1634.011 ops/ms
+# Warmup Iteration   6: 1636.633 ops/ms
+# Warmup Iteration   7: 1636.100 ops/ms
+# Warmup Iteration   8: 1634.703 ops/ms
+# Warmup Iteration   9: 1629.706 ops/ms
+# Warmup Iteration  10: 1636.664 ops/ms
+# Warmup Iteration  11: 1636.651 ops/ms
+# Warmup Iteration  12: 1636.987 ops/ms
+# Warmup Iteration  13: 1637.162 ops/ms
+# Warmup Iteration  14: 1636.941 ops/ms
+# Warmup Iteration  15: 1637.108 ops/ms
+# Warmup Iteration  16: 1636.857 ops/ms
+# Warmup Iteration  17: 1610.404 ops/ms
+# Warmup Iteration  18: 1610.550 ops/ms
+# Warmup Iteration  19: 1610.531 ops/ms
+# Warmup Iteration  20: 1610.673 ops/ms
+Iteration   1: 1610.590 ops/ms
+Iteration   2: 1609.614 ops/ms
+Iteration   3: 1607.458 ops/ms
+Iteration   4: 1609.818 ops/ms
+Iteration   5: 1610.413 ops/ms
+Iteration   6: 1610.452 ops/ms
+Iteration   7: 1610.445 ops/ms
+Iteration   8: 1610.289 ops/ms
+Iteration   9: 1610.656 ops/ms
+Iteration  10: 1610.065 ops/ms
+Iteration  11: 1606.589 ops/ms
+Iteration  12: 1609.101 ops/ms
+Iteration  13: 1610.553 ops/ms
+Iteration  14: 1610.028 ops/ms
+Iteration  15: 1610.436 ops/ms
+Iteration  16: 1610.385 ops/ms
+Iteration  17: 1610.603 ops/ms
+Iteration  18: 1610.402 ops/ms
+Iteration  19: 1610.676 ops/ms
+Iteration  20: 1610.186 ops/ms
+
+# Run progress: 57.50% complete, ETA 00:22:51
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1648.106 ops/ms
+# Warmup Iteration   2: 1645.417 ops/ms
+# Warmup Iteration   3: 1653.413 ops/ms
+# Warmup Iteration   4: 1649.731 ops/ms
+# Warmup Iteration   5: 1652.295 ops/ms
+# Warmup Iteration   6: 1652.593 ops/ms
+# Warmup Iteration   7: 1652.080 ops/ms
+# Warmup Iteration   8: 1651.587 ops/ms
+# Warmup Iteration   9: 1653.451 ops/ms
+# Warmup Iteration  10: 1651.937 ops/ms
+# Warmup Iteration  11: 1650.664 ops/ms
+# Warmup Iteration  12: 1651.612 ops/ms
+# Warmup Iteration  13: 1652.649 ops/ms
+# Warmup Iteration  14: 1653.453 ops/ms
+# Warmup Iteration  15: 1652.791 ops/ms
+# Warmup Iteration  16: 1652.263 ops/ms
+# Warmup Iteration  17: 1679.223 ops/ms
+# Warmup Iteration  18: 1663.226 ops/ms
+# Warmup Iteration  19: 1654.428 ops/ms
+# Warmup Iteration  20: 1655.113 ops/ms
+Iteration   1: 1656.892 ops/ms
+Iteration   2: 1662.215 ops/ms
+Iteration   3: 1691.273 ops/ms
+Iteration   4: 1680.120 ops/ms
+Iteration   5: 1655.432 ops/ms
+Iteration   6: 1654.358 ops/ms
+Iteration   7: 1653.839 ops/ms
+Iteration   8: 1653.676 ops/ms
+Iteration   9: 1654.946 ops/ms
+Iteration  10: 1655.783 ops/ms
+Iteration  11: 1654.340 ops/ms
+Iteration  12: 1661.604 ops/ms
+Iteration  13: 1654.685 ops/ms
+Iteration  14: 1657.824 ops/ms
+Iteration  15: 1654.774 ops/ms
+Iteration  16: 1655.859 ops/ms
+Iteration  17: 1653.494 ops/ms
+Iteration  18: 1663.059 ops/ms
+Iteration  19: 1663.099 ops/ms
+Iteration  20: 1655.187 ops/ms
+
+# Run progress: 58.75% complete, ETA 00:22:11
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1632.475 ops/ms
+# Warmup Iteration   2: 1699.185 ops/ms
+# Warmup Iteration   3: 1637.807 ops/ms
+# Warmup Iteration   4: 1639.054 ops/ms
+# Warmup Iteration   5: 1640.286 ops/ms
+# Warmup Iteration   6: 1639.195 ops/ms
+# Warmup Iteration   7: 1639.365 ops/ms
+# Warmup Iteration   8: 1637.849 ops/ms
+# Warmup Iteration   9: 1638.316 ops/ms
+# Warmup Iteration  10: 1637.510 ops/ms
+# Warmup Iteration  11: 1629.724 ops/ms
+# Warmup Iteration  12: 1639.868 ops/ms
+# Warmup Iteration  13: 1640.527 ops/ms
+# Warmup Iteration  14: 1637.841 ops/ms
+# Warmup Iteration  15: 1639.136 ops/ms
+# Warmup Iteration  16: 1639.668 ops/ms
+# Warmup Iteration  17: 1653.141 ops/ms
+# Warmup Iteration  18: 1650.159 ops/ms
+# Warmup Iteration  19: 1650.997 ops/ms
+# Warmup Iteration  20: 1655.595 ops/ms
+Iteration   1: 1645.931 ops/ms
+Iteration   2: 1643.810 ops/ms
+Iteration   3: 1652.954 ops/ms
+Iteration   4: 1654.244 ops/ms
+Iteration   5: 1647.272 ops/ms
+Iteration   6: 1643.460 ops/ms
+Iteration   7: 1647.738 ops/ms
+Iteration   8: 1653.263 ops/ms
+Iteration   9: 1652.780 ops/ms
+Iteration  10: 1654.322 ops/ms
+Iteration  11: 1653.246 ops/ms
+Iteration  12: 1649.378 ops/ms
+Iteration  13: 1649.815 ops/ms
+Iteration  14: 1652.734 ops/ms
+Iteration  15: 1652.565 ops/ms
+Iteration  16: 1644.233 ops/ms
+Iteration  17: 1648.998 ops/ms
+Iteration  18: 1652.366 ops/ms
+Iteration  19: 1653.443 ops/ms
+Iteration  20: 1651.262 ops/ms
+
+# Run progress: 60.00% complete, ETA 00:21:30
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1634.364 ops/ms
+# Warmup Iteration   2: 1701.454 ops/ms
+# Warmup Iteration   3: 1650.227 ops/ms
+# Warmup Iteration   4: 1653.033 ops/ms
+# Warmup Iteration   5: 1654.513 ops/ms
+# Warmup Iteration   6: 1653.781 ops/ms
+# Warmup Iteration   7: 1651.512 ops/ms
+# Warmup Iteration   8: 1653.315 ops/ms
+# Warmup Iteration   9: 1654.566 ops/ms
+# Warmup Iteration  10: 1648.856 ops/ms
+# Warmup Iteration  11: 1651.648 ops/ms
+# Warmup Iteration  12: 1651.723 ops/ms
+# Warmup Iteration  13: 1651.856 ops/ms
+# Warmup Iteration  14: 1653.751 ops/ms
+# Warmup Iteration  15: 1654.471 ops/ms
+# Warmup Iteration  16: 1652.178 ops/ms
+# Warmup Iteration  17: 1653.774 ops/ms
+# Warmup Iteration  18: 1659.531 ops/ms
+# Warmup Iteration  19: 1659.199 ops/ms
+# Warmup Iteration  20: 1659.030 ops/ms
+Iteration   1: 1658.454 ops/ms
+Iteration   2: 1655.439 ops/ms
+Iteration   3: 1655.982 ops/ms
+Iteration   4: 1658.467 ops/ms
+Iteration   5: 1658.575 ops/ms
+Iteration   6: 1659.156 ops/ms
+Iteration   7: 1658.428 ops/ms
+Iteration   8: 1659.861 ops/ms
+Iteration   9: 1658.720 ops/ms
+Iteration  10: 1657.429 ops/ms
+Iteration  11: 1646.619 ops/ms
+Iteration  12: 1659.565 ops/ms
+Iteration  13: 1659.077 ops/ms
+Iteration  14: 1655.592 ops/ms
+Iteration  15: 1658.139 ops/ms
+Iteration  16: 1654.694 ops/ms
+Iteration  17: 1658.137 ops/ms
+Iteration  18: 1655.889 ops/ms
+Iteration  19: 1655.698 ops/ms
+Iteration  20: 1659.275 ops/ms
+
+# Run progress: 61.25% complete, ETA 00:20:50
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+1618.074 ops/ms
+# Warmup Iteration   2: 1633.258 ops/ms
+# Warmup Iteration   3: 1643.160 ops/ms
+# Warmup Iteration   4: 1630.833 ops/ms
+# Warmup Iteration   5: 1639.465 ops/ms
+# Warmup Iteration   6: 1629.973 ops/ms
+# Warmup Iteration   7: 1631.782 ops/ms
+# Warmup Iteration   8: 1631.896 ops/ms
+# Warmup Iteration   9: 1638.623 ops/ms
+# Warmup Iteration  10: 1632.124 ops/ms
+# Warmup Iteration  11: 1632.115 ops/ms
+# Warmup Iteration  12: 1630.538 ops/ms
+# Warmup Iteration  13: 1632.098 ops/ms
+# Warmup Iteration  14: 1631.838 ops/ms
+# Warmup Iteration  15: 1632.064 ops/ms
+# Warmup Iteration  16: 1631.912 ops/ms
+# Warmup Iteration  17: 1614.461 ops/ms
+# Warmup Iteration  18: 1616.236 ops/ms
+# Warmup Iteration  19: 1615.829 ops/ms
+# Warmup Iteration  20: 1616.146 ops/ms
+Iteration   1: 1615.917 ops/ms
+Iteration   2: 1614.832 ops/ms
+Iteration   3: 1616.158 ops/ms
+Iteration   4: 1615.072 ops/ms
+Iteration   5: 1616.717 ops/ms
+Iteration   6: 1616.340 ops/ms
+Iteration   7: 1616.283 ops/ms
+Iteration   8: 1617.232 ops/ms
+Iteration   9: 1617.130 ops/ms
+Iteration  10: 1616.055 ops/ms
+Iteration  11: 1616.195 ops/ms
+Iteration  12: 1616.195 ops/ms
+Iteration  13: 1616.074 ops/ms
+Iteration  14: 1616.423 ops/ms
+Iteration  15: 1616.253 ops/ms
+Iteration  16: 1616.250 ops/ms
+Iteration  17: 1615.966 ops/ms
+Iteration  18: 1608.109 ops/ms
+Iteration  19: 1616.276 ops/ms
+Iteration  20: 1616.162 ops/ms
+
+
+Result "testParamStringsNe":
+  1635.348 ±(99.9%) 5.647 ops/ms [Average]
+  (min, avg, max) = (1596.526, 1635.348, 1691.273), stdev = 23.908
+  CI (99.9%): [1629.701, 1640.995] (assumes normal distribution)
+
+
+# JMH 1.11 (released 173 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testParamStringsUnicodeEq
+
+# Run progress: 62.50% complete, ETA 00:20:10
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2522.156 ops/ms
+# Warmup Iteration   2: 2672.005 ops/ms
+# Warmup Iteration   3: 2539.181 ops/ms
+# Warmup Iteration   4: 2535.806 ops/ms
+# Warmup Iteration   5: 2538.789 ops/ms
+# Warmup Iteration   6: 2538.532 ops/ms
+# Warmup Iteration   7: 2537.200 ops/ms
+# Warmup Iteration   8: 2536.060 ops/ms
+# Warmup Iteration   9: 2534.309 ops/ms
+# Warmup Iteration  10: 2523.087 ops/ms
+# Warmup Iteration  11: 2538.141 ops/ms
+# Warmup Iteration  12: 2537.650 ops/ms
+# Warmup Iteration  13: 2538.898 ops/ms
+# Warmup Iteration  14: 2535.646 ops/ms
+# Warmup Iteration  15: 2538.498 ops/ms
+# Warmup Iteration  16: 2541.244 ops/ms
+# Warmup Iteration  17: 2563.246 ops/ms
+# Warmup Iteration  18: 2559.287 ops/ms
+# Warmup Iteration  19: 2561.245 ops/ms
+# Warmup Iteration  20: 2560.754 ops/ms
+Iteration   1: 2560.884 ops/ms
+Iteration   2: 2557.799 ops/ms
+Iteration   3: 2559.663 ops/ms
+Iteration   4: 2558.602 ops/ms
+Iteration   5: 2561.427 ops/ms
+Iteration   6: 2560.807 ops/ms
+Iteration   7: 2559.827 ops/ms
+Iteration   8: 2559.654 ops/ms
+Iteration   9: 2561.249 ops/ms
+Iteration  10: 2559.188 ops/ms
+Iteration  11: 2560.799 ops/ms
+Iteration  12: 2559.530 ops/ms
+Iteration  13: 2560.455 ops/ms
+Iteration  14: 2559.141 ops/ms
+Iteration  15: 2559.379 ops/ms
+Iteration  16: 2561.075 ops/ms
+Iteration  17: 2560.569 ops/ms
+Iteration  18: 2559.058 ops/ms
+Iteration  19: 2558.515 ops/ms
+Iteration  20: 2558.552 ops/ms
+
+# Run progress: 63.75% complete, ETA 00:19:29
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2527.088 ops/ms
+# Warmup Iteration   2: 2499.757 ops/ms
+# Warmup Iteration   3: 2501.124 ops/ms
+# Warmup Iteration   4: 2498.911 ops/ms
+# Warmup Iteration   5: 2501.166 ops/ms
+# Warmup Iteration   6: 2485.233 ops/ms
+# Warmup Iteration   7: 2510.471 ops/ms
+# Warmup Iteration   8: 2506.764 ops/ms
+# Warmup Iteration   9: 2498.929 ops/ms
+# Warmup Iteration  10: 2468.016 ops/ms
+# Warmup Iteration  11: 2488.583 ops/ms
+# Warmup Iteration  12: 2488.809 ops/ms
+# Warmup Iteration  13: 2473.860 ops/ms
+# Warmup Iteration  14: 2488.182 ops/ms
+# Warmup Iteration  15: 2473.331 ops/ms
+# Warmup Iteration  16: 2538.216 ops/ms
+# Warmup Iteration  17: 2524.445 ops/ms
+# Warmup Iteration  18: 2525.055 ops/ms
+# Warmup Iteration  19: 2524.572 ops/ms
+# Warmup Iteration  20: 2524.898 ops/ms
+Iteration   1: 2524.828 ops/ms
+Iteration   2: 2521.393 ops/ms
+Iteration   3: 2524.523 ops/ms
+Iteration   4: 2524.090 ops/ms
+Iteration   5: 2524.912 ops/ms
+Iteration   6: 2524.711 ops/ms
+Iteration   7: 2606.793 ops/ms
+Iteration   8: 2524.455 ops/ms
+Iteration   9: 2577.096 ops/ms
+Iteration  10: 2616.301 ops/ms
+Iteration  11: 2611.490 ops/ms
+Iteration  12: 2604.612 ops/ms
+Iteration  13: 2617.000 ops/ms
+Iteration  14: 2558.378 ops/ms
+Iteration  15: 2617.606 ops/ms
+Iteration  16: 2616.677 ops/ms
+Iteration  17: 2605.834 ops/ms
+Iteration  18: 2612.606 ops/ms
+Iteration  19: 2619.907 ops/ms
+Iteration  20: 2617.023 ops/ms
+
+# Run progress: 65.00% complete, ETA 00:18:49
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2531.273 ops/ms
+# Warmup Iteration   2: 2528.000 ops/ms
+# Warmup Iteration   3: 2530.335 ops/ms
+# Warmup Iteration   4: 2531.885 ops/ms
+# Warmup Iteration   5: 2526.350 ops/ms
+# Warmup Iteration   6: 2532.399 ops/ms
+# Warmup Iteration   7: 2527.946 ops/ms
+# Warmup Iteration   8: 2529.016 ops/ms
+# Warmup Iteration   9: 2531.463 ops/ms
+# Warmup Iteration  10: 2529.385 ops/ms
+# Warmup Iteration  11: 2531.010 ops/ms
+# Warmup Iteration  12: 2531.474 ops/ms
+# Warmup Iteration  13: 2532.244 ops/ms
+# Warmup Iteration  14: 2532.356 ops/ms
+# Warmup Iteration  15: 2531.467 ops/ms
+# Warmup Iteration  16: 2546.381 ops/ms
+# Warmup Iteration  17: 2457.219 ops/ms
+# Warmup Iteration  18: 2453.715 ops/ms
+# Warmup Iteration  19: 2457.178 ops/ms
+# Warmup Iteration  20: 2455.982 ops/ms
+Iteration   1: 2456.983 ops/ms
+Iteration   2: 2456.470 ops/ms
+Iteration   3: 2454.432 ops/ms
+Iteration   4: 2456.342 ops/ms
+Iteration   5: 2456.316 ops/ms
+Iteration   6: 2457.579 ops/ms
+Iteration   7: 2457.593 ops/ms
+Iteration   8: 2457.762 ops/ms
+Iteration   9: 2457.606 ops/ms
+Iteration  10: 2457.197 ops/ms
+Iteration  11: 2456.691 ops/ms
+Iteration  12: 2457.270 ops/ms
+Iteration  13: 2457.366 ops/ms
+Iteration  14: 2456.797 ops/ms
+Iteration  15: 2457.263 ops/ms
+Iteration  16: 2456.001 ops/ms
+Iteration  17: 2456.145 ops/ms
+Iteration  18: 2456.006 ops/ms
+Iteration  19: 2456.448 ops/ms
+Iteration  20: 2456.172 ops/ms
+
+# Run progress: 66.25% complete, ETA 00:18:09
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2437.396 ops/ms
+# Warmup Iteration   2: 2424.276 ops/ms
+# Warmup Iteration   3: 2453.632 ops/ms
+# Warmup Iteration   4: 2452.428 ops/ms
+# Warmup Iteration   5: 2454.249 ops/ms
+# Warmup Iteration   6: 2454.017 ops/ms
+# Warmup Iteration   7: 2453.557 ops/ms
+# Warmup Iteration   8: 2447.675 ops/ms
+# Warmup Iteration   9: 2437.268 ops/ms
+# Warmup Iteration  10: 2454.032 ops/ms
+# Warmup Iteration  11: 2454.513 ops/ms
+# Warmup Iteration  12: 2454.922 ops/ms
+# Warmup Iteration  13: 2453.861 ops/ms
+# Warmup Iteration  14: 2454.140 ops/ms
+# Warmup Iteration  15: 2455.069 ops/ms
+# Warmup Iteration  16: 2470.791 ops/ms
+# Warmup Iteration  17: 2438.669 ops/ms
+# Warmup Iteration  18: 2438.954 ops/ms
+# Warmup Iteration  19: 2437.776 ops/ms
+# Warmup Iteration  20: 2438.152 ops/ms
+Iteration   1: 2437.401 ops/ms
+Iteration   2: 2434.125 ops/ms
+Iteration   3: 2438.603 ops/ms
+Iteration   4: 2436.752 ops/ms
+Iteration   5: 2437.843 ops/ms
+Iteration   6: 2438.103 ops/ms
+Iteration   7: 2437.316 ops/ms
+Iteration   8: 2438.820 ops/ms
+Iteration   9: 2437.838 ops/ms
+Iteration  10: 2437.954 ops/ms
+Iteration  11: 2438.899 ops/ms
+Iteration  12: 2437.812 ops/ms
+Iteration  13: 2437.761 ops/ms
+Iteration  14: 2437.695 ops/ms
+Iteration  15: 2437.519 ops/ms
+Iteration  16: 2437.799 ops/ms
+Iteration  17: 2438.955 ops/ms
+Iteration  18: 2438.104 ops/ms
+Iteration  19: 2437.758 ops/ms
+Iteration  20: 2438.021 ops/ms
+
+# Run progress: 67.50% complete, ETA 00:17:28
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2553.585 ops/ms
+# Warmup Iteration   2: 2524.655 ops/ms
+# Warmup Iteration   3: 2528.091 ops/ms
+# Warmup Iteration   4: 2534.328 ops/ms
+# Warmup Iteration   5: 2528.049 ops/ms
+# Warmup Iteration   6: 2528.021 ops/ms
+# Warmup Iteration   7: 2528.486 ops/ms
+# Warmup Iteration   8: 2536.258 ops/ms
+# Warmup Iteration   9: 2526.403 ops/ms
+# Warmup Iteration  10: 2528.342 ops/ms
+# Warmup Iteration  11: 2528.691 ops/ms
+# Warmup Iteration  12: 2527.518 ops/ms
+# Warmup Iteration  13: 2579.753 ops/ms
+# Warmup Iteration  14: 2560.642 ops/ms
+# Warmup Iteration  15: 2570.105 ops/ms
+# Warmup Iteration  16: 2521.892 ops/ms
+# Warmup Iteration  17: 2530.568 ops/ms
+# Warmup Iteration  18: 2530.738 ops/ms
+# Warmup Iteration  19: 2530.348 ops/ms
+# Warmup Iteration  20: 2530.758 ops/ms
+Iteration   1: 2529.966 ops/ms
+Iteration   2: 2528.923 ops/ms
+Iteration   3: 2529.758 ops/ms
+Iteration   4: 2528.964 ops/ms
+Iteration   5: 2529.946 ops/ms
+Iteration   6: 2530.149 ops/ms
+Iteration   7: 2529.458 ops/ms
+Iteration   8: 2512.821 ops/ms
+Iteration   9: 2528.756 ops/ms
+Iteration  10: 2529.999 ops/ms
+Iteration  11: 2529.946 ops/ms
+Iteration  12: 2529.902 ops/ms
+Iteration  13: 2530.482 ops/ms
+Iteration  14: 2530.337 ops/ms
+Iteration  15: 2529.357 ops/ms
+Iteration  16: 2530.532 ops/ms
+Iteration  17: 2530.349 ops/ms
+Iteration  18: 2530.057 ops/ms
+Iteration  19: 2529.890 ops/ms
+Iteration  20: 2530.848 ops/ms
+
+# Run progress: 68.75% complete, ETA 00:16:48
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2500.365 ops/ms
+# Warmup Iteration   2: 2512.095 ops/ms
+# Warmup Iteration   3: 2516.746 ops/ms
+# Warmup Iteration   4: 2520.392 ops/ms
+# Warmup Iteration   5: 2522.726 ops/ms
+# Warmup Iteration   6: 2506.007 ops/ms
+# Warmup Iteration   7: 2528.790 ops/ms
+# Warmup Iteration   8: 2506.310 ops/ms
+# Warmup Iteration   9: 2511.392 ops/ms
+# Warmup Iteration  10: 2508.399 ops/ms
+# Warmup Iteration  11: 2530.582 ops/ms
+# Warmup Iteration  12: 2501.168 ops/ms
+# Warmup Iteration  13: 2541.786 ops/ms
+# Warmup Iteration  14: 2523.175 ops/ms
+# Warmup Iteration  15: 2520.373 ops/ms
+# Warmup Iteration  16: 2518.124 ops/ms
+# Warmup Iteration  17: 2510.143 ops/ms
+# Warmup Iteration  18: 2510.001 ops/ms
+# Warmup Iteration  19: 2510.455 ops/ms
+# Warmup Iteration  20: 2512.729 ops/ms
+Iteration   1: 2508.178 ops/ms
+Iteration   2: 2513.620 ops/ms
+Iteration   3: 2507.643 ops/ms
+Iteration   4: 2506.002 ops/ms
+Iteration   5: 2508.371 ops/ms
+Iteration   6: 2510.022 ops/ms
+Iteration   7: 2497.509 ops/ms
+Iteration   8: 2506.838 ops/ms
+Iteration   9: 2513.729 ops/ms
+Iteration  10: 2516.070 ops/ms
+Iteration  11: 2511.169 ops/ms
+Iteration  12: 2508.223 ops/ms
+Iteration  13: 2515.200 ops/ms
+Iteration  14: 2517.983 ops/ms
+Iteration  15: 2506.414 ops/ms
+Iteration  16: 2511.685 ops/ms
+Iteration  17: 2506.273 ops/ms
+Iteration  18: 2515.289 ops/ms
+Iteration  19: 2512.644 ops/ms
+Iteration  20: 2507.513 ops/ms
+
+# Run progress: 70.00% complete, ETA 00:16:08
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2523.396 ops/ms
+# Warmup Iteration   2: 2527.552 ops/ms
+# Warmup Iteration   3: 2548.423 ops/ms
+# Warmup Iteration   4: 2548.139 ops/ms
+# Warmup Iteration   5: 2549.067 ops/ms
+# Warmup Iteration   6: 2543.687 ops/ms
+# Warmup Iteration   7: 2546.103 ops/ms
+# Warmup Iteration   8: 2535.917 ops/ms
+# Warmup Iteration   9: 2548.285 ops/ms
+# Warmup Iteration  10: 2551.162 ops/ms
+# Warmup Iteration  11: 2548.456 ops/ms
+# Warmup Iteration  12: 2548.175 ops/ms
+# Warmup Iteration  13: 2548.403 ops/ms
+# Warmup Iteration  14: 2548.949 ops/ms
+# Warmup Iteration  15: 2548.525 ops/ms
+# Warmup Iteration  16: 2538.504 ops/ms
+# Warmup Iteration  17: 2618.932 ops/ms
+# Warmup Iteration  18: 2614.093 ops/ms
+# Warmup Iteration  19: 2607.033 ops/ms
+# Warmup Iteration  20: 2605.039 ops/ms
+Iteration   1: 2621.083 ops/ms
+Iteration   2: 2599.994 ops/ms
+Iteration   3: 2594.049 ops/ms
+Iteration   4: 2606.279 ops/ms
+Iteration   5: 2601.337 ops/ms
+Iteration   6: 2606.948 ops/ms
+Iteration   7: 2607.764 ops/ms
+Iteration   8: 2618.196 ops/ms
+Iteration   9: 2569.768 ops/ms
+Iteration  10: 2599.546 ops/ms
+Iteration  11: 2604.492 ops/ms
+Iteration  12: 2600.300 ops/ms
+Iteration  13: 2623.548 ops/ms
+Iteration  14: 2610.101 ops/ms
+Iteration  15: 2615.116 ops/ms
+Iteration  16: 2613.436 ops/ms
+Iteration  17: 2600.134 ops/ms
+Iteration  18: 2611.304 ops/ms
+Iteration  19: 2608.118 ops/ms
+Iteration  20: 2607.583 ops/ms
+
+# Run progress: 71.25% complete, ETA 00:15:27
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2477.814 ops/ms
+# Warmup Iteration   2: 2453.394 ops/ms
+# Warmup Iteration   3: 2484.873 ops/ms
+# Warmup Iteration   4: 2482.636 ops/ms
+# Warmup Iteration   5: 2485.416 ops/ms
+# Warmup Iteration   6: 2485.531 ops/ms
+# Warmup Iteration   7: 2484.544 ops/ms
+# Warmup Iteration   8: 2483.718 ops/ms
+# Warmup Iteration   9: 2484.921 ops/ms
+# Warmup Iteration  10: 2484.672 ops/ms
+# Warmup Iteration  11: 2485.833 ops/ms
+# Warmup Iteration  12: 2486.575 ops/ms
+# Warmup Iteration  13: 2486.725 ops/ms
+# Warmup Iteration  14: 2486.516 ops/ms
+# Warmup Iteration  15: 2485.885 ops/ms
+# Warmup Iteration  16: 2472.702 ops/ms
+# Warmup Iteration  17: 2500.834 ops/ms
+# Warmup Iteration  18: 2500.616 ops/ms
+# Warmup Iteration  19: 2500.815 ops/ms
+# Warmup Iteration  20: 2500.775 ops/ms
+Iteration   1: 2500.887 ops/ms
+Iteration   2: 2499.802 ops/ms
+Iteration   3: 2500.467 ops/ms
+Iteration   4: 2497.897 ops/ms
+Iteration   5: 2500.880 ops/ms
+Iteration   6: 2500.154 ops/ms
+Iteration   7: 2481.988 ops/ms
+Iteration   8: 2498.587 ops/ms
+Iteration   9: 2500.747 ops/ms
+Iteration  10: 2500.638 ops/ms
+Iteration  11: 2500.631 ops/ms
+Iteration  12: 2500.661 ops/ms
+Iteration  13: 2500.485 ops/ms
+Iteration  14: 2500.527 ops/ms
+Iteration  15: 2500.536 ops/ms
+Iteration  16: 2500.583 ops/ms
+Iteration  17: 2500.328 ops/ms
+Iteration  18: 2499.894 ops/ms
+Iteration  19: 2500.617 ops/ms
+Iteration  20: 2499.926 ops/ms
+
+# Run progress: 72.50% complete, ETA 00:14:47
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2543.790 ops/ms
+# Warmup Iteration   2: 2580.778 ops/ms
+# Warmup Iteration   3: 2563.371 ops/ms
+# Warmup Iteration   4: 2555.363 ops/ms
+# Warmup Iteration   5: 2556.200 ops/ms
+# Warmup Iteration   6: 2561.789 ops/ms
+# Warmup Iteration   7: 2560.946 ops/ms
+# Warmup Iteration   8: 2556.503 ops/ms
+# Warmup Iteration   9: 2564.758 ops/ms
+# Warmup Iteration  10: 2551.357 ops/ms
+# Warmup Iteration  11: 2547.251 ops/ms
+# Warmup Iteration  12: 2548.472 ops/ms
+# Warmup Iteration  13: 2587.173 ops/ms
+# Warmup Iteration  14: 2563.908 ops/ms
+# Warmup Iteration  15: 2561.616 ops/ms
+# Warmup Iteration  16: 2558.545 ops/ms
+# Warmup Iteration  17: 2548.159 ops/ms
+# Warmup Iteration  18: 2549.836 ops/ms
+# Warmup Iteration  19: 2548.851 ops/ms
+# Warmup Iteration  20: 2550.883 ops/ms
+Iteration   1: 2548.311 ops/ms
+Iteration   2: 2548.074 ops/ms
+Iteration   3: 2547.988 ops/ms
+Iteration   4: 2546.854 ops/ms
+Iteration   5: 2549.987 ops/ms
+Iteration   6: 2549.744 ops/ms
+Iteration   7: 2552.488 ops/ms
+Iteration   8: 2550.575 ops/ms
+Iteration   9: 2547.881 ops/ms
+Iteration  10: 2548.123 ops/ms
+Iteration  11: 2550.423 ops/ms
+Iteration  12: 2549.172 ops/ms
+Iteration  13: 2549.074 ops/ms
+Iteration  14: 2548.651 ops/ms
+Iteration  15: 2548.787 ops/ms
+Iteration  16: 2547.369 ops/ms
+Iteration  17: 2548.608 ops/ms
+Iteration  18: 2547.982 ops/ms
+Iteration  19: 2549.631 ops/ms
+Iteration  20: 2548.846 ops/ms
+
+# Run progress: 73.75% complete, ETA 00:14:07
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2437.493 ops/ms
+# Warmup Iteration   2: 2474.343 ops/ms
+# Warmup Iteration   3: 2471.798 ops/ms
+# Warmup Iteration   4: 2469.081 ops/ms
+# Warmup Iteration   5: 2471.674 ops/ms
+# Warmup Iteration   6: 2468.728 ops/ms
+# Warmup Iteration   7: 2469.729 ops/ms
+# Warmup Iteration   8: 2472.184 ops/ms
+# Warmup Iteration   9: 2472.892 ops/ms
+# Warmup Iteration  10: 2473.312 ops/ms
+# Warmup Iteration  11: 2469.494 ops/ms
+# Warmup Iteration  12: 2463.917 ops/ms
+# Warmup Iteration  13: 2470.484 ops/ms
+# Warmup Iteration  14: 2463.937 ops/ms
+# Warmup Iteration  15: 2471.383 ops/ms
+# Warmup Iteration  16: 2477.692 ops/ms
+# Warmup Iteration  17: 2504.971 ops/ms
+# Warmup Iteration  18: 2505.056 ops/ms
+# Warmup Iteration  19: 2506.096 ops/ms
+# Warmup Iteration  20: 2506.768 ops/ms
+Iteration   1: 2505.471 ops/ms
+Iteration   2: 2504.368 ops/ms
+Iteration   3: 2508.554 ops/ms
+Iteration   4: 2515.553 ops/ms
+Iteration   5: 2504.165 ops/ms
+Iteration   6: 2505.075 ops/ms
+Iteration   7: 2507.119 ops/ms
+Iteration   8: 2499.619 ops/ms
+Iteration   9: 2513.102 ops/ms
+Iteration  10: 2507.459 ops/ms
+Iteration  11: 2506.103 ops/ms
+Iteration  12: 2507.092 ops/ms
+Iteration  13: 2509.768 ops/ms
+Iteration  14: 2511.064 ops/ms
+Iteration  15: 2511.132 ops/ms
+Iteration  16: 2509.664 ops/ms
+Iteration  17: 2510.474 ops/ms
+Iteration  18: 2513.600 ops/ms
+Iteration  19: 2519.827 ops/ms
+Iteration  20: 2515.170 ops/ms
+
+
+Result "testParamStringsUnicodeEq":
+  2523.425 ±(99.9%) 12.172 ops/ms [Average]
+  (min, avg, max) = (2434.125, 2523.425, 2623.548), stdev = 51.539
+  CI (99.9%): [2511.253, 2535.597] (assumes normal distribution)
+
+
+# JMH 1.11 (released 173 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JNITest.testParamStringsUnicodeNe
+
+# Run progress: 75.00% complete, ETA 00:13:26
+# Fork: 1 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2437.094 ops/ms
+# Warmup Iteration   2: 2479.220 ops/ms
+# Warmup Iteration   3: 2454.877 ops/ms
+# Warmup Iteration   4: 2457.104 ops/ms
+# Warmup Iteration   5: 2462.248 ops/ms
+# Warmup Iteration   6: 2456.625 ops/ms
+# Warmup Iteration   7: 2455.632 ops/ms
+# Warmup Iteration   8: 2451.041 ops/ms
+# Warmup Iteration   9: 2459.732 ops/ms
+# Warmup Iteration  10: 2456.086 ops/ms
+# Warmup Iteration  11: 2455.941 ops/ms
+# Warmup Iteration  12: 2456.568 ops/ms
+# Warmup Iteration  13: 2458.980 ops/ms
+# Warmup Iteration  14: 2456.367 ops/ms
+# Warmup Iteration  15: 2450.508 ops/ms
+# Warmup Iteration  16: 2460.029 ops/ms
+# Warmup Iteration  17: 2466.725 ops/ms
+# Warmup Iteration  18: 2465.967 ops/ms
+# Warmup Iteration  19: 2464.347 ops/ms
+# Warmup Iteration  20: 2455.900 ops/ms
+Iteration   1: 2461.788 ops/ms
+Iteration   2: 2444.609 ops/ms
+Iteration   3: 2468.042 ops/ms
+Iteration   4: 2445.775 ops/ms
+Iteration   5: 2451.768 ops/ms
+Iteration   6: 2449.761 ops/ms
+Iteration   7: 2444.930 ops/ms
+Iteration   8: 2449.909 ops/ms
+Iteration   9: 2450.487 ops/ms
+Iteration  10: 2460.975 ops/ms
+Iteration  11: 2448.909 ops/ms
+Iteration  12: 2448.905 ops/ms
+Iteration  13: 2452.463 ops/ms
+Iteration  14: 2449.804 ops/ms
+Iteration  15: 2467.778 ops/ms
+Iteration  16: 2455.923 ops/ms
+Iteration  17: 2455.941 ops/ms
+Iteration  18: 2456.164 ops/ms
+Iteration  19: 2451.285 ops/ms
+Iteration  20: 2463.543 ops/ms
+
+# Run progress: 76.25% complete, ETA 00:12:46
+# Fork: 2 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2458.142 ops/ms
+# Warmup Iteration   2: 2403.058 ops/ms
+# Warmup Iteration   3: 2442.915 ops/ms
+# Warmup Iteration   4: 2441.829 ops/ms
+# Warmup Iteration   5: 2444.244 ops/ms
+# Warmup Iteration   6: 2435.345 ops/ms
+# Warmup Iteration   7: 2441.180 ops/ms
+# Warmup Iteration   8: 2433.224 ops/ms
+# Warmup Iteration   9: 2437.569 ops/ms
+# Warmup Iteration  10: 2440.015 ops/ms
+# Warmup Iteration  11: 2439.776 ops/ms
+# Warmup Iteration  12: 2436.595 ops/ms
+# Warmup Iteration  13: 2432.077 ops/ms
+# Warmup Iteration  14: 2437.301 ops/ms
+# Warmup Iteration  15: 2436.855 ops/ms
+# Warmup Iteration  16: 2438.230 ops/ms
+# Warmup Iteration  17: 2346.767 ops/ms
+# Warmup Iteration  18: 2336.721 ops/ms
+# Warmup Iteration  19: 2344.988 ops/ms
+# Warmup Iteration  20: 2346.537 ops/ms
+Iteration   1: 2344.402 ops/ms
+Iteration   2: 2338.892 ops/ms
+Iteration   3: 2345.481 ops/ms
+Iteration   4: 2343.294 ops/ms
+Iteration   5: 2343.672 ops/ms
+Iteration   6: 2346.453 ops/ms
+Iteration   7: 2344.856 ops/ms
+Iteration   8: 2347.112 ops/ms
+Iteration   9: 2345.484 ops/ms
+Iteration  10: 2340.126 ops/ms
+Iteration  11: 2346.509 ops/ms
+Iteration  12: 2343.105 ops/ms
+Iteration  13: 2346.082 ops/ms
+Iteration  14: 2343.765 ops/ms
+Iteration  15: 2344.388 ops/ms
+Iteration  16: 2345.427 ops/ms
+Iteration  17: 2349.318 ops/ms
+Iteration  18: 2340.319 ops/ms
+Iteration  19: 2347.162 ops/ms
+Iteration  20: 2335.968 ops/ms
+
+# Run progress: 77.50% complete, ETA 00:12:06
+# Fork: 3 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2447.810 ops/ms
+# Warmup Iteration   2: 2442.019 ops/ms
+# Warmup Iteration   3: 2444.533 ops/ms
+# Warmup Iteration   4: 2474.901 ops/ms
+# Warmup Iteration   5: 2446.673 ops/ms
+# Warmup Iteration   6: 2470.048 ops/ms
+# Warmup Iteration   7: 2451.978 ops/ms
+# Warmup Iteration   8: 2460.352 ops/ms
+# Warmup Iteration   9: 2474.691 ops/ms
+# Warmup Iteration  10: 2439.705 ops/ms
+# Warmup Iteration  11: 2450.337 ops/ms
+# Warmup Iteration  12: 2446.973 ops/ms
+# Warmup Iteration  13: 2453.368 ops/ms
+# Warmup Iteration  14: 2447.377 ops/ms
+# Warmup Iteration  15: 2452.975 ops/ms
+# Warmup Iteration  16: 2452.546 ops/ms
+# Warmup Iteration  17: 2426.421 ops/ms
+# Warmup Iteration  18: 2430.229 ops/ms
+# Warmup Iteration  19: 2428.234 ops/ms
+# Warmup Iteration  20: 2423.590 ops/ms
+Iteration   1: 2426.492 ops/ms
+Iteration   2: 2414.655 ops/ms
+Iteration   3: 2420.279 ops/ms
+Iteration   4: 2416.756 ops/ms
+Iteration   5: 2420.969 ops/ms
+Iteration   6: 2419.557 ops/ms
+Iteration   7: 2431.633 ops/ms
+Iteration   8: 2424.317 ops/ms
+Iteration   9: 2421.138 ops/ms
+Iteration  10: 2423.125 ops/ms
+Iteration  11: 2432.678 ops/ms
+Iteration  12: 2427.439 ops/ms
+Iteration  13: 2422.701 ops/ms
+Iteration  14: 2429.232 ops/ms
+Iteration  15: 2429.753 ops/ms
+Iteration  16: 2425.950 ops/ms
+Iteration  17: 2417.996 ops/ms
+Iteration  18: 2431.329 ops/ms
+Iteration  19: 2419.621 ops/ms
+Iteration  20: 2422.637 ops/ms
+
+# Run progress: 78.75% complete, ETA 00:11:25
+# Fork: 4 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2424.837 ops/ms
+# Warmup Iteration   2: 2433.481 ops/ms
+# Warmup Iteration   3: 2443.175 ops/ms
+# Warmup Iteration   4: 2444.224 ops/ms
+# Warmup Iteration   5: 2453.692 ops/ms
+# Warmup Iteration   6: 2437.694 ops/ms
+# Warmup Iteration   7: 2453.017 ops/ms
+# Warmup Iteration   8: 2440.274 ops/ms
+# Warmup Iteration   9: 2442.637 ops/ms
+# Warmup Iteration  10: 2449.906 ops/ms
+# Warmup Iteration  11: 2448.787 ops/ms
+# Warmup Iteration  12: 2448.865 ops/ms
+# Warmup Iteration  13: 2446.203 ops/ms
+# Warmup Iteration  14: 2453.364 ops/ms
+# Warmup Iteration  15: 2448.065 ops/ms
+# Warmup Iteration  16: 2443.879 ops/ms
+# Warmup Iteration  17: 2425.495 ops/ms
+# Warmup Iteration  18: 2421.785 ops/ms
+# Warmup Iteration  19: 2424.205 ops/ms
+# Warmup Iteration  20: 2423.351 ops/ms
+Iteration   1: 2426.991 ops/ms
+Iteration   2: 2422.212 ops/ms
+Iteration   3: 2423.675 ops/ms
+Iteration   4: 2425.372 ops/ms
+Iteration   5: 2418.793 ops/ms
+Iteration   6: 2427.284 ops/ms
+Iteration   7: 2421.565 ops/ms
+Iteration   8: 2422.695 ops/ms
+Iteration   9: 2401.943 ops/ms
+Iteration  10: 2427.936 ops/ms
+Iteration  11: 2420.690 ops/ms
+Iteration  12: 2421.032 ops/ms
+Iteration  13: 2422.362 ops/ms
+Iteration  14: 2421.470 ops/ms
+Iteration  15: 2421.531 ops/ms
+Iteration  16: 2422.711 ops/ms
+Iteration  17: 2424.343 ops/ms
+Iteration  18: 2425.297 ops/ms
+Iteration  19: 2431.832 ops/ms
+Iteration  20: 2422.921 ops/ms
+
+# Run progress: 80.00% complete, ETA 00:10:45
+# Fork: 5 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2442.694 ops/ms
+# Warmup Iteration   2: 2475.500 ops/ms
+# Warmup Iteration   3: 2501.406 ops/ms
+# Warmup Iteration   4: 2504.587 ops/ms
+# Warmup Iteration   5: 2500.358 ops/ms
+# Warmup Iteration   6: 2502.071 ops/ms
+# Warmup Iteration   7: 2505.972 ops/ms
+# Warmup Iteration   8: 2498.548 ops/ms
+# Warmup Iteration   9: 2453.273 ops/ms
+# Warmup Iteration  10: 2495.419 ops/ms
+# Warmup Iteration  11: 2505.653 ops/ms
+# Warmup Iteration  12: 2500.757 ops/ms
+# Warmup Iteration  13: 2500.594 ops/ms
+# Warmup Iteration  14: 2500.802 ops/ms
+# Warmup Iteration  15: 2505.851 ops/ms
+# Warmup Iteration  16: 2498.751 ops/ms
+# Warmup Iteration  17: 2473.650 ops/ms
+# Warmup Iteration  18: 2480.560 ops/ms
+# Warmup Iteration  19: 2445.987 ops/ms
+# Warmup Iteration  20: 2463.149 ops/ms
+Iteration   1: 2477.286 ops/ms
+Iteration   2: 2468.851 ops/ms
+Iteration   3: 2474.842 ops/ms
+Iteration   4: 2496.409 ops/ms
+Iteration   5: 2469.221 ops/ms
+Iteration   6: 2474.464 ops/ms
+Iteration   7: 2487.534 ops/ms
+Iteration   8: 2490.344 ops/ms
+Iteration   9: 2488.678 ops/ms
+Iteration  10: 2466.244 ops/ms
+Iteration  11: 2472.497 ops/ms
+Iteration  12: 2453.440 ops/ms
+Iteration  13: 2484.641 ops/ms
+Iteration  14: 2461.810 ops/ms
+Iteration  15: 2479.082 ops/ms
+Iteration  16: 2482.778 ops/ms
+Iteration  17: 2479.814 ops/ms
+Iteration  18: 2472.367 ops/ms
+Iteration  19: 2466.507 ops/ms
+Iteration  20: 2457.419 ops/ms
+
+# Run progress: 81.25% complete, ETA 00:10:05
+# Fork: 6 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2443.007 ops/ms
+# Warmup Iteration   2: 2416.439 ops/ms
+# Warmup Iteration   3: 2516.100 ops/ms
+# Warmup Iteration   4: 2518.397 ops/ms
+# Warmup Iteration   5: 2524.920 ops/ms
+# Warmup Iteration   6: 2528.807 ops/ms
+# Warmup Iteration   7: 2512.615 ops/ms
+# Warmup Iteration   8: 2528.549 ops/ms
+# Warmup Iteration   9: 2519.176 ops/ms
+# Warmup Iteration  10: 2523.824 ops/ms
+# Warmup Iteration  11: 2513.201 ops/ms
+# Warmup Iteration  12: 2521.523 ops/ms
+# Warmup Iteration  13: 2517.893 ops/ms
+# Warmup Iteration  14: 2517.051 ops/ms
+# Warmup Iteration  15: 2517.643 ops/ms
+# Warmup Iteration  16: 2524.652 ops/ms
+# Warmup Iteration  17: 2457.519 ops/ms
+# Warmup Iteration  18: 2463.371 ops/ms
+# Warmup Iteration  19: 2466.440 ops/ms
+# Warmup Iteration  20: 2455.019 ops/ms
+Iteration   1: 2464.309 ops/ms
+Iteration   2: 2467.772 ops/ms
+Iteration   3: 2459.678 ops/ms
+Iteration   4: 2464.616 ops/ms
+Iteration   5: 2452.420 ops/ms
+Iteration   6: 2454.286 ops/ms
+Iteration   7: 2469.984 ops/ms
+Iteration   8: 2466.881 ops/ms
+Iteration   9: 2454.612 ops/ms
+Iteration  10: 2454.010 ops/ms
+Iteration  11: 2454.011 ops/ms
+Iteration  12: 2464.078 ops/ms
+Iteration  13: 2454.775 ops/ms
+Iteration  14: 2449.194 ops/ms
+Iteration  15: 2459.952 ops/ms
+Iteration  16: 2456.166 ops/ms
+Iteration  17: 2451.702 ops/ms
+Iteration  18: 2462.243 ops/ms
+Iteration  19: 2450.815 ops/ms
+Iteration  20: 2467.980 ops/ms
+
+# Run progress: 82.50% complete, ETA 00:09:24
+# Fork: 7 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2436.587 ops/ms
+# Warmup Iteration   2: 2464.180 ops/ms
+# Warmup Iteration   3: 2623.286 ops/ms
+# Warmup Iteration   4: 2624.509 ops/ms
+# Warmup Iteration   5: 2625.729 ops/ms
+# Warmup Iteration   6: 2621.293 ops/ms
+# Warmup Iteration   7: 2627.629 ops/ms
+# Warmup Iteration   8: 2623.107 ops/ms
+# Warmup Iteration   9: 2622.428 ops/ms
+# Warmup Iteration  10: 2622.226 ops/ms
+# Warmup Iteration  11: 2616.176 ops/ms
+# Warmup Iteration  12: 2626.745 ops/ms
+# Warmup Iteration  13: 2629.349 ops/ms
+# Warmup Iteration  14: 2628.424 ops/ms
+# Warmup Iteration  15: 2627.457 ops/ms
+# Warmup Iteration  16: 2628.823 ops/ms
+# Warmup Iteration  17: 2379.775 ops/ms
+# Warmup Iteration  18: 2372.713 ops/ms
+# Warmup Iteration  19: 2376.775 ops/ms
+# Warmup Iteration  20: 2379.876 ops/ms
+Iteration   1: 2374.783 ops/ms
+Iteration   2: 2376.620 ops/ms
+Iteration   3: 2367.591 ops/ms
+Iteration   4: 2371.685 ops/ms
+Iteration   5: 2377.737 ops/ms
+Iteration   6: 2379.769 ops/ms
+Iteration   7: 2382.953 ops/ms
+Iteration   8: 2373.942 ops/ms
+Iteration   9: 2372.196 ops/ms
+Iteration  10: 2380.014 ops/ms
+Iteration  11: 2379.659 ops/ms
+Iteration  12: 2374.786 ops/ms
+Iteration  13: 2376.415 ops/ms
+Iteration  14: 2387.347 ops/ms
+Iteration  15: 2380.689 ops/ms
+Iteration  16: 2376.062 ops/ms
+Iteration  17: 2380.483 ops/ms
+Iteration  18: 2375.178 ops/ms
+Iteration  19: 2371.827 ops/ms
+Iteration  20: 2385.297 ops/ms
+
+# Run progress: 83.75% complete, ETA 00:08:44
+# Fork: 8 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2478.689 ops/ms
+# Warmup Iteration   2: 2421.983 ops/ms
+# Warmup Iteration   3: 2501.152 ops/ms
+# Warmup Iteration   4: 2502.515 ops/ms
+# Warmup Iteration   5: 2550.817 ops/ms
+# Warmup Iteration   6: 2501.836 ops/ms
+# Warmup Iteration   7: 2504.417 ops/ms
+# Warmup Iteration   8: 2498.162 ops/ms
+# Warmup Iteration   9: 2502.165 ops/ms
+# Warmup Iteration  10: 2478.484 ops/ms
+# Warmup Iteration  11: 2504.148 ops/ms
+# Warmup Iteration  12: 2484.764 ops/ms
+# Warmup Iteration  13: 2504.654 ops/ms
+# Warmup Iteration  14: 2502.465 ops/ms
+# Warmup Iteration  15: 2499.906 ops/ms
+# Warmup Iteration  16: 2503.165 ops/ms
+# Warmup Iteration  17: 2458.995 ops/ms
+# Warmup Iteration  18: 2457.794 ops/ms
+# Warmup Iteration  19: 2457.934 ops/ms
+# Warmup Iteration  20: 2459.187 ops/ms
+Iteration   1: 2456.732 ops/ms
+Iteration   2: 2452.847 ops/ms
+Iteration   3: 2454.904 ops/ms
+Iteration   4: 2455.372 ops/ms
+Iteration   5: 2460.722 ops/ms
+Iteration   6: 2458.762 ops/ms
+Iteration   7: 2451.930 ops/ms
+Iteration   8: 2463.750 ops/ms
+Iteration   9: 2455.915 ops/ms
+Iteration  10: 2452.749 ops/ms
+Iteration  11: 2458.173 ops/ms
+Iteration  12: 2459.342 ops/ms
+Iteration  13: 2455.860 ops/ms
+Iteration  14: 2452.355 ops/ms
+Iteration  15: 2461.435 ops/ms
+Iteration  16: 2455.394 ops/ms
+Iteration  17: 2454.339 ops/ms
+Iteration  18: 2459.324 ops/ms
+Iteration  19: 2455.678 ops/ms
+Iteration  20: 2460.937 ops/ms
+
+# Run progress: 85.00% complete, ETA 00:08:04
+# Fork: 9 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2410.328 ops/ms
+# Warmup Iteration   2: 2325.811 ops/ms
+# Warmup Iteration   3: 2373.849 ops/ms
+# Warmup Iteration   4: 2382.069 ops/ms
+# Warmup Iteration   5: 2391.644 ops/ms
+# Warmup Iteration   6: 2399.414 ops/ms
+# Warmup Iteration   7: 2379.974 ops/ms
+# Warmup Iteration   8: 2391.442 ops/ms
+# Warmup Iteration   9: 2393.367 ops/ms
+# Warmup Iteration  10: 2399.506 ops/ms
+# Warmup Iteration  11: 2376.700 ops/ms
+# Warmup Iteration  12: 2381.055 ops/ms
+# Warmup Iteration  13: 2380.856 ops/ms
+# Warmup Iteration  14: 2377.752 ops/ms
+# Warmup Iteration  15: 2396.146 ops/ms
+# Warmup Iteration  16: 2393.260 ops/ms
+# Warmup Iteration  17: 2447.192 ops/ms
+# Warmup Iteration  18: 2453.348 ops/ms
+# Warmup Iteration  19: 2447.233 ops/ms
+# Warmup Iteration  20: 2452.280 ops/ms
+Iteration   1: 2456.180 ops/ms
+Iteration   2: 2448.521 ops/ms
+Iteration   3: 2472.403 ops/ms
+Iteration   4: 2445.498 ops/ms
+Iteration   5: 2443.995 ops/ms
+Iteration   6: 2448.071 ops/ms
+Iteration   7: 2446.408 ops/ms
+Iteration   8: 2444.695 ops/ms
+Iteration   9: 2460.921 ops/ms
+Iteration  10: 2449.044 ops/ms
+Iteration  11: 2446.693 ops/ms
+Iteration  12: 2448.954 ops/ms
+Iteration  13: 2443.617 ops/ms
+Iteration  14: 2443.193 ops/ms
+Iteration  15: 2442.260 ops/ms
+Iteration  16: 2447.389 ops/ms
+Iteration  17: 2446.685 ops/ms
+Iteration  18: 2448.723 ops/ms
+Iteration  19: 2450.005 ops/ms
+Iteration  20: 2451.029 ops/ms
+
+# Run progress: 86.25% complete, ETA 00:07:23
+# Fork: 10 of 10
+# Warmup Iteration   1: Loading costofnothing native library
+Loaded costofnothing native library
+2403.114 ops/ms
+# Warmup Iteration   2: 2411.098 ops/ms
+# Warmup Iteration   3: 2427.149 ops/ms
+# Warmup Iteration   4: 2409.841 ops/ms
+# Warmup Iteration   5: 2420.735 ops/ms
+# Warmup Iteration   6: 2423.492 ops/ms
+# Warmup Iteration   7: 2427.556 ops/ms
+# Warmup Iteration   8: 2421.494 ops/ms
+# Warmup Iteration   9: 2419.941 ops/ms
+# Warmup Iteration  10: 2423.755 ops/ms
+# Warmup Iteration  11: 2417.477 ops/ms
+# Warmup Iteration  12: 2431.939 ops/ms
+# Warmup Iteration  13: 2421.732 ops/ms
+# Warmup Iteration  14: 2423.383 ops/ms
+# Warmup Iteration  15: 2428.425 ops/ms
+# Warmup Iteration  16: 2420.640 ops/ms
+# Warmup Iteration  17: 2482.414 ops/ms
+# Warmup Iteration  18: 2479.707 ops/ms
+# Warmup Iteration  19: 2481.539 ops/ms
+# Warmup Iteration  20: 2485.694 ops/ms
+Iteration   1: 2483.388 ops/ms
+Iteration   2: 2475.965 ops/ms
+Iteration   3: 2474.132 ops/ms
+Iteration   4: 2482.177 ops/ms
+Iteration   5: 2485.347 ops/ms
+Iteration   6: 2487.086 ops/ms
+Iteration   7: 2482.271 ops/ms
+Iteration   8: 2480.257 ops/ms
+Iteration   9: 2477.297 ops/ms
+Iteration  10: 2484.673 ops/ms
+Iteration  11: 2475.986 ops/ms
+Iteration  12: 2483.442 ops/ms
+Iteration  13: 2475.030 ops/ms
+Iteration  14: 2481.245 ops/ms
+Iteration  15: 2481.995 ops/ms
+Iteration  16: 2487.125 ops/ms
+Iteration  17: 2478.931 ops/ms
+Iteration  18: 2482.929 ops/ms
+Iteration  19: 2456.543 ops/ms
+Iteration  20: 2485.201 ops/ms
+
+
+Result "testParamStringsUnicodeNe":
+  2434.210 ±(99.9%) 9.913 ops/ms [Average]
+  (min, avg, max) = (2335.968, 2434.210, 2496.409), stdev = 41.971
+  CI (99.9%): [2424.298, 2444.123] (assumes normal distribution)
+
+
+# JMH 1.11 (released 173 days ago, please consider updating!)
+# VM version: JDK 1.8.0_60, VM 25.60-b23
+# VM invoker: /home/y/libexec64/jdk64-1.8.0/jre/bin/java
+# VM options: -Djava.library.path=target/native/x86_64-linux-gcc/
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.yahoo.jmh.jmhtest.JavaTest.testParam2StringsNoScoping
+
+# Run progress: 87.50% complete, ETA 00:06:43
+# Fork: 1 of 10
+# Warmup Iteration   1: 9660.382 ops/ms
+# Warmup Iteration   2: 9813.071 ops/ms
+# Warmup Iteration   3: 9780.724 ops/ms
+# Warmup Iteration   4: 9852.332 ops/ms
+# Warmup Iteration   5: 9820.305 ops/ms
+# Warmup Iteration   6: 9801.796 ops/ms
+# Warmup Iteration   7: 9830.632 ops/ms
+# Warmup Iteration   8: 9798.546 ops/ms
+# Warmup Iteration   9: 9837.482 ops/ms
+# Warmup Iteration  10: 9856.625 ops/ms
+# Warmup Iteration  11: 9846.872 ops/ms
+# Warmup Iteration  12: 9801.194 ops/ms
+# Warmup Iteration  13: 9805.139 ops/ms
+# Warmup Iteration  14: 9875.070 ops/ms
+# Warmup Iteration  15: 9882.875 ops/ms
+# Warmup Iteration  16: 9875.988 ops/ms
+# Warmup Iteration  17: 10129.641 ops/ms
+# Warmup Iteration  18: 10132.508 ops/ms
+# Warmup Iteration  19: 10125.639 ops/ms
+# Warmup Iteration  20: 10095.789 ops/ms
+Iteration   1: 10139.235 ops/ms
+Iteration   2: 10115.726 ops/ms
+Iteration   3: 10129.216 ops/ms
+Iteration   4: 10128.875 ops/ms
+Iteration   5: 10124.427 ops/ms
+Iteration   6: 10126.136 ops/ms
+Iteration   7: 10137.077 ops/ms
+Iteration   8: 10131.304 ops/ms
+Iteration   9: 10125.112 ops/ms
+Iteration  10: 10127.044 ops/ms
+Iteration  11: 10131.526 ops/ms
+Iteration  12: 10129.328 ops/ms
+Iteration  13: 10127.482 ops/ms
+Iteration  14: 10132.670 ops/ms
+Iteration  15: 10127.079 ops/ms
+Iteration  16: 10126.396 ops/ms
+Iteration  17: 10130.127 ops/ms
+Iteration  18: 9999.148 ops/ms
+Iteration  19: 10059.612 ops/ms
+Iteration  20: 10118.703 ops/ms
+
+# Run progress: 88.75% complete, ETA 00:06:03
+# Fork: 2 of 10
+# Warmup Iteration   1: 10572.611 ops/ms
+# Warmup Iteration   2: 10182.998 ops/ms
+# Warmup Iteration   3: 10697.387 ops/ms
+# Warmup Iteration   4: 10787.153 ops/ms
+# Warmup Iteration   5: 10733.317 ops/ms
+# Warmup Iteration   6: 10717.342 ops/ms
+# Warmup Iteration   7: 10686.109 ops/ms
+# Warmup Iteration   8: 10691.472 ops/ms
+# Warmup Iteration   9: 10608.581 ops/ms
+# Warmup Iteration  10: 10722.768 ops/ms
+# Warmup Iteration  11: 10612.039 ops/ms
+# Warmup Iteration  12: 10708.962 ops/ms
+# Warmup Iteration  13: 10635.004 ops/ms
+# Warmup Iteration  14: 10773.190 ops/ms
+# Warmup Iteration  15: 10663.641 ops/ms
+# Warmup Iteration  16: 10797.281 ops/ms
+# Warmup Iteration  17: 10174.923 ops/ms
+# Warmup Iteration  18: 10174.617 ops/ms
+# Warmup Iteration  19: 10184.400 ops/ms
+# Warmup Iteration  20: 10170.452 ops/ms
+Iteration   1: 10168.281 ops/ms
+Iteration   2: 10192.143 ops/ms
+Iteration   3: 10205.407 ops/ms
+Iteration   4: 10231.385 ops/ms
+Iteration   5: 10203.316 ops/ms
+Iteration   6: 10201.581 ops/ms
+Iteration   7: 10190.668 ops/ms
+Iteration   8: 10215.343 ops/ms
+Iteration   9: 10196.419 ops/ms
+Iteration  10: 10208.022 ops/ms
+Iteration  11: 10179.764 ops/ms
+Iteration  12: 10168.465 ops/ms
+Iteration  13: 10169.181 ops/ms
+Iteration  14: 10243.220 ops/ms
+Iteration  15: 10224.939 ops/ms
+Iteration  16: 10203.708 ops/ms
+Iteration  17: 10374.725 ops/ms
+Iteration  18: 10160.789 ops/ms
+Iteration  19: 10206.803 ops/ms
+Iteration  20: 10153.871 ops/ms
+
+# Run progress: 90.00% complete, ETA 00:05:22
+# Fork: 3 of 10
+# Warmup Iteration   1: 10592.185 ops/ms
+# Warmup Iteration   2: 10212.336 ops/ms
+# Warmup Iteration   3: 10624.789 ops/ms
+# Warmup Iteration   4: 10634.220 ops/ms
+# Warmup Iteration   5: 10702.703 ops/ms
+# Warmup Iteration   6: 10647.685 ops/ms
+# Warmup Iteration   7: 10700.311 ops/ms
+# Warmup Iteration   8: 10643.553 ops/ms
+# Warmup Iteration   9: 10624.293 ops/ms
+# Warmup Iteration  10: 10679.320 ops/ms
+# Warmup Iteration  11: 10658.254 ops/ms
+# Warmup Iteration  12: 10647.212 ops/ms
+# Warmup Iteration  13: 10640.813 ops/ms
+# Warmup Iteration  14: 10275.300 ops/ms
+# Warmup Iteration  15: 10629.714 ops/ms
+# Warmup Iteration  16: 10654.830 ops/ms
+# Warmup Iteration  17: 10370.876 ops/ms
+# Warmup Iteration  18: 10392.551 ops/ms
+# Warmup Iteration  19: 10392.361 ops/ms
+# Warmup Iteration  20: 10373.570 ops/ms
+Iteration   1: 10381.973 ops/ms
+Iteration   2: 10381.412 ops/ms
+Iteration   3: 10337.783 ops/ms
+Iteration   4: 10477.028 ops/ms
+Iteration   5: 10417.406 ops/ms
+Iteration   6: 10422.792 ops/ms
+Iteration   7: 10396.068 ops/ms
+Iteration   8: 10467.938 ops/ms
+Iteration   9: 10475.751 ops/ms
+Iteration  10: 10388.239 ops/ms
+Iteration  11: 10416.526 ops/ms
+Iteration  12: 10381.929 ops/ms
+Iteration  13: 10377.623 ops/ms
+Iteration  14: 10452.743 ops/ms
+Iteration  15: 10414.889 ops/ms
+Iteration  16: 10353.992 ops/ms
+Iteration  17: 10384.836 ops/ms
+Iteration  18: 10397.027 ops/ms
+Iteration  19: 10391.012 ops/ms
+Iteration  20: 10405.185 ops/ms
+
+# Run progress: 91.25% complete, ETA 00:04:42
+# Fork: 4 of 10
+# Warmup Iteration   1: 10529.517 ops/ms
+# Warmup Iteration   2: 10384.997 ops/ms
+# Warmup Iteration   3: 10612.357 ops/ms
+# Warmup Iteration   4: 10687.377 ops/ms
+# Warmup Iteration   5: 10636.331 ops/ms
+# Warmup Iteration   6: 10707.790 ops/ms
+# Warmup Iteration   7: 10395.877 ops/ms
+# Warmup Iteration   8: 10690.748 ops/ms
+# Warmup Iteration   9: 10628.539 ops/ms
+# Warmup Iteration  10: 10464.144 ops/ms
+# Warmup Iteration  11: 10425.761 ops/ms
+# Warmup Iteration  12: 10632.826 ops/ms
+# Warmup Iteration  13: 10709.162 ops/ms
+# Warmup Iteration  14: 10653.577 ops/ms
+# Warmup Iteration  15: 10653.695 ops/ms
+# Warmup Iteration  16: 10635.208 ops/ms
+# Warmup Iteration  17: 10435.335 ops/ms
+# Warmup Iteration  18: 10419.106 ops/ms
+# Warmup Iteration  19: 10430.897 ops/ms
+# Warmup Iteration  20: 10433.863 ops/ms
+Iteration   1: 10400.328 ops/ms
+Iteration   2: 10392.778 ops/ms
+Iteration   3: 10433.086 ops/ms
+Iteration   4: 10433.806 ops/ms
+Iteration   5: 10429.991 ops/ms
+Iteration   6: 10402.414 ops/ms
+Iteration   7: 10395.458 ops/ms
+Iteration   8: 10417.841 ops/ms
+Iteration   9: 10371.324 ops/ms
+Iteration  10: 10384.017 ops/ms
+Iteration  11: 10402.872 ops/ms
+Iteration  12: 10433.248 ops/ms
+Iteration  13: 10435.553 ops/ms
+Iteration  14: 10433.321 ops/ms
+Iteration  15: 10434.676 ops/ms
+Iteration  16: 10435.308 ops/ms
+Iteration  17: 10416.360 ops/ms
+Iteration  18: 10399.176 ops/ms
+Iteration  19: 10404.372 ops/ms
+Iteration  20: 10394.317 ops/ms
+
+# Run progress: 92.50% complete, ETA 00:04:02
+# Fork: 5 of 10
+# Warmup Iteration   1: 9228.385 ops/ms
+# Warmup Iteration   2: 9182.475 ops/ms
+# Warmup Iteration   3: 9062.968 ops/ms
+# Warmup Iteration   4: 9308.680 ops/ms
+# Warmup Iteration   5: 9290.503 ops/ms
+# Warmup Iteration   6: 9293.983 ops/ms
+# Warmup Iteration   7: 9293.448 ops/ms
+# Warmup Iteration   8: 9291.190 ops/ms
+# Warmup Iteration   9: 9305.539 ops/ms
+# Warmup Iteration  10: 9311.434 ops/ms
+# Warmup Iteration  11: 9297.599 ops/ms
+# Warmup Iteration  12: 9297.180 ops/ms
+# Warmup Iteration  13: 9297.815 ops/ms
+# Warmup Iteration  14: 9300.643 ops/ms
+# Warmup Iteration  15: 9308.088 ops/ms
+# Warmup Iteration  16: 9303.495 ops/ms
+# Warmup Iteration  17: 9855.113 ops/ms
+# Warmup Iteration  18: 9441.892 ops/ms
+# Warmup Iteration  19: 9843.332 ops/ms
+# Warmup Iteration  20: 9368.956 ops/ms
+Iteration   1: 9341.270 ops/ms
+Iteration   2: 9818.254 ops/ms
+Iteration   3: 9711.445 ops/ms
+Iteration   4: 9462.050 ops/ms
+Iteration   5: 9802.812 ops/ms
+Iteration   6: 9755.805 ops/ms
+Iteration   7: 9728.086 ops/ms
+Iteration   8: 9540.170 ops/ms
+Iteration   9: 9661.545 ops/ms
+Iteration  10: 9857.763 ops/ms
+Iteration  11: 9549.295 ops/ms
+Iteration  12: 9405.989 ops/ms
+Iteration  13: 9365.250 ops/ms
+Iteration  14: 9759.802 ops/ms
+Iteration  15: 9740.716 ops/ms
+Iteration  16: 9517.755 ops/ms
+Iteration  17: 9366.759 ops/ms
+Iteration  18: 9554.182 ops/ms
+Iteration  19: 9371.265 ops/ms
+Iteration  20: 9367.720 ops/ms
+
+# Run progress: 93.75% complete, ETA 00:03:21
+# Fork: 6 of 10
+# Warmup Iteration   1: 10586.866 ops/ms
+# Warmup Iteration   2: 10156.317 ops/ms
+# Warmup Iteration   3: 8909.231 ops/ms
+# Warmup Iteration   4: 10753.197 ops/ms
+# Warmup Iteration   5: 10768.242 ops/ms
+# Warmup Iteration   6: 10751.557 ops/ms
+# Warmup Iteration   7: 10753.815 ops/ms
+# Warmup Iteration   8: 10758.492 ops/ms
+# Warmup Iteration   9: 10735.976 ops/ms
+# Warmup Iteration  10: 10791.247 ops/ms
+# Warmup Iteration  11: 10786.974 ops/ms
+# Warmup Iteration  12: 10775.203 ops/ms
+# Warmup Iteration  13: 10796.137 ops/ms
+# Warmup Iteration  14: 10756.659 ops/ms
+# Warmup Iteration  15: 10769.449 ops/ms
+# Warmup Iteration  16: 10802.849 ops/ms
+# Warmup Iteration  17: 10248.679 ops/ms
+# Warmup Iteration  18: 10163.930 ops/ms
+# Warmup Iteration  19: 10183.940 ops/ms
+# Warmup Iteration  20: 10147.085 ops/ms
+Iteration   1: 10152.829 ops/ms
+Iteration   2: 10098.003 ops/ms
+Iteration   3: 10160.694 ops/ms
+Iteration   4: 10235.888 ops/ms
+Iteration   5: 10189.901 ops/ms
+Iteration   6: 10169.403 ops/ms
+Iteration   7: 10227.675 ops/ms
+Iteration   8: 10252.288 ops/ms
+Iteration   9: 10198.566 ops/ms
+Iteration  10: 10250.480 ops/ms
+Iteration  11: 10177.572 ops/ms
+Iteration  12: 10246.255 ops/ms
+Iteration  13: 10170.381 ops/ms
+Iteration  14: 10206.965 ops/ms
+Iteration  15: 10190.473 ops/ms
+Iteration  16: 10254.195 ops/ms
+Iteration  17: 10255.233 ops/ms
+Iteration  18: 10249.372 ops/ms
+Iteration  19: 10233.336 ops/ms
+Iteration  20: 10227.347 ops/ms
+
+# Run progress: 95.00% complete, ETA 00:02:41
+# Fork: 7 of 10
+# Warmup Iteration   1: 10340.259 ops/ms
+# Warmup Iteration   2: 10446.378 ops/ms
+# Warmup Iteration   3: 10468.730 ops/ms
+# Warmup Iteration   4: 10434.645 ops/ms
+# Warmup Iteration   5: 10476.002 ops/ms
+# Warmup Iteration   6: 10480.754 ops/ms
+# Warmup Iteration   7: 10457.997 ops/ms
+# Warmup Iteration   8: 10498.536 ops/ms
+# Warmup Iteration   9: 10448.921 ops/ms
+# Warmup Iteration  10: 10463.378 ops/ms
+# Warmup Iteration  11: 10443.710 ops/ms
+# Warmup Iteration  12: 10491.143 ops/ms
+# Warmup Iteration  13: 10501.055 ops/ms
+# Warmup Iteration  14: 10386.201 ops/ms
+# Warmup Iteration  15: 10469.915 ops/ms
+# Warmup Iteration  16: 10380.136 ops/ms
+# Warmup Iteration  17: 10801.669 ops/ms
+# Warmup Iteration  18: 10415.753 ops/ms
+# Warmup Iteration  19: 10412.211 ops/ms
+# Warmup Iteration  20: 10423.422 ops/ms
+Iteration   1: 10415.636 ops/ms
+Iteration   2: 10402.345 ops/ms
+Iteration   3: 10869.184 ops/ms
+Iteration   4: 10768.573 ops/ms
+Iteration   5: 10529.887 ops/ms
+Iteration   6: 10413.332 ops/ms
+Iteration   7: 10414.119 ops/ms
+Iteration   8: 10412.507 ops/ms
+Iteration   9: 10888.765 ops/ms
+Iteration  10: 10398.669 ops/ms
+Iteration  11: 10417.015 ops/ms
+Iteration  12: 10420.840 ops/ms
+Iteration  13: 10590.127 ops/ms
+Iteration  14: 10753.905 ops/ms
+Iteration  15: 10842.393 ops/ms
+Iteration  16: 10415.901 ops/ms
+Iteration  17: 10421.392 ops/ms
+Iteration  18: 10414.721 ops/ms
+Iteration  19: 10414.022 ops/ms
+Iteration  20: 10758.912 ops/ms
+
+# Run progress: 96.25% complete, ETA 00:02:01
+# Fork: 8 of 10
+# Warmup Iteration   1: 10454.464 ops/ms
+# Warmup Iteration   2: 10278.317 ops/ms
+# Warmup Iteration   3: 10727.760 ops/ms
+# Warmup Iteration   4: 10704.548 ops/ms
+# Warmup Iteration   5: 10666.532 ops/ms
+# Warmup Iteration   6: 10694.005 ops/ms
+# Warmup Iteration   7: 10698.068 ops/ms
+# Warmup Iteration   8: 10608.602 ops/ms
+# Warmup Iteration   9: 10676.547 ops/ms
+# Warmup Iteration  10: 10636.319 ops/ms
+# Warmup Iteration  11: 10677.605 ops/ms
+# Warmup Iteration  12: 10711.982 ops/ms
+# Warmup Iteration  13: 10703.421 ops/ms
+# Warmup Iteration  14: 10664.606 ops/ms
+# Warmup Iteration  15: 10672.195 ops/ms
+# Warmup Iteration  16: 10678.164 ops/ms
+# Warmup Iteration  17: 10270.439 ops/ms
+# Warmup Iteration  18: 10210.726 ops/ms
+# Warmup Iteration  19: 10361.388 ops/ms
+# Warmup Iteration  20: 10311.424 ops/ms
+Iteration   1: 10227.461 ops/ms
+Iteration   2: 10311.908 ops/ms
+Iteration   3: 10208.461 ops/ms
+Iteration   4: 10345.186 ops/ms
+Iteration   5: 10233.495 ops/ms
+Iteration   6: 10480.600 ops/ms
+Iteration   7: 10383.497 ops/ms
+Iteration   8: 10246.382 ops/ms
+Iteration   9: 10236.388 ops/ms
+Iteration  10: 10223.824 ops/ms
+Iteration  11: 10219.881 ops/ms
+Iteration  12: 10286.796 ops/ms
+Iteration  13: 10281.904 ops/ms
+Iteration  14: 10280.148 ops/ms
+Iteration  15: 10261.692 ops/ms
+Iteration  16: 10301.925 ops/ms
+Iteration  17: 10289.006 ops/ms
+Iteration  18: 10262.610 ops/ms
+Iteration  19: 10367.253 ops/ms
+Iteration  20: 10240.562 ops/ms
+
+# Run progress: 97.50% complete, ETA 00:01:20
+# Fork: 9 of 10
+# Warmup Iteration   1: 10340.716 ops/ms
+# Warmup Iteration   2: 10748.178 ops/ms
+# Warmup Iteration   3: 10567.610 ops/ms
+# Warmup Iteration   4: 10467.383 ops/ms
+# Warmup Iteration   5: 10234.338 ops/ms
+# Warmup Iteration   6: 10621.039 ops/ms
+# Warmup Iteration   7: 10239.117 ops/ms
+# Warmup Iteration   8: 9845.511 ops/ms
+# Warmup Iteration   9: 10069.375 ops/ms
+# Warmup Iteration  10: 9911.645 ops/ms
+# Warmup Iteration  11: 10388.467 ops/ms
+# Warmup Iteration  12: 10044.014 ops/ms
+# Warmup Iteration  13: 10603.016 ops/ms
+# Warmup Iteration  14: 9963.151 ops/ms
+# Warmup Iteration  15: 9995.612 ops/ms
+# Warmup Iteration  16: 10248.798 ops/ms
+# Warmup Iteration  17: 10449.895 ops/ms
+# Warmup Iteration  18: 10453.964 ops/ms
+# Warmup Iteration  19: 10167.135 ops/ms
+# Warmup Iteration  20: 10164.452 ops/ms
+Iteration   1: 10436.372 ops/ms
+Iteration   2: 10152.180 ops/ms
+Iteration   3: 10446.930 ops/ms
+Iteration   4: 10162.868 ops/ms
+Iteration   5: 10236.413 ops/ms
+Iteration   6: 10450.612 ops/ms
+Iteration   7: 10460.171 ops/ms
+Iteration   8: 10456.266 ops/ms
+Iteration   9: 10449.521 ops/ms
+Iteration  10: 10396.017 ops/ms
+Iteration  11: 10177.862 ops/ms
+Iteration  12: 10198.663 ops/ms
+Iteration  13: 10187.276 ops/ms
+Iteration  14: 10195.819 ops/ms
+Iteration  15: 10189.395 ops/ms
+Iteration  16: 10445.022 ops/ms
+Iteration  17: 10158.547 ops/ms
+Iteration  18: 10208.185 ops/ms
+Iteration  19: 10189.050 ops/ms
+Iteration  20: 10212.736 ops/ms
+
+# Run progress: 98.75% complete, ETA 00:00:40
+# Fork: 10 of 10
+# Warmup Iteration   1: 9025.460 ops/ms
+# Warmup Iteration   2: 9188.872 ops/ms
+# Warmup Iteration   3: 9315.409 ops/ms
+# Warmup Iteration   4: 9307.596 ops/ms
+# Warmup Iteration   5: 9359.281 ops/ms
+# Warmup Iteration   6: 9357.008 ops/ms
+# Warmup Iteration   7: 9369.447 ops/ms
+# Warmup Iteration   8: 9387.690 ops/ms
+# Warmup Iteration   9: 9382.715 ops/ms
+# Warmup Iteration  10: 9368.027 ops/ms
+# Warmup Iteration  11: 9365.889 ops/ms
+# Warmup Iteration  12: 9382.932 ops/ms
+# Warmup Iteration  13: 9336.598 ops/ms
+# Warmup Iteration  14: 9362.585 ops/ms
+# Warmup Iteration  15: 9336.039 ops/ms
+# Warmup Iteration  16: 9321.251 ops/ms
+# Warmup Iteration  17: 10314.555 ops/ms
+# Warmup Iteration  18: 10324.899 ops/ms
+# Warmup Iteration  19: 10357.745 ops/ms
+# Warmup Iteration  20: 10308.606 ops/ms
+Iteration   1: 10370.673 ops/ms
+Iteration   2: 10227.514 ops/ms
+Iteration   3: 10252.296 ops/ms
+Iteration   4: 10339.279 ops/ms
+Iteration   5: 10326.873 ops/ms
+Iteration   6: 10344.680 ops/ms
+Iteration   7: 10363.110 ops/ms
+Iteration   8: 10346.625 ops/ms
+Iteration   9: 10334.287 ops/ms
+Iteration  10: 10304.390 ops/ms
+Iteration  11: 10352.861 ops/ms
+Iteration  12: 10389.013 ops/ms
+Iteration  13: 10349.712 ops/ms
+Iteration  14: 10308.660 ops/ms
+Iteration  15: 10343.800 ops/ms
+Iteration  16: 10408.128 ops/ms
+Iteration  17: 10310.078 ops/ms
+Iteration  18: 10321.160 ops/ms
+Iteration  19: 10218.175 ops/ms
+Iteration  20: 10334.861 ops/ms
+
+
+Result "testParam2StringsNoScoping":
+  10238.344 ±(99.9%) 62.841 ops/ms [Average]
+  (min, avg, max) = (9341.270, 10238.344, 10888.765), stdev = 266.073
+  CI (99.9%): [10175.503, 10301.185] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:53:47
+
+Benchmark                             Mode  Cnt      Score     Error   Units
+JNITest.testEquals1                  thrpt  200   1748.002 ±   4.084  ops/ms
+JNITest.testEquals2                  thrpt  200   1589.690 ±   3.514  ops/ms
+JNITest.testParam2StringsNoScoping   thrpt  200   8759.817 ± 252.259  ops/ms
+JNITest.testParamStringsEq           thrpt  200   1810.502 ±  13.743  ops/ms
+JNITest.testParamStringsNe           thrpt  200   1635.348 ±   5.647  ops/ms
+JNITest.testParamStringsUnicodeEq    thrpt  200   2523.425 ±  12.172  ops/ms
+JNITest.testParamStringsUnicodeNe    thrpt  200   2434.210 ±   9.913  ops/ms
+JavaTest.testParam2StringsNoScoping  thrpt  200  10238.344 ±  62.841  ops/ms
