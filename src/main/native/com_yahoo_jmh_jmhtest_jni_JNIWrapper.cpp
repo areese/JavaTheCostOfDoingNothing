@@ -1,3 +1,5 @@
+// Copyright 2016 Yahoo Inc.
+// Licensed under the terms of the New-BSD license. Please see LICENSE file in the project root for terms.
 #include <string.h>
 
 #include "com_yahoo_jmh_jmhtest_jni_JNIWrapper.h"
