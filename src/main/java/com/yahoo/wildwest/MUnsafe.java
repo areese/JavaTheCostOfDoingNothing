@@ -3,6 +3,7 @@
 package com.yahoo.wildwest;
 
 import java.lang.reflect.Field;
+import java.net.InetSocketAddress;
 
 import sun.misc.Unsafe;
 import sun.misc.VM;
@@ -14,6 +15,8 @@ public class MUnsafe {
     public static final long charArrayIndexScale;
     public static final long byteArrayBaseOffset;
     public static final long byteArrayIndexScale;
+    public static final long ISA_HOLDER_OFFSET;
+    // public static final long ISA_ADDR_OFFSET;
 
     static {
         try {
@@ -24,8 +27,13 @@ public class MUnsafe {
             charArrayIndexScale = unsafe.arrayIndexScale(char[].class);
             byteArrayBaseOffset = unsafe.arrayBaseOffset(byte[].class);
             byteArrayIndexScale = unsafe.arrayIndexScale(byte[].class);
-        } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
-            throw new RuntimeException(e);
+
+            ISA_HOLDER_OFFSET = unsafe.objectFieldOffset(InetSocketAddress.class.getDeclaredField("holder"));
+
+
+
+        } catch (ReflectiveOperationException | SecurityException | IllegalArgumentException e) {
+            throw new Error(e);
         }
     }
 
@@ -77,5 +85,12 @@ public class MUnsafe {
         return address;
     }
 
+    public static void copyMemory(long destAddress, long totalSize, byte[] from) {
+        long fromOffset = unsafe.arrayBaseOffset(byte[].class);
+        unsafe.copyMemory(from, fromOffset, null, index(destAddress, 0), totalSize);
+    }
 
+    private static long index(long address, int i) {
+        return address + ((long) i << 0);
+    }
 }
