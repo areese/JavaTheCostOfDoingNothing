@@ -49,5 +49,22 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_LotsOfLongs_testLongParams
 (JNIEnv *, jclass,
         jlong inetAddress, jlong inetAddressLen, jlong ra, jlong raLen, jlong rp,
         jlong rpLen, jlong rs, jlong rsLen) {
+    jlong inetAddressL;
+    jlong inetAddressLenL;
+    jlong raL;
+    jlong raLenL;
+    jlong rpL;
+    jlong rpLenL;
+    jlong rsL;
+    jlong rsLenL;
+
+    inetAddressL = inetAddress;
+    inetAddressLenL = inetAddressLen;
+    raL = ra;
+    raLenL = raLen;
+    rpL = rp;
+    rpLenL = rpLen;
+    rsL = rs;
+    rsLenL = rsLen;
 
 }
