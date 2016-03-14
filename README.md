@@ -47,7 +47,6 @@ These replicate the orginal charts in slide 13 and 14, but using the data from t
 (Sadly I can't find the original code that was used for these slides despite digging).
 
 <h2 id="TheCost">The Cost</h2>
-|-------------------------------------|-------------|---------|-----------|-----------|-----------|-------------|
 | Benchmark                           | Score       | Error ± |           |           | avg       | avg ns/op   |
 |-------------------------------------|-------------|---------|-----------|-----------|-----------|-------------|
 | JNITest.testEquals1                 | 1748.002    | 4.084   | 1743.918  | 1752.086  | 1748.002  | 572.0817253 |
@@ -58,10 +57,8 @@ These replicate the orginal charts in slide 13 and 14, but using the data from t
 | JNITest.testParamStringsUnicodeEq   | 2523.425    | 12.172  | 2511.253  | 2535.597  | 2523.425  | 396.2867928 |
 | JNITest.testParamStringsUnicodeNe   | 2434.21     | 9.913   | 2424.297  | 2444.123  | 2434.21   | 410.8108996 |
 | JavaTest.testParam2StringsNoScoping | 10238.344   | 62.841  | 10175.503 | 10301.185 | 10238.344 | 97.6720454  |
-|-------------------------------------|-------------|---------|-----------|-----------|-----------|-------------|
 
 
-|------------------------------------|-------------|--------------|
 | Portion                            | ns/op       | % Time Taken |
 |------------------------------------|-------------|--------------|
 | Java 2 strings                     | 97.6720454  |              |
@@ -74,7 +71,6 @@ These replicate the orginal charts in slide 13 and 14, but using the data from t
 | JNI Get Strings overhead (unicode) | 282.1291568 | 51.08%       |
 | JNI UTF8 Decoding overhead         | 156.0462066 | 28.25%       |
 | Total Time taken                   | 552.3329994 |              |
-|------------------------------------|-------------|--------------|
 
 
 <h2 id="Credits">Credits</h2>
