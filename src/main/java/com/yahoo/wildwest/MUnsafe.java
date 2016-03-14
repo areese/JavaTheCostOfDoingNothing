@@ -61,6 +61,11 @@ public class MUnsafe {
      * The object referred to by o is an array, and the offset is an integer of the form B+N*S, where N is a valid index
      * into the array, and B and S are the values obtained by #arrayBaseOffset and #arrayIndexScale (respectively) from
      * the array's class. The value referred to is the Nth element of the array.
+     * 
+     * @param index into the array to find the offset for.
+     * @param base base from Unsafe to use.
+     * @param scale scale from Unsafe to use
+     * @return value usable by copyMemory
      **/
     public static long calculateOffset(int index, long base, long scale) {
         return (base + (index * scale));
