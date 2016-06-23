@@ -25,23 +25,6 @@ public class TestCopyFrom {
         return address + ((long) i << 0);
     }
 
-    private static long allocate(long cap) {
-        boolean pa = VM.isDirectMemoryPageAligned();
-        int ps = MUnsafe.unsafe.pageSize();
-        long size = Math.max(1L, (long) cap + (pa ? ps : 0));
-        long base = MUnsafe.unsafe.allocateMemory(size);
-        MUnsafe.unsafe.setMemory(base, size, (byte) 0);
-
-        long address = 0;
-        if (pa && (base % ps != 0)) {
-            // Round up to page boundary
-            address = base + ps - (base & (ps - 1));
-        } else {
-            address = base;
-        }
-
-        return address;
-    }
 
     private static void testCopyFromByteArray() {
         Unsafe unsafe = MUnsafe.getUnsafe();
@@ -51,7 +34,7 @@ public class TestCopyFrom {
 
         long size = 16;
         long totalSize = size + 32;
-        long destAddress = allocate(totalSize);
+        long destAddress = MUnsafe.allocateMemory(totalSize);
 
         byte[] from = new byte[(int) totalSize];
         Arrays.fill(from, (byte) 0xDA);
