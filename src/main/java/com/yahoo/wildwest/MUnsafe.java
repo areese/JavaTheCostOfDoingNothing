@@ -134,7 +134,7 @@ public class MUnsafe {
     public static long allocateMemory(long size) {
         // http://bugs.java.com/view_bug.do?bug_id=4837564, remove page alignment as that could explode in our faces. =)
         long address = unsafe.allocateMemory(size);
-        unsafe.setMemory(address, size, (byte) 0);
+        //unsafe.setMemory(address, size, (byte) 0);
 
         return address;
     }
