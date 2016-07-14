@@ -65,10 +65,10 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamArra
 
 /*
  * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
- * Method:    nativeParamNoneReturnString
+ * Method:    nativeParamNoneReturnStringUTF8
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamNoneReturnString(
+JNIEXPORT jstring JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamNoneReturnStringUTF8(
         JNIEnv *jenv, jclass) {
     return jenv->NewStringUTF("I'm doing nothing");
 
@@ -94,9 +94,46 @@ JNIEXPORT jboolean JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeEqual
  * Signature: (Ljava/lang/String;Ljava/lang/String;)V
  */
 JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParam2StringsNoScoping
-  (JNIEnv *jenv, jclass, jstring lhs, jstring rhs)
+(JNIEnv *jenv, jclass, jstring lhs, jstring rhs)
 {
 
+}
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStringsUTF8
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStringsUTF8
+(JNIEnv *jenv, jclass, jstring lhs, jstring rhs)
+{
+    // we want to use this string.
+    ScopedStringUTFChars lhsString(jenv, lhs);
+    ScopedStringUTFChars rhsString(jenv, rhs);
+}
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStringUTF8
+ * Signature: (Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStringUTF8
+(JNIEnv *jenv, jclass, jstring lhs)
+{
+    // we want to use this string.
+    ScopedStringUTFChars lhsString(jenv, lhs);
+}
+
+/*
+ * Class:     com_yahoo_jmh_jmhtest_jni_JNIWrapper
+ * Method:    nativeParamStringUnicode
+ * Signature: (Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamStringUnicode
+(JNIEnv *jenv, jclass, jstring lhs)
+{
+    // we want to use this string.
+    ScopedStringUnicodeChars lhsString(jenv, lhs);
 }
 
 /*

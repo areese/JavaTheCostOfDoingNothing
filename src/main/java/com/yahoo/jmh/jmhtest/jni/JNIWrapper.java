@@ -29,11 +29,15 @@ public class JNIWrapper implements Wrapper {
 
     static final native void nativeParamArray(String[] param);
 
-    static final native String nativeParamNoneReturnString();
+    static final native String nativeParamNoneReturnStringUTF8();
 
     static final native boolean nativeEquals(String lhs, String rhs);
 
     static final native void nativeParam2StringsNoScoping(String lhs, String rhs);
+
+    static final native void nativeParamStringsUTF8(String lhs, String rhs);
+    static final native void nativeParamStringUTF8(String lhs);
+    static final native void nativeParamStringUnicode(String lhs);
 
     /**
      * 
@@ -85,8 +89,8 @@ public class JNIWrapper implements Wrapper {
     }
 
     @Override
-    public final String paramNoneReturnString() {
-        return nativeParamNoneReturnString();
+    public final String paramNoneReturnStringUTF8() {
+        return nativeParamNoneReturnStringUTF8();
     }
 
     @Override
@@ -97,6 +101,24 @@ public class JNIWrapper implements Wrapper {
     @Override
     public boolean param2StringsNoScoping(String lhs, String rhs) {
         nativeParam2StringsNoScoping(lhs, rhs);
+        return returnValue;
+    }
+
+    @Override
+    public boolean paramStringsUTF8(String lhs, String rhs) {
+        nativeParamStringsUTF8(lhs, rhs);
+        return returnValue;
+    }
+
+    @Override
+    public boolean paramStringUTF8(String lhs) {
+        nativeParamStringUTF8(lhs);
+        return returnValue;
+    }
+
+    @Override
+    public boolean paramStringUnicode(String lhs) {
+        nativeParamStringUnicode(lhs);
         return returnValue;
     }
 

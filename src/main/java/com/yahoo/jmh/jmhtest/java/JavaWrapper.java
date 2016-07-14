@@ -3,6 +3,10 @@
 
 package com.yahoo.jmh.jmhtest.java;
 
+import java.nio.charset.StandardCharsets;
+
+import org.openjdk.jmh.infra.Blackhole;
+
 import com.yahoo.jmh.jmhtest.Wrapper;
 
 
@@ -38,7 +42,8 @@ public class JavaWrapper implements Wrapper {
     }
 
     @Override
-    public final String paramNoneReturnString() {
+    public final String paramNoneReturnStringUTF8() {
+        // FIX me this should do encoding
         return returnString;
     }
 
@@ -49,12 +54,28 @@ public class JavaWrapper implements Wrapper {
 
     @Override
     public boolean paramStringsUnicode(String lhs, String rhs) {
+        return lhs.getBytes(StandardCharsets.UTF_16).length > 0 && rhs.getBytes(StandardCharsets.UTF_16).length > 0;
+    }
+
+    @Override
+    public boolean param2StringsNoScoping(String lhs, String rhs) {
         return returnValue;
     }
 
     @Override
-    public boolean param2StringsNoScoping(String equalsLhs1, String equalsRhs1) {
-        return returnValue;
+    public boolean paramStringsUTF8(String lhs, String rhs) {
+        return lhs.getBytes(StandardCharsets.UTF_8).length > 0 && rhs.getBytes(StandardCharsets.UTF_8).length > 0;
+    }
+
+    @Override
+    public boolean paramStringUTF8(String lhs) {
+        // decode the string to be UTF-8
+        return lhs.getBytes(StandardCharsets.UTF_8).length > 0;
+    }
+
+    @Override
+    public boolean paramStringUnicode(String lhs) {
+        return lhs.getBytes(StandardCharsets.UTF_16).length > 0;
     }
 
 }

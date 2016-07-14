@@ -80,8 +80,8 @@ public abstract class BaseTest {
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public String testParamNoneReturnString() {
-        return wrapper.paramNoneReturnString();
+    public String paramNoneReturnStringUTF8() {
+        return wrapper.paramNoneReturnStringUTF8();
     }
 
     @Benchmark
