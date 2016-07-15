@@ -24,8 +24,8 @@ JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamNone
 JNIEXPORT void JNICALL Java_com_yahoo_jmh_jmhtest_jni_JNIWrapper_nativeParamString
 (JNIEnv *jenv, jclass, jstring stringArg)
 {
-    // we want to use this string.
-    ScopedStringUTFChars scopedString(jenv, stringArg);
+    // we're doing nothing.  yay.
+    // we don't want to decode the string in this case.
 }
 
 /*

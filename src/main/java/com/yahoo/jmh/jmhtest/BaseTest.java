@@ -31,70 +31,82 @@ public abstract class BaseTest {
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamNone() {
+    public boolean paramNone() {
         return wrapper.paramNone();
     }
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamString() {
+    public boolean paramString() {
         return wrapper.paramString(bar);
     }
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParam2StringsNoScoping() {
-        return wrapper.param2StringsNoScoping(equalsLhs1, equalsRhs1);
+    public boolean paramStringUTF8() {
+        return wrapper.paramStringUTF8(bar);
     }
 
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamStringsEq() {
-        return wrapper.paramStrings(equalsLhs1, equalsRhs1);
+    public boolean paramStringUnicode() {
+        return wrapper.paramStringUnicode(bar);
     }
 
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamStringsNe() {
-        return wrapper.paramStrings(notEqualsLhs1, notEqualsRhs1);
-    }
-
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamStringsUnicodeEq() {
-        return wrapper.paramStringsUnicode(equalsLhs1, equalsRhs1);
-    }
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamStringsUnicodeNe() {
-        return wrapper.paramStringsUnicode(notEqualsLhs1, notEqualsRhs1);
-    }
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testParamArray() {
-        return wrapper.paramArray(foo);
-    }
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public String paramNoneReturnStringUTF8() {
-        return wrapper.paramNoneReturnStringUTF8();
-    }
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testEquals1() {
-        return wrapper.strEquals(equalsLhs1, equalsRhs1);
-    }
-
-    @Benchmark
-    @CompilerControl(CompilerControl.Mode.EXCLUDE)
-    public boolean testEquals2() {
-        return wrapper.strEquals(notEqualsLhs1, notEqualsRhs1);
-    }
-
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParam2StringsNoScoping() {
+    // return wrapper.param2StringsNoScoping(equalsLhs1, equalsRhs1);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParamStringsEq() {
+    // return wrapper.strEquals(equalsLhs1, equalsRhs1);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParamStringsNe() {
+    // return wrapper.strNotEquals(notEqualsLhs1, notEqualsRhs1);
+    // }
+    //
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParamStringsUnicodeEq() {
+    // return wrapper.paramStringsUnicode(equalsLhs1, equalsRhs1);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParamStringsUnicodeNe() {
+    // return wrapper.paramStringsUnicode(notEqualsLhs1, notEqualsRhs1);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testParamArray() {
+    // return wrapper.paramArray(foo);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public String paramNoneReturnStringUTF8() {
+    // return wrapper.paramNoneReturnStringUTF8();
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testEquals1() {
+    // return wrapper.strEquals(equalsLhs1, equalsRhs1);
+    // }
+    //
+    // @Benchmark
+    // @CompilerControl(CompilerControl.Mode.EXCLUDE)
+    // public boolean testEquals2() {
+    // return wrapper.strEquals(notEqualsLhs1, notEqualsRhs1);
+    // }
+    //
 
 }

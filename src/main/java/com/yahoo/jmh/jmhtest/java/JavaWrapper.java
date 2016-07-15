@@ -5,8 +5,6 @@ package com.yahoo.jmh.jmhtest.java;
 
 import java.nio.charset.StandardCharsets;
 
-import org.openjdk.jmh.infra.Blackhole;
-
 import com.yahoo.jmh.jmhtest.Wrapper;
 
 
@@ -16,6 +14,7 @@ public class JavaWrapper implements Wrapper {
 
     private boolean returnValue = true;
     private String returnString = "foo";
+    private byte[] UTF8_STRING = returnString.getBytes(StandardCharsets.UTF_8);
 
     public static final JavaWrapper getInstance() {
         return INSTANCE;
@@ -44,7 +43,7 @@ public class JavaWrapper implements Wrapper {
     @Override
     public final String paramNoneReturnStringUTF8() {
         // FIX me this should do encoding
-        return returnString;
+        return new String(UTF8_STRING, StandardCharsets.UTF_8);
     }
 
     @Override
