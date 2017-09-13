@@ -47,6 +47,7 @@ These replicate the orginal charts in slide 13 and 14, but using the data from t
 (Sadly I can't find the original code that was used for these slides despite digging).
 
 <h2 id="TheCost">The Cost</h2>
+
 | Benchmark                           | Score       | Error ± |           |           | avg       | avg ns/op   |
 |-------------------------------------|-------------|---------|-----------|-----------|-----------|-------------|
 | JNITest.testEquals1                 | 1748.002    | 4.084   | 1743.918  | 1752.086  | 1748.002  | 572.0817253 |
