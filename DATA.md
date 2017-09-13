@@ -2,7 +2,7 @@
 
 
 
-=== Java Benchmark:
+## Java Benchmark:
 ```
 java -Djava.library.path=target/native/x86_64-linux-gcc/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest
 ```
@@ -11,7 +11,7 @@ java -Djava.library.path=target/native/x86_64-linux-gcc/ -jar target/JavaTheCost
 java -Djava.library.path=target/native/x86_64-linux-gcc/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest
 ```
 
-=== HW Config
+## HW Config
 ```
 Summary:	HP DL160 G6, 2 x Xeon E5620 2.40GHz, 23.1GB / 24GB 1333MHz DDR3, 1 x 1TB SATA
 System:		HP ProLiant DL160 G6, C-2N/24/1000, ySPEC 25.0
@@ -27,7 +27,7 @@ OS:		RHEL 6.5.7, RHEL Server 6.5, Linux 2.6.32-431.23.3.el6.YAHOO.20140804.x86_6
 BIOS:		HP O33 09/01/2011, rev 8.15
 ```
 
-=== data
+## data
 ```
 jnitest.txt
 javatest.txt
