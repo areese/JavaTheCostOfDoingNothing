@@ -22,6 +22,7 @@ With JMH we can do far better micro-benchmarking, so I've resurrected this.
 
 <h2 id="Running">Running</h2>
 First build the code: 
+
 ```
 mvn clean verify
 ```
@@ -30,21 +31,25 @@ Then decide which test to run, and set your java.library.path appriately.
 
 
 <h3 id="JavaTest">JavaTest</h3>
+
 ```
 java -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JavaTest 
 ```
 
 <h3 id="JNITest">JNITest</h3>
+
 ```
 java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
 ```
 
 <h3 id="osx">osx</h3>
+
 ```
 java.library.path=target/native/x86_64-darwin-clang/
 ```
 
 <h3 id="linux">linux</h3>
+
 ```
 java.library.path=target/native/x86_64-linux-gcc/
 ```
