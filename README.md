@@ -42,13 +42,15 @@ java -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtes
 java -Djava.library.path=target/native/x86_64-darwin-clang/ -jar target/JavaTheCostOfDoingNothing-1.0-SNAPSHOT.jar com.yahoo.jmh.jmhtest.JNITest 
 ```
 
-<h3 id="osx">osx</h3>
+-Djava.library.path must be set correctly based on if you are on OS-X, or Linux to correctly find the shared library.
+
+<h3 id="osx">OS-X Library path</h3>
 
 ```
 java.library.path=target/native/x86_64-darwin-clang/
 ```
 
-<h3 id="linux">linux</h3>
+<h3 id="linux">Linux Library path</h3>
 
 ```
 java.library.path=target/native/x86_64-linux-gcc/
