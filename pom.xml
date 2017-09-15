@@ -20,8 +20,8 @@
         <max_jdk_version>${max_jdk}</max_jdk_version>
         <source_jdk_version>${min_jdk_version}</source_jdk_version>
         <target_jdk_version>${min_jdk_version}</target_jdk_version>
-        <jmh.version>1.11</jmh.version>
-        <jol.version>0.3</jol.version>
+        <jmh.version>1.19</jmh.version>
+        <jol.version>0.8</jol.version>
     </properties>
     <profiles>
         <profile>

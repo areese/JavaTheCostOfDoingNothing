@@ -1,0 +1,8 @@
+JavaTest.paramNone,avgt,200,89.468,0.872,ns/op
+JavaTest.paramString,avgt,200,92.292,0.318,ns/op
+JavaTest.paramStringUTF8,avgt,200,165.789,0.688,ns/op
+JavaTest.paramStringUnicode,avgt,200,290.608,2.504,ns/op
+JNITest.paramNone,avgt,200,101.726,1.345,ns/op
+JNITest.paramString,avgt,200,104.287,2.078,ns/op
+JNITest.paramStringUTF8,avgt,200,279.152,1.325,ns/op
+JNITest.paramStringUnicode,avgt,200,262.929,2.827,ns/op

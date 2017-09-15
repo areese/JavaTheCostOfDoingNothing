@@ -53,7 +53,28 @@ public class JavaWrapper implements Wrapper {
 
     @Override
     public boolean paramStringsUnicode(String lhs, String rhs) {
-        return lhs.getBytes(StandardCharsets.UTF_16).length > 0 && rhs.getBytes(StandardCharsets.UTF_16).length > 0;
+        // we want to look exactly like the jni would look when it gets unicode for 2 strings and compares lengths.
+        // http://hg.openjdk.java.net/jdk8u/jdk8u-dev/hotspot/file/92693f9dd704/src/share/vm/classfile/javaClasses.cpp#l321
+        // that's what I think the jni ends up calling underneath
+        char[] left;
+        {
+            final int len = lhs.length();
+            left = new char[len];
+            for (int i = 0; i < len; i++) {
+                left[i] = lhs.charAt(i);
+            }
+        }
+
+        char[] right;
+        {
+            final int len = rhs.length();
+            right = new char[len];
+            for (int i = 0; i < len; i++) {
+                right[i] = rhs.charAt(i);
+            }
+        }
+
+        return left.length > 0 && right.length > 0;
     }
 
     @Override

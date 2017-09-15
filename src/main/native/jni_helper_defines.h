@@ -498,7 +498,8 @@ private:
 class ScopedStringUnicodeChars {
 public:
     ScopedStringUnicodeChars(JNIEnv *jenv, jstring jstr, jchar *str) :
-            _jenv(jenv), _jstr(jstr), _str((wchar_t*) str) {
+             _jenv(0), _jstr(0), _str(0), _length(0) {
+       set(jenv, jstr, str);
     }
 
     ScopedStringUnicodeChars(JNIEnv *jenv, jstring jstr) {
@@ -506,7 +507,7 @@ public:
     }
 
     ScopedStringUnicodeChars() :
-            _jenv(0), _jstr(0), _str(0) {
+            _jenv(0), _jstr(0), _str(0), _length(0) {
     }
 
     virtual ~ScopedStringUnicodeChars() {
@@ -519,12 +520,23 @@ public:
         _jenv = jenv;
         _jstr = jstr;
         _str = (wchar_t*) str;
+        if (NULL != _jstr) {
+            // seems wrong, but previously getLength() was doing exactly this.
+            // so when we cached the length, we pushed this here.
+            _length = _jenv->GetStringLength(_jstr);
+        } else {
+            _length = 0;
+        }
     }
 
     inline void set(JNIEnv *jenv, jstring jstr) {
-        _str =
-                (wchar_t*) (
-                        (NULL == jstr) ? NULL : jenv->GetStringChars(jstr, 0));
+        if (NULL == jstr) {
+            _str = 0;
+            _length = 0;
+        } else {
+            _str = (wchar_t*) jenv->GetStringChars(jstr, 0);
+            _length = _jenv->GetStringLength(_jstr);
+        }
         _jenv = jenv;
         _jstr = jstr;
     }
@@ -542,10 +554,7 @@ public:
     }
 
     inline const jsize getLength() {
-        if (NULL == _jstr) {
-            return 0;
-        }
-        return _jenv->GetStringLength(_jstr);
+        return _length;
     }
 
 private:
@@ -556,6 +565,7 @@ private:
     JNIEnv *_jenv;
     jstring _jstr;
     const wchar_t *_str;
+    jsize _length;
 };
 
 class ScopedStringUTFCharsArray {
