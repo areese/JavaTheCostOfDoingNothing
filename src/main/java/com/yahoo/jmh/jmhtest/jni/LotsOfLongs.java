@@ -6,16 +6,16 @@ package com.yahoo.jmh.jmhtest.jni;
 
 public class LotsOfLongs {
 
-    private boolean returnValue = true;
+  private boolean returnValue = true;
 
-    static {
-        JniLibraryLoader.load();
-    }
+  static {
+    JniLibraryLoader.load();
+  }
 
-    public static final native void testLongArray(long[] longArray);
+  public static final native void testLongArray(long[] longArray);
 
-    public static final native void testLongParams(long inetAddress, long inetAddressLen, long ra, long raLen, long rp,
-                    long rpLen, long rs, long rsLen);
+  public static final native void testLongParams(long inetAddress, long inetAddressLen, long ra, long raLen, long rp,
+                                                 long rpLen, long rs, long rsLen);
 
 
 }
