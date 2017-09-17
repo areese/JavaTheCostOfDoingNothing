@@ -437,7 +437,8 @@ private:
 class ScopedStringUTFChars {
 public:
     ScopedStringUTFChars(JNIEnv *jenv, jstring jstr, char *str) :
-            _jenv(jenv), _jstr(jstr), _str(str) {
+		_jenv(0), _jstr(0), _str(0), _length(0) {
+		set(jenv, jstr, str);
     }
 
     ScopedStringUTFChars(JNIEnv *jenv, jstring jstr) {
@@ -445,7 +446,7 @@ public:
     }
 
     ScopedStringUTFChars() :
-            _jenv(0), _jstr(0), _str(0) {
+            _jenv(0), _jstr(0), _str(0), _length(0) {
     }
 
     virtual ~ScopedStringUTFChars() {
@@ -458,12 +459,19 @@ public:
         _jenv = jenv;
         _jstr = jstr;
         _str = str;
-    }
+		if (NULL != _jstr) {
+			// seems wrong, but previously getLength() was doing exactly this.
+			// so when we cached the length, we pushed this here.
+			_length = _jenv->GetStringLength(_jstr);
+		} else {
+			_length = 0;
+		}
+	}
 
     inline void set(JNIEnv *jenv, jstring jstr) {
-        _str = (NULL == jstr) ? NULL : jenv->GetStringUTFChars(jstr, 0);
-        _jenv = jenv;
-        _jstr = jstr;
+		_jenv = jenv;
+		_jstr = jstr;
+		_str = (NULL == jstr) ? NULL : _jenv->GetStringUTFChars(_jstr, 0);
     }
 
     inline const char * getChars() {
@@ -478,12 +486,9 @@ public:
         return _str;
     }
 
-    inline const jsize getLength() {
-        if (NULL == _jstr) {
-            return 0;
-        }
-        return _jenv->GetStringUTFLength(_jstr);
-    }
+	inline const jsize getLength() {
+		return _length;
+	}
 
 private:
     // Disabled
@@ -493,6 +498,7 @@ private:
     JNIEnv *_jenv;
     jstring _jstr;
     const char *_str;
+	jsize _length;
 };
 
 class ScopedStringUnicodeChars {
@@ -530,15 +536,15 @@ public:
     }
 
     inline void set(JNIEnv *jenv, jstring jstr) {
-        if (NULL == jstr) {
+		_jenv = jenv;
+		_jstr = jstr;
+		if (NULL == jstr) {
             _str = 0;
             _length = 0;
         } else {
-            _str = (wchar_t*) jenv->GetStringChars(jstr, 0);
+            _str = (wchar_t*)_jenv->GetStringChars(_jstr, 0);
             _length = _jenv->GetStringLength(_jstr);
         }
-        _jenv = jenv;
-        _jstr = jstr;
     }
 
     inline const wchar_t * getChars() {
