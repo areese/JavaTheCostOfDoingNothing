@@ -1,0 +1,21 @@
+Result "com.yahoo.jmh.jmhtest.JNITest.testParamStringsUnicodeNe":
+  414.575 ±(99.9%) 57.301 ns/op [Average]
+  (min, avg, max) = (329.490, 414.575, 1189.059), stdev = 242.616
+  CI (99.9%): [357.274, 471.876] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:21:48
+
+Benchmark                           Mode  Cnt    Score     Error  Units
+JNITest.paramNone                   avgt  200   51.755 ±   0.289  ns/op
+JNITest.paramNoneReturnStringUTF8   avgt  200  195.286 ±   1.203  ns/op
+JNITest.paramString                 avgt  200   55.108 ±   0.355  ns/op
+JNITest.paramStringUTF8             avgt  200  190.134 ±   0.751  ns/op
+JNITest.paramStringUnicode          avgt  200  192.856 ±   0.848  ns/op
+JNITest.testEquals1                 avgt  200  474.597 ±   1.958  ns/op
+JNITest.testEquals2                 avgt  200  663.863 ± 110.090  ns/op
+JNITest.testParam2StringsNoScoping  avgt  200   57.739 ±   0.401  ns/op
+JNITest.testParamArray              avgt  200   55.261 ±   0.525  ns/op
+JNITest.testParamStringsEq          avgt  200  474.757 ±   0.876  ns/op
+JNITest.testParamStringsUnicodeEq   avgt  200  337.587 ±   1.172  ns/op
+JNITest.testParamStringsUnicodeNe   avgt  200  414.575 ±  57.301  ns/op
